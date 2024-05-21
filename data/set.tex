@@ -1,0 +1,137 @@
+\chapter{集合}
+\section{元素与集合}
+\subsection{集合的概念}
+虽然集合是一个原始的概念, 但对一个具体的集合而言, 很多情况下我们还是可以采用列举法或描述法给出它的一个准确而清晰的表示.
+
+用描述法表示一个集合基于下面的概括原则:
+
+概括原则 对任给的一个性质 $P$, 存在一个集合 $S$, 它的元素恰好是具有性质 $P$ 的所有对象, 即
+
+$$
+	S=\{x \mid P(x)\}
+$$
+
+其中 $P(x)$ 表示 “ $x$ 具有性质 $P "$.
+
+由此,我们知道集合的元素是完全确定的, 同时它的元素之间具有互异性和无序性.
+
+集合的元素个数为有限数的集合称为有限集, 元素个数为无限数的集合称为无限集. 如果有限集 $A$ 的元素个数为 $n$, 则称 $A$ 为 $n$ 元集, 记作 $|A|=n$. 空集不含任何元素.
+
+\begin{example}
+	设集合 $M=\left\{x \left\lvert\, \frac{a x-5}{x^{2}-a}<0\right., x \in \mathbf{R}\right\}$. 若 $3 \in M$, 且 $5 \notin M$, 求实数 $a$ 的取值范围.
+\end{example}
+\begin{solution}
+	由 $3 \in M$, 得 $\frac{3 a-5}{3^{2}-a}<0$, 即
+
+	\begin{gather*}
+		\left(a-\frac{5}{3}\right)(a-9)>0, \\
+		a<\frac{5}{3} \text { 或 } a>9 . \tag{1}
+	\end{gather*}
+
+
+	所以
+
+	由 $5 \notin M$ 得, $\frac{5 a-5}{5^{2}-a} \geqslant 0$ 或 $5^{2}-a=0$, 所以
+
+	\begin{equation*}
+		1 \leqslant a \leqslant 25 \tag{2}
+	\end{equation*}
+
+
+	由 (1)、(2) 得, $a \in\left[1, \frac{5}{3}\right) \cup(9,25]$.
+
+	说明 $5 \notin M$ 隐含了条件 $5^{2}-a=0$, 这是容易被忽视的.
+\end{solution}
+
+\begin{example}
+	设集合 $M=\left\{a \mid a=x^{2}-y^{2}, x, y \in \mathbf{Z}\right\}, n$ 为整数. 分别判断数 $4 n 、 4 n+1 、 4 n+2 、 4 n+3$ 与集合 $M$ 的关系.
+\end{example}
+
+\begin{analysis}
+	当 $n=1$ 时, 易知 $4=2^{2}-0^{2}, 5=3^{2}-2^{2}, 7=4^{2}-3^{2}$; 而对任何整数 $x 、 y$, 由于 $x+y$ 与 $x-y$ 同奇偶, 故 $(x+y)(x-y) \neq 2 \times 3=6 \times$ $1=6$. 于是, 我们尝试将 $4 n 、 4 n+1 、 4 n+3$ 分别表示成 $x^{2}-y^{2}$ 的形式, 并证明不存在 $x, y \in \mathbf{Z}$, 使 $4 n+2=x^{2}-y^{2}$.
+\end{analysis}
+
+\begin{solution}
+	因为对任意的整数 $n$, 有
+
+	\begin{gather*}
+		4 n=(n+1)^{2}-(n-1)^{2}(n+1, n-1 \in \mathbf{Z}) \\
+		4 n+1=(2 n+1)^{2}-(2 n)^{2}(2 n+1,2 n \in \mathbf{Z}) \\
+		4 n+3=(2 n+2)^{2}-(2 n+1)^{2}(2 n+2,2 n+1 \in \mathbf{Z})
+	\end{gather*}
+
+	所以 $4 n, 4 n+1,4 n+3 \in M$.
+
+	若 $4 n+2$ 是 $M$ 的元素, 则存在 $x, y \in \mathbf{Z}$ 满足 $4 n+2=x^{2}-y^{2}$. 注意到 $x+y$ 与 $x-y$ 奇偶性相同, 若同为奇数, 则 $4 n+2=x^{2}-y^{2}=(x+y)(x-$ $y)$ 不成立; 若同为偶数, 则 $(x+y)(x-y)$ 为 4 的倍数, 但 $4 n+2$ 不是 4 的倍数, 故 $4 n+2=x^{2}-y^{2}=(x+y)(x-y)$ 不成立. 所以 $4 n+2$ 不是 $M$ 的元素.
+
+	说明 由概括原则我们知道, 判断一个对象 $x$ 是否为集合 $S$ 的元素, 等价于判断 $x$ 是否具有性质 $P$.
+\end{solution}
+
+\begin{example}
+	设集合
+
+	$$
+		S=\left\{\left.\frac{m+n}{\sqrt{m^{2}+n^{2}}} \right\rvert\, m, n \in \mathbf{N}, m^{2}+n^{2} \neq 0\right\}
+	$$
+
+	证明: 对一切 $x, y \in S$, 且 $x<y$, 总存在 $z \in S$, 使得 $x<z<y$.
+\end{example}
+
+\begin{proof}
+	因 $\left(\frac{m+n}{\sqrt{m^{2}+n^{2}}}\right)^{2}=1+2 \times \frac{m n}{m^{2}+n^{2}}$, 所以, 原命题等价于: 设
+
+	$$
+		S^{\prime}=\left\{\left.\frac{m n}{m^{2}+n^{2}} \right\rvert\, m, n \in \mathbf{N}\right\}
+	$$
+
+	则对一切 $x, y \in S^{\prime}$ 且 $x<y$, 总存在 $z \in S^{\prime}$ 使得 $x<z<y$.
+
+	$$
+		\text { 记 } x=\frac{m n}{m^{2}+n^{2}}, y=\frac{a b}{a^{2}+b^{2}}(x<y) \text {. 不妨设 } m \leqslant n, a \leqslant b \text {. }
+	$$
+	考虑函数 $f(x)=\frac{-x}{1+x^{2}}$. 易证, $f(x)$ 在 $[0,1]$ 上严格递增. 所以, 对所有 $c, d \in[0,1]$, 有
+
+	$$
+		\begin{gathered}
+			f(c)<f(d) \Leftrightarrow c<d . \\
+			\text { 又 } f\left(\frac{m}{n}\right)=\frac{m m}{m^{2}+n^{2}}<\frac{a b}{a^{2}+b^{2}}=f\left(\frac{a}{b}\right) \text {,则 } \frac{m}{n}<\frac{a}{b} \text {. }
+		\end{gathered}
+	$$
+
+	因此, 可以选择有理数 $\frac{p}{q}(p, q \in \mathbf{N}, q \neq 0)$, 使得 $\frac{m}{n}<\frac{p}{q}<$ $\frac{a}{b}\left(\right.$ 如取 $\left.\frac{p}{q}=\frac{1}{2}\left(\frac{m}{n}+\frac{a}{b}\right)\right)$. 故
+
+	$$
+		f\left(\frac{m}{n}\right)<f\left(\frac{p}{q}\right)<f\left(\frac{a}{b}\right)
+	$$
+
+	令 $z=f\left(\frac{p}{q}\right)=\frac{p q}{p^{2}+q^{2}}$ 即可.
+\end{proof}
+
+\begin{note}
+	上述解法用等价命题代替原命题, 避免了根式运算, 使解答过程变得简洁.
+\end{note}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{集合的运算}
+\section{有限集的阶}
+\section{子集族}
+\section{集合的性质}
+\section{集合中的最大(小)值}
+\section{集合的分划}
+\section{分类原则}
+\section{极端原理}
+\section{ 容斥原理}
+\section{ 映射方法}
