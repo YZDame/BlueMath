@@ -1,6 +1,47 @@
-\chapter{集合}
-\section{元素与集合}
-\subsection{集合的概念}
+\documentclass[aspectratio=169]{ctexbeamer}
+\usetheme{Boadilla}
+\usecolortheme{beaver}
+\usepackage{amsmath} 
+\usepackage{amssymb} 
+\usepackage{amsfonts} 
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{comment}
+\pgfplotsset{compat=1.18}
+\usefonttheme[onlymath]{serif} % 衬线数学字体
+\title[集合]{集合}
+\subtitle{}
+\author[珠海市第一中学]{\kaishu{珠海市第一中学}}
+\date[\today]{\today}
+\titlegraphic{\includegraphics[width=2cm]{logo.png}}
+
+%在每个section 前边单独插入当前章节高亮的目录页（当然最原始的目录页你还是需要手动录入的, 不要想偷懒）
+\AtBeginSection[]
+{
+	\begin{frame}
+		\frametitle{目录}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+\newenvironment{righttikzpicture}
+  {\begin{flushright}\begin{tikzpicture}}
+  {\end{tikzpicture}\end{flushright}}
+\newenvironment{lefttikzpicture}
+  {\begin{flushleft}\begin{tikzpicture}}
+  {\end{tikzpicture}\end{flushleft}}
+\newenvironment{centertikzpicture}
+  {\begin{tikzpicture}}
+  {\end{tikzpicture}}
+
+\newcommand{\pll}{\kern 0.56em/\kern -0.8em /\kern 0.56em}
+\begin{document}
+\frame{\titlepage}
+%\kaishu
+\frame{\frametitle{目录}\tableofcontents}
+
+\section{集合的概念}
+\begin{frame}
 虽然集合是一个原始的概念, 但对一个具体的集合而言, 很多情况下我们还是可以采用列举法或描述法给出它的一个准确而清晰的表示.
 
 用描述法表示一个集合基于下面的概括原则:
@@ -16,11 +57,14 @@ $$
 由此,我们知道集合的元素是完全确定的, 同时它的元素之间具有互异性和无序性.
 
 集合的元素个数为有限数的集合称为有限集, 元素个数为无限数的集合称为无限集. 如果有限集 $A$ 的元素个数为 $n$, 则称 $A$ 为 $n$ 元集, 记作 $|A|=n$. 空集不含任何元素.
+\end{frame}
 
-\begin{example}
+\begin{frame}
 	设集合 $M=\left\{x \left\lvert\, \frac{a x-5}{x^{2}-a}<0\right., x \in \mathbf{R}\right\}$. 若 $3 \in M$, 且 $5 \notin M$, 求实数 $a$ 的取值范围.
-\end{example}
-\begin{solution}
+
+
+\end{frame}
+\begin{comment}
 	由 $3 \in M$, 得 $\frac{3 a-5}{3^{2}-a}<0$, 即
 
 	\begin{gather*}
@@ -41,17 +85,17 @@ $$
 	由 (1), (2) 得, $a \in\left[1, \frac{5}{3}\right) \cup(9,25]$.
 
 	说明 $5 \notin M$ 隐含了条件 $5^{2}-a=0$, 这是容易被忽视的.
-\end{solution}
+\end{comment}
 
-\begin{example}
+\begin{frame}
 	设集合 $M=\left\{a \mid a=x^{2}-y^{2}, x, y \in \mathbf{Z}\right\}, n$ 为整数. 分别判断数 $4 n ,  4 n+1 ,  4 n+2 ,  4 n+3$ 与集合 $M$ 的关系.
-\end{example}
+\end{frame}
 
-\begin{analysis}
+\begin{comment}
 	当 $n=1$ 时, 易知 $4=2^{2}-0^{2}, 5=3^{2}-2^{2}, 7=4^{2}-3^{2}$; 而对任何整数 $x ,  y$, 由于 $x+y$ 与 $x-y$ 同奇偶, 故 $(x+y)(x-y) \neq 2 \times 3=6 \times$ $1=6$. 于是, 我们尝试将 $4 n ,  4 n+1 ,  4 n+3$ 分别表示成 $x^{2}-y^{2}$ 的形式, 并证明不存在 $x, y \in \mathbf{Z}$, 使 $4 n+2=x^{2}-y^{2}$.
-\end{analysis}
+\end{comment}
 
-\begin{solution}
+\begin{comment}
 	因为对任意的整数 $n$, 有
 
 	\begin{gather*}
@@ -65,9 +109,9 @@ $$
 	若 $4 n+2$ 是 $M$ 的元素, 则存在 $x, y \in \mathbf{Z}$ 满足 $4 n+2=x^{2}-y^{2}$. 注意到 $x+y$ 与 $x-y$ 奇偶性相同, 若同为奇数, 则 $4 n+2=x^{2}-y^{2}=(x+y)(x-$ $y)$ 不成立; 若同为偶数, 则 $(x+y)(x-y)$ 为 4 的倍数, 但 $4 n+2$ 不是 4 的倍数, 故 $4 n+2=x^{2}-y^{2}=(x+y)(x-y)$ 不成立. 所以 $4 n+2$ 不是 $M$ 的元素.
 
 	说明 由概括原则我们知道, 判断一个对象 $x$ 是否为集合 $S$ 的元素, 等价于判断 $x$ 是否具有性质 $P$.
-\end{solution}
+\end{comment}
 
-\begin{example}
+\begin{frame}
 	设集合
 
 	$$
@@ -75,9 +119,9 @@ $$
 	$$
 
 	证明: 对一切 $x, y \in S$, 且 $x<y$, 总存在 $z \in S$, 使得 $x<z<y$.
-\end{example}
+\end{frame}
 
-\begin{proof}
+\begin{comment}
 	因 $\left(\frac{m+n}{\sqrt{m^{2}+n^{2}}}\right)^{2}=1+2 \times \frac{m n}{m^{2}+n^{2}}$, 所以, 原命题等价于: 设
 
 	$$
@@ -105,14 +149,16 @@ $$
 	$$
 
 	令 $z=f\left(\frac{p}{q}\right)=\frac{p q}{p^{2}+q^{2}}$ 即可.
-\end{proof}
+\end{comment}
 
-\begin{note}
+\begin{comment}
 	上述解法用等价命题代替原命题, 避免了根式运算, 使解答过程变得简洁.
-\end{note}
+\end{comment}
 
-\subsection{集合与集合的关系}
-在两个集合的关系中, 子集是一个重要的概念, 它的两个特例是真子集和集合相等. 从下面“充分必要条件”的角度来理解子集, 真子集和集合相等的概念无疑是十分有益的:
+
+\section{集合与集合的关系}
+\begin{frame}
+    在两个集合的关系中, 子集是一个重要的概念, 它的两个特例是真子集和集合相等. 从下面“充分必要条件”的角度来理解子集, 真子集和集合相等的概念无疑是十分有益的:
 
 子集 : $A \subseteq B \Leftrightarrow$ 对任意 $x \in A$,恒有 $x \in B$;
 
@@ -127,15 +173,18 @@ $$
   \item $A \subseteq B, B \subseteq C \Rightarrow A \subseteq C$;
   \item $n$ 元集 $A$ 总共有 $2^{n}$ 个不同的子集.
 \end{enumerate}
-\begin{example}
-若集合 $\{1,2, \cdots, 50\}$ 的子集中不包含形如 $\{x, 3 x\}$ 的子集, 则称该子集为“特殊子集”,含元素个数最多的特殊子集称为“超特殊子集”. 求超特殊子集含有多少个元素,且存在多少个不同的超特殊子集?
-\end{example}
+\end{frame}
 
-\begin{analysis}
+
+\begin{frame}
+若集合 $\{1,2, \cdots, 50\}$ 的子集中不包含形如 $\{x, 3 x\}$ 的子集, 则称该子集为“特殊子集”,含元素个数最多的特殊子集称为“超特殊子集”. 求超特殊子集含有多少个元素,且存在多少个不同的超特殊子集?
+\end{frame}
+
+\begin{comment}
 一个自然的想法是, 先列出集合 $\{1,2, \cdots, 50\}$ 的所有仅包含形如 $\left\{x, 3^{k} x\right\}\left(k \in \mathbf{N}^{*}\right)$ 的二元子集且元素尽可能多的子集,以及 $\{1,2, \cdots, 50\}$\\
 除去上述复合元素后余下元素构成的子集, 然后考虑如何从这些子集中选取元素组成超“特殊子集”.
-\end{analysis}
-\begin{solution}
+\end{comment}
+\begin{comment}
 作集合 $\{1,2, \cdots, 50\}$ 的子集：
 $$
 \begin{aligned}
@@ -159,9 +208,9 @@ $$
 (1) 两个集合的元素之和相等;
 
 (2) 两个集合的元素之积相等.
-\end{solution}
+\end{comment}
 
-\begin{example}
+\begin{frame}
 设 $a ,  b ,  c$ 是互不相同的正整数, $n$ 为正整数. 若集合
 
 $$
@@ -169,9 +218,9 @@ $$
 $$
 
 求 $a^{2}+b^{2}+c^{2}$ 的最小值.
-\end{example}
+\end{frame}
 
-\begin{solution}
+\begin{comment}
 由题设, 显然 $n>1$. 由于
 
 $$
@@ -186,13 +235,13 @@ $$
 当 $n=5$ 时, 由 $a+b=25, a+c=36, b+c=49$ 解得 $a=6, b=19$, $c=30$. 这时, $a^{2}+b^{2}+c^{2}=1297$.
 
 综上,所求 $a^{2}+b^{2}+c^{2}$ 的最小值为 1297 .
-\end{solution}
+\end{comment}
 
-\begin{note}
+\begin{comment}
 	元素之和(积)相等只是两个集合相等的必要条件,以此求解集合时一般还要检查集合的元素是否互异.
-\end{note}
+\end{comment}
 
-\begin{example}\label{ex:6}
+\begin{frame}\label{ex:6}
 对于非空数集 $S ,  T$, 定义
 
 $$
@@ -206,9 +255,9 @@ D+D \subseteq 2(A+B), \text { 且 }|D| \geqslant \frac{|A| \cdot|B|}{2 n}
 $$
 
 这里 $|X|$ 表示有限集 $X$ 的元素个数.
-\end{example}
+\end{frame}
 
-\begin{proof}
+\begin{comment}
 令 $S_{y}=\{(a, b) \mid a-b=y, a \in A, b \in B\}$.
 
 由于 $\sum_{y=1-n}^{n-1}\left|S_{y}\right|=|A| \cdot|B|$, 故存在 $y_{0}, 1-n \leqslant y_{0} \leqslant n-1$, 使
@@ -241,50 +290,41 @@ d_{1}+d_{2} & =2 a_{1}-y_{0}+2 b_{2}+y_{0} \\
 $$
 
 综上可知集合 $D$ 满足要求.
-\end{proof}
+\end{comment}
 
-\begin{note}
+\begin{comment}
 例 \ref{ex:6}定义了一种新的集合运算, 正确理解这个定义是顺利解题的关键.\\
-\end{note}
+\end{comment}
 
-\begin{example}
+\begin{frame}
 用 $\sigma(S)$ 表示非空的整数集合 $S$ 的所有元素的和. 设 $A=\left\{a_{1}\right.$, $\left.a_{2}, \cdots, a_{11}\right\}$ 是正整数的集合, 且 $a_{1}<a_{2}<\cdots<a_{11}$; 又设对每个正整数 $n \leqslant$ 1500 , 都存在 $A$ 的子集 $S$, 使得 $\sigma(S)=n$. 求 $a_{10}$ 的最小可能值.
-\end{example}
+\end{frame}
 
-\begin{analysis}
+\begin{comment}
 要求 $a_{10}$ 的最小值, 显然应使 $\sigma(A)=1500$. 又由题设,应使 $a_{11}$ 尽可能大, 且前 10 个数之和不小于 750 , 故取 $a_{11}=750$. 考虑整数的二进制表示, 由 $1+2+\cdots+2^{7}=255$ 知, 前 8 个数应依次为 $1 ,  2 ,  4 ,  8 ,  16 ,  32 ,  64 ,  128$. 这时 $a_{9}+a_{10}=495$, 从而有 $a_{10}=248$.
-\end{analysis}
+\end{comment}
 
-\begin{solution}
+\begin{comment}
 取 $A_{0}=\{1,2,4,8,16,32,64,128,247,248,750\}$, 易知 $A_{0}$ 满足题目要求, 且 $a_{10}=248$. 故 $a_{10}$ 的最小可能值不超过 248 .
 
 另一方面, $a_{10}$ 不可能比 248 更小. 这是因为前 10 个数之和不能小于 750 ,否则设 $\sum_{i=1}^{10} a_{i}=m, m<750$, 则 $a_{11}=1500-m$, 对 $n \in(m, 1500-m)$, 显然不存在 $A$ 的子集 $S$, 使 $\sigma(S)=n$. 因 $1+2+\cdots+2^{7}=255$, 由整数的二进制表示知, 其前 8 个数之和最大为 255. 故 $a_{9}+a_{10}$ 的最小可能值为 495 , 从而 $a_{10}$至少为 248.
 
 综上知, $a_{10}$ 的最小可能值为 248 .
-\end{solution}
+\end{comment}
 
-\begin{note}
+\begin{comment}
 本例采用了构造法. 直接构造一个符合题设的 $A_{0}$, 然后证明 $A_{0}$ 具有所要求的性质. 这种方法在解有关集合和组合的问题中经常用到.
-\end{note}
+\end{comment}
 
-\begin{example}
+\begin{frame}
 设 $A_{1}, A_{2}, A_{3}, \cdots$ 是一列集合, 满足:对任意正整数 $j$, 只有有限多个正整数 $i$, 使得 $A_{i} \subseteq A_{j}$. 证明: 存在一列正整数 $a_{1}, a_{2}, a_{3}, \cdots$, 使得对任意正整数 $i ,  j, a_{i} \mid a_{j}$ 当且仅当 $A_{i} \subseteq A_{j}$.
-\end{example}
-\begin{proof}
+\end{frame}
+\begin{comment}
 设 $p_{1}, p_{2}, p_{3}, \cdots$ 是全体素数从小到大排列. 对 $i \in \mathbf{N}^{*}$, 记 $S_{i}=$ $\left\{j \in \mathbf{N}^{*} \mid A_{j} \subseteq A_{i}\right\}$, 由题设知 $S_{i}$ 是有限集, 且 $i \in S_{i}$. 令 $a_{i}=\prod_{j \in S_{i}} p_{j}$, 下面证明数列 $a_{1}, a_{2}, a_{3}, \cdots$ 满足条件.
 
 对任意正整数 $i ,  j$, 若 $A_{i} \subseteq A_{j}$, 则 $S_{i} \subseteq S_{j}$, 从而 $a_{i} \mid a_{j}$; 若 $a_{i} \mid a_{j}$, 则 $S_{i} \subseteq$ $S_{j}$, 由 $i \in S_{i}$ 可知 $i \in S_{j}$, 故 $A_{i} \subseteq A_{j}$. 因此 $a_{i} \mid a_{j}$ 当且仅当 $A_{i} \subseteq A_{j}$.
-\end{proof}
+\end{comment}
 
 
-
-\section{集合的运算}
-\section{有限集的阶}
-\section{子集族}
-\section{集合的性质}
-\section{集合中的最大(小)值}
-\section{集合的分划}
-\section{分类原则}
-\section{极端原理}
-\section{ 容斥原理}
-\section{ 映射方法}
+\end{document}
+  
