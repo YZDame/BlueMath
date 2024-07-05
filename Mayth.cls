@@ -1,5 +1,5 @@
 \ProvidesClass{Mayth}
-\LoadClass{ctexbook}
+\LoadClass[zihao=-4]{ctexbook}
 
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
@@ -19,7 +19,7 @@
 %\reversemarginpar
 
 \pgfplotsset{compat=1.18}
-\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\geometry{a4paper, left=4.5cm, right=4.5cm, top=4cm, bottom=4cm}
 
 \theoremstyle{definition}
 
