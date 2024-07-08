@@ -22,7 +22,7 @@
 \geometry{a4paper, left=4.5cm, right=4.5cm, top=4cm, bottom=4cm}
 
 \theoremstyle{definition}
-
+\newtheorem{definition}{定义}[section]
 \newtheorem*{solution}{解}
 
 \theoremstyle{plain}
