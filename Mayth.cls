@@ -22,6 +22,10 @@
 \geometry{a4paper, left=4.5cm, right=4.5cm, top=4cm, bottom=4cm}
 
 \theoremstyle{definition}
+\newtheorem{question}{问题}[section]
+\newtheorem{example}{例}[section]
+\newtheorem{exercise}{练习}[section]
+\newtheorem{formula}{公式}[section]
 \newtheorem{definition}{定义}[section]
 \newtheorem*{solution}{解}
 
