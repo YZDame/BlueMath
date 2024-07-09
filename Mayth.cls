@@ -21,6 +21,8 @@
 \pgfplotsset{compat=1.18}
 \geometry{a4paper, left=4.5cm, right=4.5cm, top=4cm, bottom=4cm}
 
+\setcounter{tocdepth}{1}
+
 \theoremstyle{definition}
 \newtheorem{question}{问题}[section]
 \newtheorem{example}{例}[section]
