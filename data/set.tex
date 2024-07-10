@@ -6,7 +6,6 @@
 用描述法表示一个集合基于下面的概括原则:
 
 概括原则 对任给的一个性质 $P$, 存在一个集合 $S$, 它的元素恰好是具有性质 $P$ 的所有对象, 即
-
 $$
 	S=\{x \mid P(x)\}
 $$
@@ -53,7 +52,6 @@ $$
 
 \begin{solution}
 	因为对任意的整数 $n$, 有
-
 	\begin{gather*}
 		4 n=(n+1)^{2}-(n-1)^{2}(n+1, n-1 \in \mathbf{Z}) \\
 		4 n+1=(2 n+1)^{2}-(2 n)^{2}(2 n+1,2 n \in \mathbf{Z}) \\
@@ -69,7 +67,6 @@ $$
 
 \begin{example}
 	设集合
-
 	$$
 		S=\left\{\left.\frac{m+n}{\sqrt{m^{2}+n^{2}}} \right\rvert\, m, n \in \mathbf{N}, m^{2}+n^{2} \neq 0\right\}
 	$$
@@ -79,18 +76,15 @@ $$
 
 \begin{proof}
 	因 $\left(\frac{m+n}{\sqrt{m^{2}+n^{2}}}\right)^{2}=1+2 \times \frac{m n}{m^{2}+n^{2}}$, 所以, 原命题等价于: 设
-
 	$$
 		S^{\prime}=\left\{\left.\frac{m n}{m^{2}+n^{2}} \right\rvert\, m, n \in \mathbf{N}\right\}
 	$$
 
 	则对一切 $x, y \in S^{\prime}$ 且 $x<y$, 总存在 $z \in S^{\prime}$ 使得 $x<z<y$.
-
 	$$
 		\text { 记 } x=\frac{m n}{m^{2}+n^{2}}, y=\frac{a b}{a^{2}+b^{2}}(x<y) \text {. 不妨设 } m \leqslant n, a \leqslant b \text {. }
 	$$
 	考虑函数 $f(x)=\frac{-x}{1+x^{2}}$. 易证, $f(x)$ 在 $[0,1]$ 上严格递增. 所以, 对所有 $c, d \in[0,1]$, 有
-
 	$$
 		\begin{gathered}
 			f(c)<f(d) \Leftrightarrow c<d . \\
@@ -99,7 +93,6 @@ $$
 	$$
 
 	因此, 可以选择有理数 $\frac{p}{q}(p, q \in \mathbf{N}, q \neq 0)$, 使得 $\frac{m}{n}<\frac{p}{q}<$ $\frac{a}{b}\left(\right.$ 如取 $\left.\frac{p}{q}=\frac{1}{2}\left(\frac{m}{n}+\frac{a}{b}\right)\right)$. 故
-
 	$$
 		f\left(\frac{m}{n}\right)<f\left(\frac{p}{q}\right)<f\left(\frac{a}{b}\right)
 	$$
@@ -121,7 +114,6 @@ $$
 集合相等: $A=B \Leftrightarrow A \subseteq B$, 且 $B \subseteq A$.
 
 容易证明两个集合之间关系的如下性质:
-
 \begin{enumerate}
 	\item $\varnothing \subseteq A, \varnothing \varsubsetneqq A(A \neq \varnothing)$;
 	\item $A \subseteq B, B \subseteq C \Rightarrow A \subseteq C$;
@@ -163,7 +155,6 @@ $$
 
 \begin{example}
 	设 $a ,  b ,  c$ 是互不相同的正整数, $n$ 为正整数. 若集合
-
 	$$
 		\{a+b, b+c, c+a\}=\left\{n^{2},(n+1)^{2},(n+2)^{2}\right\}
 	$$
@@ -173,7 +164,6 @@ $$
 
 \begin{solution}
 	由题设, 显然 $n>1$. 由于
-
 	$$
 		n^{2}+(n+1)^{2}+(n+2)^{2}=2(a+b+c)
 	$$
@@ -194,13 +184,11 @@ $$
 
 \begin{example}\label{ex:6}
 	对于非空数集 $S ,  T$, 定义
-
 	$$
 		S+T=\{s+t \mid s \in S, t \in T\}, 2 S=\{2 s \mid s \in S\}
 	$$
 
 	设 $n$ 为正整数, $A ,  B$ 均为 $\{1,2, \cdots, n\}$ 的非空子集, 证明: 存在 $A+B$ 的子集 $D$, 使得
-
 	$$
 		D+D \subseteq 2(A+B), \text { 且 }|D| \geqslant \frac{|A| \cdot|B|}{2 n}
 	$$
@@ -212,19 +200,16 @@ $$
 	令 $S_{y}=\{(a, b) \mid a-b=y, a \in A, b \in B\}$.
 
 	由于 $\sum_{y=1-n}^{n-1}\left|S_{y}\right|=|A| \cdot|B|$, 故存在 $y_{0}, 1-n \leqslant y_{0} \leqslant n-1$, 使
-
 	$$
 		\left|S_{y_{0}}\right| \geqslant \frac{|A| \cdot|B|}{2 n-1}>\frac{|A| \cdot|B|}{2 n}
 	$$
 
 	取 $D=\left\{2 b+y_{0} \mid(a, b) \in S_{y_{0}}\right\}$, 由于对所有的 $(a, b) \in S_{y_{0}}$, 相应的 $b$值两两不等, 进而 $2 b+y_{0}$ 两两不同, 故
-
 	$$
 		|D|=\left|S_{y_{0}}\right|>\frac{|A| \cdot|B|}{2 n}
 	$$
 
 	由 $S_{y_{0}}$ 的定义知, 对 $D$ 中的每个元素 $d$, 存在 $(a, b) \in S_{y_{0}}$ 使得
-
 	$$
 		d=2 b+y_{0}=a+b \in A+B
 	$$
@@ -232,7 +217,6 @@ $$
 	故 $D \subseteq A+B$.
 
 	对 $d_{1}, d_{2} \in D$, 设 $d_{1}=2 b_{1}+y_{0}=2 a_{1}-y_{0}, d_{2}=2 b_{2}+y_{0}\left(b_{1}, b_{2} \in B\right.$, $\left.a_{1} \in A\right)$, 则
-
 	$$
 		\begin{aligned}
 			d_{1}+d_{2} & =2 a_{1}-y_{0}+2 b_{2}+y_{0}          \\
@@ -283,7 +267,6 @@ $$
 \end{example}
 \begin{proof}
 	记参加第 $j$ 场比赛的选手为 $\left(a_{j}, b_{j}\right)$, 并记
-
 	$$
 		S=\left\{\left(a_{j}, b_{j}\right) \mid j=1,2, \cdots, 14\right\}
 	$$
@@ -297,7 +280,6 @@ $$
 	由于每名选手至少参加一场比赛, 所以除了 $M_{0}$ 中的 $r$ 场比赛之外, 至少还要进行 $20-2 r$ 场比赛.
 
 	因此,总比赛场数至少为
-
 	$$
 		r+20-2 r=20-r \geqslant 15
 	$$
@@ -330,7 +312,6 @@ $$
 
 \subsection{集合的交集、并集、补集}
 集合的交集、并集、补集三种基本沄算是通过元素与集合的关系来定义的:
-
 $$
 	\begin{aligned}
 		 & A \cap B=\{x \mid x \in A, \text { 且 } x \in B\},                             \\
@@ -370,7 +351,6 @@ $\complement_{U}(A \cup B)=\complement_{U} A \cap \complement_{U} B$.
 \subsection{集合的差集、对称差}
 \begin{definition}
 	由属于集合 $A$ 且不属于集合 $B$ 的全体元素组成的集合叫做集合 $A$ 对 $B$ 的差集, 记作 $A \backslash B$ (或 $A-B$ ), 即
-
 	$$
 		A \backslash B=\{x \mid x \in A \text {, 且 } x \notin B\} .
 	$$
@@ -389,7 +369,6 @@ $\complement_{U}(A \cup B)=\complement_{U} A \cap \complement_{U} B$.
 
 \begin{definition}
 	由属于集合 $A$ 且不属于集合 $B$, 或属于集合 $B$ 且不属于集合 $A$的全体元素组成的集合叫做集合 $A$ 和 $B$ 的对称差,记作 $A \triangle B$, 即
-
 	$$
 		\begin{aligned}
 			A \triangle B & =(A-B) \cup(B-A)                                                                         \\
@@ -415,7 +394,6 @@ $\complement_{U}(A \cup B)=\complement_{U} A \cap \complement_{U} B$.
 \subsection{集合的笛卡尔积}
 \begin{definition}
 	设 $A 、 B$ 为两个集合, 以 $A$ 中元素为第一元素, $B$ 中元素为第二元素构成有序对, 所有这样的有序对组成的集合叫做集合 $A$ 与 $B$ 的笛卡尔积 (又称直称 $),$ 记作 $A \times B , $ 即
-
 	$$
 		A \times B=\{(x, y) \mid x \in A, y \in B\}
 	$$
@@ -455,7 +433,6 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 	因为 $\complement_{U}(A \cup B)=\left(\complement_{U} A\right) \cap\left(\complement_{U} B\right)=$ $\{1,9\}$, 所以 $A \cup B=\{2,3,4,5,6,7,8\}$.
 
 	又
-
 	$$
 		\begin{aligned}
 			A \cap B                              & =\{2\},     \\
@@ -467,7 +444,6 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 
 
 	所以
-
 	$$
 		\begin{aligned}
 			B & =U \cap B=\left(A \cup \complement_{U} A\right) \cap B             \\
@@ -515,7 +491,6 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 	故当 $a=0$ 或 1 时, $(A \cup B) \cap C$ 恰有两个元素.
 
 	(2) 使 $(A \cup B) \cap C$ 恰有三个元素的情况是
-
 	$$
 		\frac{2 a}{1+a^{2}}=\frac{1-a^{2}}{1+a^{2}}
 	$$
@@ -540,7 +515,6 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 \end{note}
 
 例\ref{ex:1.2.3}实际上给出了一个关于集合的方程组:
-
 $$
 	\left\{\begin{array}{l}
 		A \cup B=\{1,2, \cdots, n\} \\
@@ -585,7 +559,6 @@ $$
 	故集合 $A \backslash B$ 中的点的数目不大于集合 $B$ 中的点对的数目.
 
 	记 $|B|=k$, 则集合 $A \backslash B$ 中点的数目为 $2016-k$, 集合 $B$ 中点对的数目为 $\frac{k(k-1)}{2}$. 所以
-
 	$$
 		2016-k \leqslant \frac{(k-1) k}{2}
 	$$
@@ -612,7 +585,6 @@ $$
 	类似地, $r\left(\left\{y_{1}, y_{3}\right\}\right)=r\left(\left\{y_{1}, y_{4}\right\}\right)=y_{1}$.
 
 	此时, 只有
-
 	$$
 		\begin{aligned}
 			 & \left\{y_{1}, y_{2}, y_{3}\right\} 、\left\{y_{1}, y_{2}, y_{4}\right\} 、\left\{y_{1}, y_{3}, y_{4}\right\} 、              \\
@@ -674,7 +646,6 @@ $$
 
 \begin{example}
 	将集合 $M=\{1,2, \cdots, 100\}$ 中任意 67 个数染成红色, 另 33 个数染成蓝色. 若集合 $M$ 存在形如
-
 	$$
 		A_{i, k}=\{i, i+1, \cdots, i+3 k-1\}(1 \leqslant k \leqslant 33,1 \leqslant i \leqslant 101-3 k)
 	$$
@@ -707,7 +678,6 @@ $$
 	则集合 $A_{i, 17}$ 的红色数个数比集合 $A_{i+1,17}$ 的红色数个数少 1 .
 
 	考虑下面两个集合
-
 	$$
 		\begin{gathered}
 			A_{1,17}=\{1,2, \cdots, 51\} \\
@@ -723,7 +693,6 @@ $$
 	下面分三种情形讨论.
 
 	（1）当集合 $A$ 中两个数均为红色时,由抽屉原则,知集合
-
 	$$
 		A_{1,17} \backslash A=\{1,2, \cdots, 49\} \text { 与 } A_{50,17} \backslash A=\{52,53, \cdots, 100\}
 	$$
@@ -755,19 +724,16 @@ $$
 
 \begin{proof}
 	游戏结束时, 爱丽丝获得的金币数多于鲍勃获得的金币数当且仅当
-
 	$$
 		\sum_{i=1}^{n}(-1)^{\left|B_{i} \cap S\right|} a_{i}<0
 	$$
 
 	否则,对任意的非空集合 $S$ 有
-
 	$$
 		\sum_{i=1}^{n}(-1)^{\left|B_{i} \cap S\right|} a_{i}>0
 	$$
 
 	显然, 当 $S=\varnothing$ 时,
-
 	$$
 		\sum_{i=1}^{n}(-1)^{\left|B_{i} \cap s\right|} a_{i}=\sum_{i=1}^{n} a_{i}>0
 	$$
@@ -781,7 +747,6 @@ $$
 
 
 	当 $B$ 是 $\{1,2, \cdots, m\}$ 的非空子集时, 考虑 $\sum_{S \subseteq\{1,2, \cdots, m\}}(-1)^{|B \cap S|}$.记 $S=C \cup D$, 其中, $C=S \backslash B, D=S \cap B, C \cap D=\varnothing$. 则
-
 	$$
 		\begin{aligned}
 			  & \sum_{S \subseteq\{1,2, \ldots, m\}}(-1)^{|B \cap S|}                                 \\
@@ -791,19 +756,16 @@ $$
 	$$
 
 	因为 $|B|>0$, 所以,
-
 	$$
 		\sum_{D \subseteq B}(-1)^{|D|}=\sum_{r=0}^{|B|}(-1)^{r} \mathrm{C}_{|B|}^{r}=0
 	$$
 
 	则对每个非空子集 $B \subseteq\{1,2, \cdots, m\}$ 有
-
 	$$
 		\sum_{S \subseteq\{1,2, \ldots, m\}}(-1)^{|B \cap S|}=0
 	$$
 
 	故
-
 	$$
 		\sum_{S \subseteq\{1,2, \ldots, m\}} \sum_{i=1}^{n}(-1)^{\left|B_{i} \cap S\right|} a_{i}=\sum_{i=1}^{n}\left[a_{i} \sum_{S \subseteq\{1,2, \ldots, m\}}(-1)^{\left|B_{i} \cap S\right|}\right]=0
 	$$
@@ -813,7 +775,6 @@ $$
 
 \begin{example}
 	设 $A$ 是集合 $S=\{1,2, \cdots, 1000000\}$ 的一个恰有 101 个元素的子集. 证明: 在 $S$ 中存在数 $t_{1}, t_{2}, \cdots, t_{100}$, 使得集合
-
 	$$
 		A_{j}=\left\{x+t_{j} \mid x \in A\right\}, j=1,2, \cdots, 100
 	$$
@@ -826,7 +787,6 @@ $$
 
 \begin{proof}
 	考虑集合 $D=\{x-y \mid x, y \in A\}$, 则
-
 	$$
 		|D| \leqslant 101 \times 100+1=10101
 	$$
@@ -866,13 +826,11 @@ $$
 
 \begin{solution}
 	形如 $4 k+1$ 的数可分为 3 类:
-
 	$$
 		12 l+1,12 l+5,12 l+9(l \in \mathbf{Z})
 	$$
 
 	其中只有形如 $12 l+5$ 的数是形如 $3 k-1$ 的数. 令
-
 	$$
 		1 \leqslant 12 l+5 \leqslant 2000(l \in \mathbf{Z})
 	$$
@@ -888,7 +846,6 @@ $$
 
 \begin{example}
 	给定正整数 $n(n \geqslant 2)$. 称集合 $S(|S|=n)$ 的三个互不相同的子集 $S_{i} 、 S_{j} 、 S_{k}$ 为一个“三角形”. 定义
-
 	$$
 		\left|\left(S_{i} \cap S_{j}\right) \cup\left(S_{j} \cap S_{k}\right) \cup\left(S_{k} \cap S_{i}\right)\right|
 	$$
@@ -904,26 +861,25 @@ $$
 \end{analysis}
 
 \begin{solution}
-令 $T_{1}=\left(S_{i} \cap S_{j}\right) \backslash S_{k}, T_{2}=\left(S_{i} \cap S_{j}\right) \backslash S_{i}, T_{3}=\left(S_{k} \cap S_{i}\right) \backslash S_{j}$, $T_{4}=S_{i} \cap S_{j} \cap S_{k}$.
+	令 $T_{1}=\left(S_{i} \cap S_{j}\right) \backslash S_{k}, T_{2}=\left(S_{i} \cap S_{j}\right) \backslash S_{i}, T_{3}=\left(S_{k} \cap S_{i}\right) \backslash S_{j}$, $T_{4}=S_{i} \cap S_{j} \cap S_{k}$.
 
-本题等价于求有多少种方式将数 $1,2, \cdots, n$ 放入集合 $T_{1} 、 T_{2} 、 T_{3} 、 T_{4}$中,使得 $S_{i} 、 S_{i} 、 S_{k}$ 互不相同.
+	本题等价于求有多少种方式将数 $1,2, \cdots, n$ 放入集合 $T_{1} 、 T_{2} 、 T_{3} 、 T_{4}$中,使得 $S_{i} 、 S_{i} 、 S_{k}$ 互不相同.
 
-首先, 将 $1,2, \cdots, n$ 放入集合 $T_{1} 、 T_{2} 、 T_{3} 、 T_{4}$ 中,共有 $4^{n}$ 种方法.
+	首先, 将 $1,2, \cdots, n$ 放入集合 $T_{1} 、 T_{2} 、 T_{3} 、 T_{4}$ 中,共有 $4^{n}$ 种方法.
 
-其次, 若 $S_{i}=S_{j}$, 则 $S_{i}=S_{i} \cap S_{j}=S_{j}$. 从而, 将 1, $2, \cdots, n$ 放入集合 $T_{1} 、 T_{4}$ 中, 共有 $2^{\prime \prime}$ 种方法, 这不满足条件.
+	其次, 若 $S_{i}=S_{j}$, 则 $S_{i}=S_{i} \cap S_{j}=S_{j}$. 从而, 将 1, $2, \cdots, n$ 放入集合 $T_{1} 、 T_{4}$ 中, 共有 $2^{\prime \prime}$ 种方法, 这不满足条件.
 
-类似地, $S_{j}=S_{k}, S_{k}=S_{i}$ 都有 $2^{\prime \prime}$ 种方式不满足条件.
+	类似地, $S_{j}=S_{k}, S_{k}=S_{i}$ 都有 $2^{\prime \prime}$ 种方式不满足条件.
 
-但是 $S_{i}=S_{j}=S_{k}$ 被多减了两次.
+	但是 $S_{i}=S_{j}=S_{k}$ 被多减了两次.
 
-最后, 再考虑 $S_{i} 、 S_{j} 、 S_{k}$ 的次序.
+	最后, 再考虑 $S_{i} 、 S_{j} 、 S_{k}$ 的次序.
 
-故所求的周长为 $n$ 的三角形的个数为 $\frac{1}{6}\left(4^{n}-3 \times 2^{n}+2\right)$.
+	故所求的周长为 $n$ 的三角形的个数为 $\frac{1}{6}\left(4^{n}-3 \times 2^{n}+2\right)$.
 \end{solution}
 
 \begin{example}
 	设 $a_{1}, a_{2}, \cdots, a_{n}$ 为 $1,2, \cdots, n$ 的一个排列, $f_{k}=\mid\left\{a_{i} \mid a_{i}<a_{k}\right.$, $i>k\}\left|, g_{k}=\right|\left\{a_{i} \mid a_{i}>a_{k}, i<k\right\} \mid$, 其中 $k=1,2, \cdots, n$. 证明：
-
 	$$
 		\sum_{k=1}^{n} g_{k}=\sum_{k=1}^{n} f_{k}
 	$$
@@ -931,7 +887,6 @@ $$
 
 \begin{analysis}
 	一般来说 $f_{k} \neq g_{k}$, 且分别计算 $f_{k} 、 g_{k}$ 是困难的. 令 $A_{k}=$ $\left\{a_{i} \mid a_{i}<a_{k}, i>k\right\}$, 对 $A_{k}$ 换一种写法: $A_{k}=\left\{\left(a_{i}, a_{k}\right) \mid a_{i}<a_{k}, i>k\right\}$, 显然是合理的. 易知 $k \neq k^{\prime}$ 时, $A_{k} \cap A_{k}{ }^{\prime}=\varnothing$. 所以,
-
 	$$
 		\begin{aligned}
 			\sum_{k=1}^{n} f_{k} & =\left|A_{1}\right|+\left|A_{2}\right|+\cdots+\left|A_{n}\right|=\left|A_{1} \cup A_{2} \cup \cdots \cup A_{n}\right| \\
@@ -956,7 +911,6 @@ $$
 
 \begin{example}
 	在集合 $\{1,2, \cdots, 2 n\}$ 中选取其中 $n$ 个数, 记为 $a_{1}, a_{2}, \cdots, a_{n}\left(a_{1}\right.$ $\left.<a_{2}<\cdots<a_{n}\right)$, 剩下 $n$ 个数记为 $b_{1}, b_{2}, \cdots, b_{n}\left(b_{1}>b_{2}>\cdots>b_{n}\right)$. 证明：
-
 	$$
 		\left|a_{1}-b_{1}\right|+\left|a_{2}-b_{2}\right|+\cdots+\left|a_{n}-b_{n}\right|=n^{2}
 	$$
@@ -964,7 +918,6 @@ $$
 
 \begin{analysis}
 	观察如下刻意排序的两组数:
-
 	$$
 		\begin{aligned}
 			 & a_{1}<a_{2}<\cdots<a_{j}<\cdots<a_{n} \\
@@ -983,13 +936,11 @@ $$
 	同理,假设 $a_{i} 、 b_{i}$ 同在集合 $H$ 中时,也导出矛盾.
 
 	因此, 对于每一个 $i(i=1,2, \cdots, n)$ 均有
-
 	$$
 		\left|a_{i}-b_{i}\right|=\left(h_{i}-l_{i}\right)\left(h_{i} \in H, l_{i} \in L\right) \text {. }
 	$$
 
 	故
-
 	$$
 		\begin{aligned}
 			  & \left|a_{1}-b_{1}\right|+\left|a_{2}-b_{2}\right|+\cdots+\left|a_{n}-b_{n}\right| \\
@@ -1027,7 +978,6 @@ $$
 	注意到, 对于 $i=2,3, \cdots, k$, 城市 $x_{i}$ 与城市 $c_{i}$ 相连.
 
 	用同样的方法 (用 $a$ 替换 $b$ ), 知城市 $x_{i}(i=2,3, \cdots, k)$ 有 $k$ 种连接方式,但已知城市 $x_{i}$ 有 $m+1$ 种连接方式, 因此,
-
 	$$
 		k=m+1, N-1=k+k m=k^{2} \text {. }
 	$$
@@ -1037,7 +987,667 @@ $$
 	本例我们是通过引入集合语言,讨论有限集的阶来达到证明的目的的.
 \end{note}
 
+\subsection{二、有关集合阶的不等式}
+有些集合虽然不能准确求出其元素的数目,但是我们可以利用不等式来估计其阶的范围.
+\begin{example}
+	设 $p \geqslant 5$ 是一个素数, $S=\{1,2, \cdots, p-1\}, A=\{a \mid a \in S$, $\left.a^{p-1} \not \equiv 1\left(\bmod p^{2}\right)\right\}$. 证明: $|A| \geqslant \frac{p-1}{2}$.
+\end{example}
+
+\begin{analysis}
+	如果 $1 \leqslant a \leqslant p-1$, 显然 $1 \leqslant p-a \leqslant p-1$. 将 $a$ 与 $p-a$ 配对,如果 $a^{p-1}$ 与 $(p-a)^{p^{-1}}$ 模 $p^{2}$ 不同余, 则结论成立.
+\end{analysis}
+
+\begin{proof}
+	设 $a \in S$, 则 $p-a \in S$. 由二项式定理, 有
+	$$
+		(p-a)^{p-1}-a^{p-1} \equiv-(p-1) a^{p-2} \cdot p \not \equiv 0\left(\bmod p^{2}\right)
+	$$
+
+	于是, $a$ 和 $p-a$ 中至少有一个在 $A$ 中, 从而有
+	$$
+		|A| \geqslant \frac{p-1}{2}
+	$$
+\end{proof}
+
+\begin{example}
+	设 $A_{1}, A_{2}, \cdots, A_{30}$ 是集合 $\{1,2, \cdots, 2003\}$ 的子集，且 $\left|A_{i}\right| \geqslant$ $660, i=1,2, \cdots, 30$. 证明: 存在 $i \neq j, i, j \in\{1,2, \cdots, 30\}$, 使得 $\mid A_{i} \cap$ $A_{j} \mid \geqslant 203$.
+\end{example}
+
+\begin{proof}
+	不妨设每一个 $A_{i}$ 的元素都为 660 个 (否则去掉一些元素).作一个集合、元素的关系表：表中每一行(除最上面的一行外)分别表示 30 个集合 $A_{1}, A_{2}, \cdots, A_{30}$, 表的 $n$ 列 (最左面一列除外) 分别表示 2003 个元素 1 , $2, \cdots, 2003$. 若 $i \in A_{j}(i=1,2, \cdots, 2003,1 \leqslant j \leqslant 30)$, 则在 $i$ 所在的列与 $A_{j}$ 所在行的交叉处写上 1 , 若 $i \notin A_{j}$, 则写上 0 .
+
+	\begin{center}
+		\begin{tabular}{c|ccccc}
+			         & 1        & 2        & 3        & $\cdots$ & 2003     \\
+			\hline
+			$A_{1}$  & $\times$ & $\times$ & $\times$ & $\cdots$ & $\times$ \\
+			$A_{2}$  & $\times$ & $\times$ & $\times$ & $\cdots$ & $\times$ \\
+			$\cdots$ & $\times$ & $\times$ & $\times$ & $\cdots$ & $\times$ \\
+			$A_{30}$ & $\times$ & $\times$ & $\times$ & $\cdots$ & $\times$ \\
+		\end{tabular}
+	\end{center}
+
+	表中每一行有 660 个 1 ,因此共有 $30 \times 660$ 个 1 . 设第 $j$ 列有 $m_{j}$ 个 1 $(j=1,2, \cdots, 2003)$, 则
+	$$
+		\sum_{j=1}^{2003} m_{j}=30 \times 660
+	$$
+
+	由于每个元素 $j$ 属于 $\mathrm{C}_{m_{j}}^{2}$ 个交集 $A_{s} \cap A_{t}$, 因此
+	$$
+		\sum_{j=1}^{2003} \mathrm{C}_{m_{j}}^{2}=\sum_{1 \leqslant s<t \leqslant 30}\left|A_{s} \cap A_{t}\right|
+	$$
+
+	由柯西不等式, 得
+	$$
+		\sum_{j=1}^{2003} \mathrm{C}_{m_{j}}^{2}=\frac{1}{2}\left(\sum_{j=1}^{2003} m_{j}^{2}-\sum_{j=1}^{2003} m_{j}\right) \geqslant \frac{1}{2}\left(\frac{1}{2003}\left(\sum_{j=1}^{2003} m_{j}\right)^{2}-\sum_{j=1}^{2003} m_{j}\right)
+	$$
+
+	所以,必有 $i \neq j$, 满足
+	$$
+		\begin{aligned}
+			\left|A_{i} \cap A_{j}\right| & \geqslant \frac{1}{\mathrm{C}_{30}^{2}} \times \frac{1}{2}\left(\frac{1}{2003}\left(\sum_{j=1}^{2003} m_{j}\right)^{2}-\sum_{j=1}^{2003} m_{j}\right) \\
+			                              & =\frac{660(30 \times 660-2003)}{29 \times 2003}>202
+		\end{aligned}
+	$$
+
+	从而
+	$$
+		\left|A_{i} \cap A_{j}\right| \geqslant 203
+	$$
+\end{proof}
+
+\begin{note}
+	本题中所作的表,称为元素、集合从属关系表. 它在讨论涉及多个\\
+	集合的问题时非常有用.
+\end{note}
+
+\begin{example}
+	设 $n, k \in \mathbf{N}^{*}$, 且 $k \leqslant n$. 并设 $S$ 是含有 $n$ 个互异实数的集合, $T=\left\{a \mid a=x_{1}+x_{2}+\cdots+x_{k}, x_{i} \in S, x_{i} \neq x_{j}(i \neq j), 1 \leqslant i, j \leqslant k\right\}$. 求证: $|T| \geqslant k(n-k)+1$.
+\end{example}
+
+\begin{analysis}
+	设 $S_{n}=\left\{s_{1}, s_{2}, \cdots, s_{n-1}, s_{n}\right\}$, 且 $s_{1}<s_{2}<\cdots<s_{n-1}<s_{n}$. 作 $S_{n}$的子集 $S_{n-1}=\left\{s_{1}, s_{2}, \cdots, s_{n-1}\right\}$, 设 $S_{n-1} 、 S_{n}$ 分别对应 $T_{n-1} 、 T_{n}$. 对固定的 $k$ $(k \leqslant n-1)$, 由 $s_{n-1}+s_{n-2}+\cdots+s_{n-k}<s_{n}+s_{n-2}+\cdots+s_{n-k}<s_{n}+s_{n-1}+s_{n-3}$ $+\cdots+s_{n-k}<\cdots<s_{n}+s_{n-1}+\cdots+s_{n-k+1}$, 知 $\left|T_{n}\right| \geqslant\left|T_{n-1}\right|+k$. 而 $k(n-k)+$ $1=k(n-1-k)+k+1$, 这提示我们对 $n$ 进行归纳证明.
+\end{analysis}
+
+\begin{proof}
+	设 $s_{1}<s_{2}<\cdots<s_{n}$ 是 $S$ 的 $n$ 个元素. 对元素数目 $n$ 使用数学归纳法.
+
+	首先, 当 $k=1$ 和 $k=n$ 时, 结论显然成立. 设 $k \leqslant n-1$, 且结论对 $S_{0}=\left\{s_{1}, s_{2}, \cdots, s_{n-1}\right\}$ 成立, 并设 $T_{0}$ 是当把 $S$ 换成 $S_{0}$ 时与 $T$ 相应的集合. 于是有
+	$$
+		\begin{gathered}
+			\left|T_{0}\right| \geqslant k(n-k-1)+1 . \\
+			\text { 令 } x=s_{n}+s_{n-1}+\cdots+s_{n-k} \text {, 并令 } y_{i}=x-s_{n-i}, i=0,1, \cdots, k .
+		\end{gathered}
+	$$
+
+	显然 $y_{i} \in T$, 且有 $y_{0}<y_{1}<y_{2}<\cdots<y_{k}$. 因为 $y_{0}$ 是 $T_{0}$ 中的最大元素,所以
+	$$
+		y_{i} \in T, y_{i} \notin T_{0}, i=1,2, \cdots, k
+	$$
+
+	故有
+	$$
+		|T| \geqslant\left|T_{0}\right|+k \geqslant k(n-k-1)+1+k=k(n-k)+1
+	$$
+
+	这就完成了归纳证明.
+\end{proof}
+
+\begin{example}
+	设集合 $F$ 是一个非空有限的整数集, $n$ 为正整数, 满足 (1) 对任意的 $x \in F$, 均有
+	$$
+		x=y+z(y, z \in F) \text {; }
+	$$
+
+	(2) 若 $1 \leqslant k \leqslant n, x_{1}, x_{2}, \cdots, x_{k} \in F$, 则 $x_{1}+x_{2}+\cdots+x_{k} \neq 0$.证明:集合 $F$ 中至少含有 $2 n+2$ 个互异的元素.
+\end{example}
+
+\begin{proof}
+	由已知条件 (2)得 $0 \notin F$.
+
+	假设集合 $F$ 只包含正整数. 设 $x$ 是集合 $F$ 中最小的元素. 则由 $x=y+$ $z(y, z>0)$, 知 $y<x, z<x$, 矛盾. 因此, 集合 $F$ 包含负整数. 同理, 集合 $F$也不能只包含负整数.
+
+	假设已经从集合 $F$ 中选出 $k$ 个正整数, 记为 $x_{1}, x_{2}, \cdots, x_{k}$. 所以, $0<x_{k}$\\
+	$=y+z(y, z \in F)$.
+
+	不妨设 $y>0$, 则记为 $y$ 为 $x_{k+1}$.
+
+	继续以这样的方式选出集合 $F$ 中的正元素 $x_{1}, x_{2}, \cdots$ (允许相同).
+
+	由 $F$ 是有限集,知存在正整数 $i<j$,使得 $x_{i}, x_{i+1}, \cdots, x_{j-1}$ 互不相同, 且 $x_{j}=x_{i}$.
+
+	于是, 存在 $z_{i}, z_{i+1}, \cdots, z_{j-1} \in F$, 使得
+	$$
+		\begin{aligned}
+			 & x_{i}=x_{i+1}+z_{i},     \\
+			 & x_{i+1}=x_{i+2}+z_{i+1}, \\
+			 & \cdots                   \\
+			 & x_{j-1}=x_{j}+z_{j-1} .
+		\end{aligned}
+	$$
+
+	因为 $x_{i}=x_{j}$, 所以, $z_{i}+z_{i+1}+\cdots+z_{j-1}=0$.
+
+	由题设得 $j-i>n$.
+
+	又因为 $x_{i}, x_{i+1}, \cdots, x_{j-1}$ 互不相同, 所以, 集合 $F$ 中包含至少 $j-i \geqslant n+$ 1 个正整数.
+
+	同理,集合 $F$ 中包含至少 $n+1$ 个负整数.
+
+	从而, 集合 $F$ 中至少含有 $2 n+2$ 个互异的元素.
+\end{proof}
+
+\begin{example}
+	设 $A$ 是一个有限实数集, $A_{1}, A_{2}, \cdots, A_{n}$ 是 $A$ 的非空子集, 满足下列条件:
+
+	(1) $A$ 中所有元素之和为 0 ;
+
+	(2) 对任意 $x_{i} \in A_{i}(i=1,2, \cdots, n)$, 都有 $x_{1}+x_{2}+\cdots+x_{n}>0$.
+
+	证明: 存在 $1 \leqslant i_{1}<i_{2}<\cdots<i_{k} \leqslant n$, 使得
+	$$
+		\left|A_{i_{1}} \cup A_{i_{2}} \cup \cdots \cup A_{i_{k}}\right|<\frac{k}{n}|A|
+	$$
+
+	这里 $|X|$ 表示有限集合 $X$ 的元素个数.
+\end{example}
+
+\begin{proof}
+	设 $A=\left\{a_{1}, a_{2}, \cdots, a_{m}\right\}, a_{1}>a_{2}>\cdots>a_{m}$. 则由条件 (1) 知 $a_{1}+a_{2}+\cdots+a_{m}=0$. 考虑每个 $A_{i}$ 中的最小数, 并设 $A_{1}, A_{2}, \cdots, A_{n}$ 中恰有 $k_{i}$ 个集合的最小数为 $a_{i}, i=1,2, \cdots, m$. 则有
+	$$
+		k_{1}+k_{2}+\cdots+k_{m}=n
+	$$
+
+	且由条件 (2) 知
+	$$
+		k_{1} a_{1}+k_{2} a_{2}+\cdots+k_{m} a_{m}>0
+	$$
+
+	对 $s=1,2, \cdots, m-1$, 共有 $k_{1}+k_{2}+\cdots+k_{s}$ 个集合, 其最小数 $\geqslant a_{s}$. 故这些集合的并集包含在 $\left\{a_{1}, a_{2}, \cdots, a_{s}\right\}$ 中, 元素个数不超过 $s$.
+
+	下证存在 $s \in\{1,2, \cdots, m-1\}$, 使得 $k=k_{1}+k_{2}+\cdots+k_{s}>\frac{s n}{m}$.\\
+	用反证法, 设对于 $s=1,2, \cdots, m-1$, 都有
+	$$
+		k_{1}+k_{2}+\cdots+k_{s} \leqslant \frac{s n}{m}
+	$$
+
+	由阿贝尔 (Abel)变换可知 (注意 $a_{s}-a_{s+1}>0,1 \leqslant s \leqslant m-1$ )
+	$$
+		\begin{aligned}
+			0<\sum_{j=1}^{m} k_{j} a_{j} & =\sum_{s=1}^{m-1}\left(a_{s}-a_{s+1}\right)\left(k_{1}+k_{2}+\cdots+k_{s}\right)+a_{m}\left(k_{1}+k_{2}+\cdots+k_{m}\right) \\
+			                             & \leqslant \sum_{s=1}^{m-1}\left(a_{s}-a_{s+1}\right) \frac{s n}{m}+a_{m} n=\frac{n}{m} \sum_{j=1}^{m} a_{j}=0
+		\end{aligned}
+	$$
+
+	矛盾. 对于这一 $s$, 取 $A_{1}, A_{2}, \cdots, A_{n}$ 中最小数 $\geqslant a_{s}$ 的那些集合, 记为 $A_{i_{1}}$, $A_{i_{2}}, \cdots, A_{i_{k}}$. 则由上述的结果可知, 这些子集共有 $k=k_{1}+k_{2}+\cdots+k_{s}>\frac{s n}{m}$个,且它们的并集的元素个数不超过 $s$, 即
+	$$
+		\left|A_{i_{1}} \cup A_{i_{2}} \cup \cdots \cup A_{i_{k}}\right| \leqslant s<\frac{k m}{n}=\frac{k}{n}|A|
+	$$
+\end{proof}
+
 \section{子集族}
+我们可以将某些集合取来作为元素构成一个新的集合, 如 $A^{*}=\{\{1\}$, $\{0,1\},\{0\}, \varnothing\}$ 就是一个含有 4 个元素 $\{1\} 、\{0,1\} 、\{0\} 、 \varnothing$ 的集合. 一般地, 将集合 $M$ 的若干子集作为元素构成的集合 $M^{*}$ 叫做原集合的一个子集族. 例如前面的 $A^{*}$ 就是二元集 $A=\{0,1\}$ 的全部子集所构成的子集族. 子集族 $M^{*}$ 中所含原来集合的子集的数目叫做该子集族的阶, 记作 $\left|M^{*}\right|$. 例如子集族 $A^{*}$ 的阶为 4 , 即 $\left|A^{*}\right|=4$.
+
+根据已知条件求子集族的阶或包含子集族中所有子集的集合的阶, 是较常见的一类集合问题.
+
+\begin{example}
+	已知集合 $A=\{1,2, \cdots, 10\}$. 求集合 $A$ 的具有下列性质的子集个数: 每个子集至少含有 2 个元素, 且每个子集中任何两个元素的差的绝对值大于 1 .
+\end{example}
+
+\begin{analysis}
+	集合 $A$ 有 $2^{10}-1$ 个非空子集, 逐一考察的工作只有交给计算机.我们先来看看比 $A$ 的元素少一些的集合的情形. 记集合 $A_{i}$ 符合条件的子集族为 $A_{i}^{*},\left|A_{i}^{*}\right|=a_{i}$.
+	$$
+		\begin{aligned}
+			 & A_{1}=\{1\}, A_{1}^{*}=\varnothing, a_{1}=0                         \\
+			 & A_{2}=\{1,2\}, A_{2}^{*}=\varnothing, a_{2}=0 ;                     \\
+			 & A_{3}=\{1,2,3\}, A_{3}^{*}=\{\{1,3\}\}, a_{3}=1                     \\
+			 & A_{4}=\{1,2,3,4\}, A_{4}^{*}=\{\{1,3\},\{1,4\},\{2,4\}\}, a_{4}=3 ; \\
+			 & A_{5}=\{1,2,3,4,5\}, A_{5}^{*}=\{\{1,3\},\{1,4\},\{2,4\},\{1,3,5\}  \\
+			 & \{1,5\},\{2,5\},\{3,5\}\}, a_{5}=7 .
+		\end{aligned}
+	$$
+
+	我们来考察写出 $A_{5}^{*}$ 的过程, 这可以分作两步: 第一步写出 $A_{4}^{*}$ 的全部元素, 它们都不含元素 5 ;第二步写出含 5 的子集, 它们是在 $A_{3}^{*}$ 的元素中添 5 所成,或者是含 5 的二元子集, 即 $a_{5}=a_{4}+a_{3}+3$. 其实对 $A_{4}^{*} 、 A_{3}^{*}$ 有类似的\\
+	结论: $a_{4}=a_{3}+a_{2}+2, a_{3}=a_{2}+a_{1}+1$. 我们可以将这个作法推广到一般.
+\end{analysis}
+
+\begin{solution}
+	设 $a_{n}$ 是集合 $\{1,2, \cdots, n\}$ 的具有题设性质的子集个数.
+
+	对于集合 $\{1,2, \cdots, n, n+1, n+2\}$, 具有题设性质的子集可分为两类:第一类子集不包含 $n+2$, 它们是集合 $\{1,2, \cdots, n, n+1\}$ 的全部具有题设性质的子集, 共有 $a_{n+1}$ 个; 第二类子集包含 $n+2$, 它们是集合 $\{1,2, \cdots, n\}$ 的每个具有题设性质的子集与 $\{n+2\}$ 的并集, 以及二元子集 $\{1, n+2\},\{2$, $n+2\}, \cdots,\{n, n+2\}$, 共有 $a_{n}+n$ 个.
+
+	于是,我们有 $a_{n+2}=a_{n+1}+a_{n}+n$.
+
+	易知, $a_{1}=a_{2}=0$, 因此 $a_{3}=1, a_{4}=3, a_{5}=7, a_{6}=14, a_{7}=26$, $a_{8}=46, a_{9}=79, a_{10}=133$.
+
+	所以, 所求子集的个数为 133 .
+
+	说明 上述解法的特点是将问题一般化,一般问题解决了,特殊问题当然就解决了. 这里用到了递推方法, 递推也是解决组合问题的常用方法之一.
+
+	与上例相反,我们来看一个已知子集族求恰好包含这些子集的集合的阶的问题.
+\end{solution}
+
+\begin{example}
+	对于整数 $n(n \geqslant 2)$, 如果存在集合 $\{1,2, \cdots, n\}$ 的子集族 $A_{1}$, $A_{2}, \cdots, A_{n}$ 满足:
+
+	(a) $i \notin A_{i}, i=1,2, \cdots, n$;
+
+	(b) 若 $i \neq j, i, j \in\{1,2, \cdots, n\}$, 则 $i \in A_{j}$, 当且仅当 $j \notin A_{i}$;
+
+	(c) 任意 $i, j \in\{1,2, \cdots, n\}, A_{i} \cap A_{j} \neq \varnothing$.
+
+	则称 $n$ 是“好数”.
+
+	证明: (1) 7 是好数;
+
+	（2）当且仅当 $n \geqslant 7$ 时, $n$ 是好数.
+\end{example}
+
+\begin{analysis}
+	对于 $n=7$, 可以作出满足条件的子集族来验证; 当 $n \geqslant 7$ 时, 可考虑用数学归纳法证明.
+\end{analysis}
+
+\begin{proof}
+	（1）当 $n=7$ 时, 取
+	$$
+		\begin{aligned}
+			 & A_{1}=\{2,3,4\}, A_{2}=\{3,5,6\}, A_{3}=\{4,5,7\}                  \\
+			 & A_{4}=\{2,6,7\}, A_{5}=\{1,4,6\}, A_{6}=\{1,3,7\}, A_{7}=\{1,2,5\}
+		\end{aligned}
+	$$
+
+	即可.
+
+	(2) 先证当 $n \geqslant 7$ 时, $n$ 是好数. 对 $n$ 进行归纳.
+
+	由 (1) 知, 当 $n=7$ 时, 结论成立.
+
+	假设 $n(n \geqslant 7)$ 是好数, 则存在子集族 $A_{1}, A_{2}, \cdots, A_{n}$ 满足条件. 对于 $n+$
+
+	1 , 取子集族 $B_{1}=A_{1}, B_{2}=A_{2}, \cdots, B_{n}=A_{n}, B_{n+1}=\{1,2, \cdots, n\}$. 由归纳假设易知, 它们也是满足条件的.
+
+	下面证明每一个好数 $n$ 都至少为 7.
+
+	如果 $A_{1}, A_{2}, \cdots, A_{n}$ 是一个 $n$ 为好数的集合的子集族,那么, 每一个 $A_{i}$至少有三个元素. 事实上,若 $A_{i} \subset\{j, k\}$, 则
+	$$
+		A_{i} \cap A_{j}=\{k\}, A_{i} \cap A_{k}=\{j\}
+	$$
+
+	所以, $k \in A_{j}, j \in A_{k}$. 矛盾.
+
+	考虑一个由元素 $0 、 1$ 构成的 $n \times n$ 阶正方形表格, 当且仅当 $j \in A_{i}$ 其第 $i$行第 $j$ 列的元素为 1 . 表中对角线上的元素为 0 , 对于余下的元素, 因为 $i \neq j$,当且仅当 $a_{j i}=1$ 时 $a_{i j}=0$, 所以 0 的个数等于 1 的个数. 因此, 表中元素的和为 $\frac{n^{2}-n}{2}$. 又每行元素的和大于等于 3 , 所以 $n^{2}-n \geqslant 6 n$, 故 $n \geqslant 7$.
+\end{proof}
+
+\begin{example}
+	选择 $n$ 元集 $H$ 的一些 $k(3 \leqslant k \leqslant n)$ 元子集, $H$ 中任两元素都恰在三个选定的子集中同时出现, $H$ 中任三元素都恰在两个选定子集中出现. 求这样的 $n$ 和 $k$.
+\end{example}
+
+\begin{analysis}
+	由“ $H$ 中任两元素都恰在三个选定的子集中同时出现”, 我们着眼于计算集合 $H$ 和选定的 $K$ 元子集的二元子集的个数, 便有 $3 \mathrm{C}_{n}^{2}=m \mathrm{C}_{k}^{2}$. 根据另一条件可得另一类似的关系式. 然后可通过对这两个关系式的讨论来确定 $n$ 和 $k$.
+\end{analysis}
+
+\begin{solution}
+	设选定了 $H$ 的 $m$ 个 $k$ 元子集, 每个 $k$ 元集中由两元素组成的元素对个数是 $\mathrm{C}_{k}^{2}$. 所有选定子集的这样的元素对个数是 $m \mathrm{C}_{k}^{2}$.
+
+	另一方面, $H$ 中任两元素都恰在三个选定子集中出现, 故 $3 \mathrm{C}_{n}^{2}=m \mathrm{C}_{k}^{2}$, 即
+
+
+	\begin{equation*}
+		3 n(n-1)=m k(k-1) \tag{1}
+	\end{equation*}
+
+
+	同理, 由题中另一条件得 $2 \mathrm{C}_{n}^{3}=m \mathrm{C}_{k}^{3}$, 即
+
+
+	\begin{equation*}
+		2 n(n-1)(n-2)=m k(k-1)(k-2) \tag{2}
+	\end{equation*}
+
+
+	(2) $\div$ (1)得
+	$$
+		\frac{2(n-2)}{3}=k-2 \text {, 即 } k=\frac{2 n+2}{3} \text {. }
+	$$
+
+	代人式(1)得
+	$$
+		3 n(n-1)=\frac{2}{9}(n+1)(2 n-1) m
+	$$
+
+	即
+	$$
+		m=\frac{27 n(n-1)}{2(n+1)(2 n-1)}
+	$$
+
+	由 $(2 n-1, n)=(2 n-1, n-1)=1$, 得 $(2 n-1) \mid 27$. 所以
+	$$
+		2 n-1=1,3,9,27, n=1,2,5,14 .
+	$$
+
+	又 $n \geqslant 3$, 故 $n=5$ 或 14.
+
+	当 $n=14$ 时, $m$ 不是整数;
+
+	当 $n=5$ 时, $m=5, k=4$. 取 $H=\{1,2,3,4,5\}$. 其 5 个四元子集
+
+	$\{1,2,3,4\},\{1,2,3,5\},\{1,2,4,5\},\{1,3,4,5\},\{2,3,4,5\}$
+
+	满足题意.
+
+	综上, $n=5, k=4$.
+\end{solution}
+
+下面我们来考察集合的一个重要的特殊子集族及其应用.
+
+由有限集 $M$ 的全体子集所构成的子集族,简称为 $C$ 族. $C$ 族有如下基本的性质:
+
+\begin{property}
+	设 $|M|=n$, 则集合 $M$ 的全部子集构成的集合 $M^{*}$ 的阶为 $2^{n}$, 即
+	$$
+		\left|M^{*}\right|=\mathrm{C}_{n}^{0}+\mathrm{C}_{n}^{1}+\cdots+\mathrm{C}_{n}^{n}=2^{n}
+	$$
+\end{property}
+
+\begin{example}\label{ex:任一有限集的全部子集}
+	试证: 任一有限集的全部子集可以排定次序, 使得任何相邻的两个子集都相差一个元素.
+\end{example}
+
+\begin{analysis}
+	不妨设有限集 $A=\{1,2,3, \cdots, n\}$. 先来看一些简单情形：
+
+	当 $n=1$ 时, 显然可以排成: $\varnothing,\{1\} ;$
+
+	当 $n=2$ 时,共有 $2^{2}=4$ (个) 子集, 可排成: $\varnothing,\{1\},\{1,2\},\{2\}$;
+
+	当 $n=3$ 时, 共有 $2^{3}=8$ (个) 子集, 可排成: $\varnothing,\{1\},\{1,2\},\{2\}$, $\{2,3\},\{1,2,3\},\{1,3\},\{3\}$.
+
+	显然符合条件的排序方式不是惟一的. 请注意 $n=3$ 时的上述排法: 所有子集可分为两组, 前 4 个子集都不含元素 3 ; 后 4 个均含元素 3 , 且去掉 3 后恰是前 4 个子集排列的逆序. 事实上, $n=2$ 时也如此. 这说明我们可以考虑用数学归纳法来证明.
+\end{analysis}
+
+\begin{proof}
+	设有限集为 $M_{n}=\left\{w_{1}, w_{2}, \cdots, w_{n}\right\}$, 我们对 $n$ 进行归纳.
+
+	当 $n=1$ 时, $M_{1}=\left\{w_{1}\right\}$, 将它的两个子集排列成 $\varnothing,\left\{w_{1}\right\}$ 即可.
+
+	假设当 $n=k$ 时,命题成立. 当 $n=k+1$ 时,
+	$$
+		M_{k+1}=\left\{w_{1}, w_{2}, \cdots, w_{k}, w_{k+1}\right\}
+	$$
+
+	它是由集合 $M_{k}=\left\{w_{1}, w_{2}, \cdots, w_{k}\right\}$ 添加元素 $w_{k+1}$ 而形成的. $M_{k}$ 的子集个数为\\
+	$2^{k}$. 由归纳假设知, 可将 $M_{k}$ 的全体子集排成满足题设要求的一列, 不妨设
+	$$
+		A_{1}, A_{2}, A_{3}, \cdots, A_{2^{k}}\left(A_{i} \subseteq M_{k}, i=1,2,3, \cdots, 2^{k}\right)
+	$$
+
+	就是这样的一个排列. 我们来看排列
+	$$
+		A_{1}, A_{2}, A_{3}, \cdots, A_{2^{k}}, A_{2^{k}} \bigcup\left\{w_{k+1}\right\}, A_{2^{k}-1} \bigcup\left\{w_{k+1}\right\}, \cdots, A_{1} \bigcup\left\{w_{k+1}\right\}
+	$$
+
+	它恰好由 $M_{k+1}$ 的 $2^{k+1}$ 个不同子集排成,且任意两个相邻集合的元素都仅相差 1 个. 可见当 $n=k+1$ 时, 命题也成立.
+
+	所以,对任意的 $n \in \mathbf{N}^{*}$, 所述命题成立.
+\end{proof}
+
+\begin{analysis}
+	例\ref{ex:任一有限集的全部子集}实际上是 $C$ 族的一个性质. 一个复杂的问题, 也许一时找不到解题的突破口, 这时可考虑“以退求进” 的策略. 先解决一些简单的或特殊的情形, 从中发现规律和方法, 从而找到解决一般问题的办法. 这也就是从特殊到一般的思维方法.
+\end{analysis}
+
+\begin{example}
+	在某次竞选中各政党作出 $n$ 种不同的诺言 $(n>0)$, 有些政党可以作某些相同的诺言. 现知其中每两个政党都至少作了一个相同的诺言, 但没有两个政党的诺言完全相同. 求证: 政党个数 $\leqslant 2^{n-1}$.
+\end{example}
+
+\begin{proof}
+	设有 $m$ 个政党. 以 $A$ 记所有诺言的集合, $A_{i}$ 记第 $i$ 个政党的诺言的集合 $(i=1,2, \cdots, m)$. 由题设知
+	$$
+		|A|=n, A_{i} \cap A_{j} \neq \varnothing, A_{i} \neq A_{j}, 1 \leqslant i<j \leqslant m
+	$$
+
+	因 $\left(\complement_{A} A_{i}\right) \cap A_{i}=\varnothing$, 故 $\complement_{A} A_{i} \neq A_{j}(i, j=1,2, \cdots, m)$, 即 $\complement_{A} A_{i}$ 不同于任何一个政党的诺言的集合. 所以
+	$$
+		A_{1}, A_{2}, \cdots, A_{m}, \complement_{A} A_{1}, \complement_{A} A_{2}, \cdots, \complement_{A} A_{m}
+	$$
+
+	各不相同, 而它们的个数不超过集合 $A$ 的所有子集的数目 $2^{n}$, 即 $2 m \leqslant 2^{n}$,
+
+	所以
+	$$
+		m \leqslant 2^{n-1}
+	$$
+\end{proof}
+
+\begin{note}
+	上述解法的特点是将一个趣味问题转化为集合问题, 然后借助集合的知识和方法来解决.
+\end{note}
+
+\begin{example}
+	任取 $n(n \geqslant 3)$ 元集的 $n+1$ 个奇数元子集. 证明: 其中必有两个集合的交集也为奇数元集.
+\end{example}
+
+\begin{proof}
+	设 $n$ 元集为 $A$. 取出的 $n+1$ 个奇数元集中若有两个集相同,其交集即为奇数元集合. 故可设 $n+1$ 个子集互不相同, 设 $M=\left\{B_{1}, B_{2}, \cdots\right.$, $\left.B_{n+1}\right\}$.
+
+	对 $M$ 的每个非空子集 $P$ 及任意 $x$, 设 $n(x, p)$ 为集合 $P$ 中含 $x$ 的集合的\\
+	个数, 记
+	$$
+		O(P)=\{x \in A \mid n(x, p) \text { 为奇数 }\} \text {. }
+	$$
+
+	注意到,集合 $P$ 有 $2^{n+1}-1$ 种选法,而 $O(P)$ 只有 $2^{n}$ 种选法,但 $2^{n+1}-1>$ $2^{n}$. 由抽屟原理, 知必有 $P_{1} \neq P_{2}$, 使得 $O\left(P_{1}\right)=O\left(P_{2}\right)$.
+
+	考虑 $Q=P_{1} \Delta P_{2}\left(\right.$ 即 $\left.\left(P_{1} \cup P_{2}\right) \backslash\left(P_{1} \cap P_{2}\right)\right)$.
+
+	对每个 $x \in A$, 设 $P_{1} \backslash P_{2} 、 P_{1} \cap P_{2} 、 P_{2} \backslash P_{1}$ 中分别有 $k_{1} 、 k_{2} 、 k_{3}$ 个集合含 $x$. 则
+	$$
+		k_{1}+k_{2} \equiv k_{2}+k_{3}(\bmod 2)
+	$$
+
+	所以 $k_{1}+k_{3} \equiv 0(\bmod 2)$, 即集合 $Q$ 中有偶数个集合含 $x$, 故 $O(Q)=\varnothing$.
+
+	设 $Q=\left\{C_{1}, C_{2}, \cdots, C_{q}\right\}$. 由于每个 $x \in A$ 在集合 $Q$ 中偶数个子集中, 故每个 $x \in C_{1}$ 在 $\left\{C_{2}, C_{3}, \cdots, C_{q}\right\}$ 的奇数个集合中.
+
+	于是, $\sum_{i=2}^{q}\left|C_{1} \cap C_{i}\right|$ 中每个 $x \in C_{1}$ 计数奇数次.
+
+	而 $\left|C_{1}\right|$ 为奇数, 故 $\sum_{i=2}^{q}\left|C_{1} \cap C_{i}\right|$ 为奇数, 因此, 其中必有一项 $\left|C_{1} \cap C_{i}\right|$ 为奇数.
+\end{proof}
+
+\begin{example}
+	现有 $n\left(n \in \mathbf{Z}_{+}, n \geqslant 2\right)$ 盏灯, 每血灯只有开和关两种状态. 对这些灯的每一个非空子集 $A$, 有一个按钮可操作集合 $A$ 中的灯, 在操作该按钮时,每个集合 $A$ 中的灯会改变它们各自的状态 (开的变为关的,关的变为开的).每个按钮均是相同的, 哪个按钮对应哪些灯组成的子集是未知的. 假设最开始所有灯是关闭的. 证明: 可以在至多 $2^{n-1}+1$ 次操作内让所有的灯全部打开.
+\end{example}
+
+\begin{proof}
+	令 $L$ 为所有的灯的集合, $L$ 的非空子集有 $2^{n}-1$ 个.
+
+	令 $k=2^{n-1}-1$. 设 $S_{1}, S_{2}, \cdots, S_{k}$ 为任意 $k$ 个不同的按钮, $A_{1}, A_{2}, \cdots$, $A_{k}$ 依次为这 $k$ 个按钮控制的灯的集合, $B$ 为依次操作按钮 $S_{1}, S_{2}, \cdots, S_{k}$ 各一次后亮着的灯的集合.
+
+	对 $D \subseteq L$, 令 $\bar{D}$ 表示不在集合 $D$ 中的灯的集合; 对于 $D \subseteq L, E \subseteq L$, 令
+	$$
+		D+E=(D \cup E) \backslash(D \cap E),
+	$$
+
+	即仅在集合 $D$ 或 $E$ 中出现的灯的集合. 则
+	$$
+		B=A_{1}+A_{2}+\cdots+A_{k}
+	$$
+
+	注意到,
+	$$
+		D+D=\varnothing, \bar{D}=D+L, D+\bar{D}=L
+	$$
+
+	考虑集合 $X=\left\{A_{1}, A_{2}, \cdots, A_{k}\right\}$,
+	$$
+		Y=\left\{\overline{B+A_{1}}, \overline{B+A_{2}}, \cdots, \overline{B+A_{k}}\right\}
+	$$
+
+	若 $X \cap Y \neq \varnothing$, 则存在 $i, j \in\{1,2, \cdots, k\}$, 使得 $A_{i}=\overline{B+A_{j}}$. 此时, $B+A_{j}+A_{i}=L$. 因此, 在依次操作按钮 $S_{1}, S_{2}, \cdots, S_{k}$ 各一次 (共 $k$ 次) 后, 再操作 $S_{j} 、 S_{i}$ 各一次, 则所有的灯均会亮着. 操作的总次数为 $k+2=2^{n-1}+1$.
+
+	现在假设 $X \cap Y=\varnothing$.
+
+	若存在 $j \in\{1,2, \cdots, k\}$, 使得 $\overline{B+A_{j}}=\varnothing$, 则 $B+A_{j}=L$. 因此, 在依次操作 $S_{1}, S_{2}, \cdots, S_{k}$ 各一次后, 再操作 $S_{j}$ 一次, 所有的灯均会亮着. 操作的总次数为 $k+1=2^{n-1}$ (次).
+
+	若对每个 $j \in\{1,2, \cdots, k\}, \overline{B+A_{j}} \neq \varnothing$. 此时, $X \cup Y$ 是由 $L$ 的
+	$$
+		2 k=2\left(2^{n-1}-1\right)=2^{n}-2
+	$$
+
+	个不同的非空子集组成的子集族. 设 $S_{k+1}$ 是不同于 $S_{1}, S_{2}, \cdots, S_{k}$ 的一个按钮. 令 $A_{k+1}$ 为它控制的灯的集合. 显然, $A_{k+1} \notin X$.
+
+	若 $A_{k+1} \in Y$, 则存在 $j \in\{1,2, \cdots, k\}$, 使得 $A_{k+1}=\overline{B+A_{j}}$. 于是, $B+$ $A_{j}+A_{k+1}=L$.
+
+	因此, 在依次操作 $S_{1}, S_{2}, \cdots, S_{k}$ 各一次后, 再操作 $S_{j} 、 S_{k+1}$ 各一次, 所有的灯会亮着. 操作的总次数为 $k+2=2^{n-1}+1$.
+
+	若 $A_{k+1} \notin Y$, 则 $\left\{A_{k+1}\right\} \cup X \cup Y$ 是 $L$ 的全部非空子集组成的子集族. 故
+
+
+	\begin{equation*}
+		A_{k+1}+\sum_{i=1}^{k} A_{i}+\sum_{j=1}^{k}\left(\overline{B+A_{j}}\right)=\sum_{\substack{M=L \\ M \neq \varnothing}} M \tag{1}
+	\end{equation*}
+
+
+	因为 $L$ 中每个灯属于 $L$ 的 $2^{n-1}$ 个非空子集, 而 $2^{n-1}$ 为偶数, 所以,
+	$$
+		\sum_{\substack{M \subset L \\ M \neq \varnothing}} M=\varnothing
+	$$
+
+	而 $\overline{B+A_{j}}=B+A_{j}+L$, 故式(1)的左边为
+	$$
+		k B+k L+A_{k+1}=B+L+A_{k+1}
+	$$
+
+	即
+	$$
+		B+L+A_{k+1}=\varnothing
+	$$
+
+	所以
+	$$
+		B+A_{k+1}=L
+	$$
+
+	这表明, 在操作 $S_{1}, S_{2}, \cdots, S_{k}$ 各一次后, 再操作 $S_{k+1}$ 一次, 所有的灯会\\
+	亮着. 操作的总次数为 $k+1=2^{n n-1}$.
+
+	综上, 最多只需 $k+2=2^{n n-1}+1$ (次) 操作,所有的灯会亮着.
+\end{proof}
+
+\begin{note}
+	说明 这里的集合运算“+”就是集合的对称差“ $\triangle$ ”, 不要与普通数和式的加法运算混淆.
+\end{note}
+
+\begin{example}
+	若集合族平满足:对于任意的三个集合 $X_{1}, X_{2}, X_{3} \in \mathscr{F}$,
+	$$
+		\left(X_{1} \backslash X_{2}\right) \cap X_{3},\left(X_{2} \backslash X_{1}\right) \cap X_{3}
+	$$
+
+	中至少有一个为空集, 则称此集合族为“完美”的. 证明: 若 $\mathscr{F}$ 是由一个给定的有限集 $U$ 的一些子集构成的完美的集合族,则 $|\mathscr{F}| \leqslant|U|+1$.
+\end{example}
+
+\begin{proof}
+	对 $|U|$ 应用数学归纳法证明.
+
+	当 $|U|=0$, 即 $U=\varnothing$ 时, $U$ 只有一个子集, 则 $\left|\mathscr{F}_{\mid}\right| \leqslant 1$.
+
+	当 $|U|>0$ 时, 设 $Z$ 是集合族 $\mathscr{F}$ 中元素个数最少的非空集合 (若 $Z$ 不存在,则 $\mid$ 列 $\mid \leqslant 1$, 这种情形已经证明).
+
+	首先, 若 $Y_{1} 、 Y_{2}$ 是集合族昇中的两个非空集合, 且 $Y_{1} \backslash Z=Y_{2} \backslash Z$ (可能会有 $Y_{1}=Z$ 或 $Y_{2}=Z$ ), 则 $Y_{1}=Y_{2}$. 否则, 存在非空集合 $Y_{1}, Y_{2} \in \mathscr{F}$, 且 $Y_{1} \neq$ $Y_{2}$. 不妨设存在一个元素 $x_{1} \in Y_{1} \backslash Y_{2}$.
+
+	由于 $Y_{1} \backslash Y_{2} \subseteq Z$, 则 $x_{1} \in Z \backslash Y_{2}$ (如图 4-1).
+
+	%\begin{center}
+	%	\includegraphics[max width=\textwidth]{2024_05_17_3b020e8fe1313185a92eg-041}
+	%\end{center}
+
+	图 4-1
+
+	因为 $Z$ 为元素最少的非空集合, 且 $Y_{2}$ 不为空集,所以, $|Z| \leqslant\left|Y_{2}\right|$.
+
+	又 $Z \not \subset Y_{2}\left(\right.$ 因 $\left.x_{1} \in Z \backslash Y_{2}\right)$, 可推断 $Y_{2} \backslash Z$ 不为空集.
+
+	因此, 存在元素 $x_{2} \in Y_{2} \backslash Z=Y_{1} \backslash Z$.
+
+	故 $x_{1} \in Z \backslash Y_{2}, x_{2} \in Y_{2} \backslash Z,\left\{x_{1}, x_{2}\right\} \subseteq Y_{1}$.
+
+	当 $X_{1}=Z, X_{2}=Y_{2}, X_{3}=Y_{1}$ 时,这与集合族 $\mathscr{F}$ 是完美的矛盾.
+
+	定义 $\mathscr{F}^{\prime}$ 是 $U \backslash Z$ 的子集构成的集合族 $\mathscr{F}^{\prime}=\{Y \backslash Z \mid Y \in \mathscr{F}, Y \neq \varnothing\}$. 显然,集合族 $\mathscr{F}^{\prime}$ 是一个由更小的子集构成的完美的集合族.
+
+	故由归纳假设, 有 $\left|\mathscr{F}^{\prime}\right| \leqslant|U \backslash Z|+1$.
+
+	此外,由前知集合 $Y \backslash Z$ 是与 $Y \in \mathscr{F}$ 且 $Y \neq \varnothing$ 不同的.
+
+	因此, $|\mathscr{F}| \leqslant\left|\mathscr{F}^{\prime}\right|+1$ ( +1 是因为集合族 $\mathscr{F}$ 中有可能含有空集).
+
+	故 $|\mathscr{F}| \leqslant\left|\mathscr{F}^{\prime}\right|+1 \leqslant|U \backslash Z|+1+1 \leqslant|U|-1+1+1=|U|+1$.
+\end{proof}
+
+\begin{example}
+	设 $A_{1}, A_{2}, \cdots, A_{n}$ 为有限集合 $X$ 的 $n$ 个非空子集,且对任意正整数 $i 、 j(1 \leqslant i \leqslant j \leqslant n), A_{i} \cap A_{j}$ 不为单元集. 证明: 可将集合 $X$ 的元素分成两类,使每个子集 $A_{i}(i=1,2, \cdots, n)$ 的元素不全在同一类中.
+\end{example}
+
+\begin{proof}
+	因为每个子集 $A_{i}(i=1,2, \cdots, n)$ 非空,且由条件知 $A_{i}=A_{i} \cap$ $A_{i}$ 不为单元集,所以,集合 $A_{i}$ 至少含两个元素.
+
+	在集合 $X$ 的某种分类下,若 $A_{i}$ 的元素只出现在一类中,则称 $A_{i}$ 为“单类集”;若 $A_{i}$ 的元素出现在两类中,则称 $A_{i}$ 为“双类集”.
+
+	记 $t$ 为 $A_{i}(i=1,2, \cdots, n)$ 中双类集的数目, 若 $t$ 能取到 $n$, 则命题得证.
+
+	因为 $A_{1}$ 至少含两个元素,所以,先将集合 $X$ 的元素分成两类,且使 $A_{1}$ 为双类集. 此时, $t \geqslant 1$.
+
+	下面证明:对使 $t<n$ 的任意一种分类, 经适当调整必可使 $t$ 的值增加.
+
+	设集合 $X$ 中 $x_{1}, x_{2}, \cdots, x_{r}$ 在第一类 $, x_{r+1}, x_{r+2}, \cdots, x_{m}$ 在第二类. 不妨设此时 $A_{1}, A_{2}, \cdots, A_{t}$ 为双类集, $A_{t+1}, A_{t+2}, \cdots, A_{n}$ 为单类集, 且 $A_{t+1}=$ $\left\{x_{1}, x_{2}, \cdots, x_{s}\right\}$, 其中, $A_{t+1}$ 至少含两个元素. 故 $2 \leqslant s \leqslant r$, 这表明,第一类元素不少于两个.
+
+	现将集合 $X$ 中的元素 $x_{1}$ 调到第二类,其余元素类别不变. 此时,集合 $X$仍有两类元素,而 $A_{t+1}$ 变为双类集.
+
+	若 $A_{i}(1 \leqslant i \leqslant t)$ 不含元素 $x_{1}$, 则 $A_{i}$ 仍为双类集; 若 $A_{i}(1 \leqslant i \leqslant t)$ 含元素 $x_{1}$, 则根据条件, $A_{i}$ 与 $A_{t+1}$ 必有除 $x_{1}$ 之外另一公共元素 $x_{j}(2 \leqslant j \leqslant s)$, 故 $x_{1}$调到第二类后, $A_{i}$ 中仍有第一类元素,即 $A_{i}$ 仍为双类集.
+
+	综上, 调整之后至少 $A_{1}, A_{2}, \cdots, A_{t+1}$ 为双类集.
+
+	因此,双类集数目不小于 $t+1$.
+
+	从而, 经有限次这样的调整后必有 $t=n$.
+\end{proof}
+
+最后,我们来看一个集合族的例子.
+
+\begin{example}
+	给定正整数 $k \geqslant 2$, 请构造一个集合簇 $\mathscr{A}$, 它包含无限多个由正整数构成的集合, 满足以下性质:
+
+	(1) 集合族 $\mathscr{A}$ 中任意 $k$ 个集合的交集为一个单元素集合;
+
+	(2) 集合族 $\mathscr{A}$ 中任意 $k+1$ 个集合的交集为空集.
+\end{example}
+
+\begin{solution}
+	将正整数集合中任意 $k$ 个数构成的集合无重复无遗漏地排成一排,记这些集合依次为 $S_{1}, S_{2}, \cdots$. 对每个正整数 $m$, 取 $A_{m}=\left\{n \mid m \in S_{n}\right\}$, 集合族 $\mathscr{A}$ 由 $A_{1}, A_{2}, \cdots$ 构成.
+
+	接下来证明集合簇 $\mathscr{A}$ 符合题意.
+
+	首先证明:集合簇 $\mathscr{A}$ 确为一个无限集.
+
+	对于不同的两个正整数 $m 、 m^{\prime}$, 由构造法则, 知存在不同的正整数 $n 、 n^{\prime}$,使得 $m \in S_{n}, m \notin S_{n^{\prime}}$, 但 $m^{\prime} \in S_{n^{\prime}}, m^{\prime} \notin S_{n}$.
+
+	故 $n \in A_{m} \backslash A_{m^{\prime}}, n^{\prime} \in A_{m^{\prime}} \backslash A_{m}$. 从而, $A_{m} \neq A_{m^{\prime}}$.
+
+	其次证明:子集簇 $\&$ 满足性质(1).
+
+	若 $m_{1}, m_{2}, \cdots, m_{k}$ 为不同的正整数,则
+	$$
+		A_{m_{1}} \cap A_{m_{2}} \cap \cdots \cap A_{m_{k}}=\{i\}
+	$$
+	其中, $i$ 为集合 $\left\{m_{1}, m_{2}, \cdots, m_{k}\right\}$ 在排列 $S_{1}, S_{2}, \cdots$ 中所在集合的下标.
+
+	最后证明:子集簇 $\mathscr{A}$ 满足性质(2).
+
+	若 $m_{1}, m_{2}, \cdots, m_{k+1}$ 为不同的正整数, 则 $\left\{m_{1}, m_{2}, \cdots, m_{k}\right\} 、\left\{m_{2}, \cdots\right.$, $\left.m_{k}, m_{k+1}\right\}$ 在排列 $S_{1}, S_{2}, \cdots$ 中处于不同位置.
+
+	故 $A_{m_{1}} \cap A_{m_{2}} \cap \cdots \cap A_{m_{k}} \cap A_{m_{k+1}}=\varnothing$.
+\end{solution}
+
 \section{集合的性质}
 \section{集合中的最大(小)值}
 \section{集合的分划}

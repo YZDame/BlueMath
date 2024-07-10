@@ -34,6 +34,7 @@
 \theoremstyle{plain}
 \newtheorem*{note}{注记}
 \newtheorem*{analysis}{分析}
+\newtheorem*{property}{性质}
 
 \renewcommand{\qedsymbol}{$\blacksquare$}
 \renewcommand{\proofname}{\bf 证明}
