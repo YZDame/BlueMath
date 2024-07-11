@@ -17,6 +17,7 @@
 \RequirePackage{commath}
 \RequirePackage{marginnote}
 %\reversemarginpar
+\RequirePackage{pifont}
 
 \pgfplotsset{compat=1.18}
 \geometry{a4paper, left=4.5cm, right=4.5cm, top=4cm, bottom=4cm}
@@ -64,3 +65,6 @@
             \tikz[baseline,line width=0.05ex,line join=round]
             \draw (0,.1ex) -- (.8em,.1ex) -- (1em,1.6ex) -- (.2em,1.6ex) -- cycle;}}}
 
+\title{\textsc{BlueMath}: 高中数学竞赛小蓝本 \LaTeX 整理版}
+\author{LeyuDame}
+\date{\today}

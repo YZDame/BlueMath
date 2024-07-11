@@ -5,7 +5,7 @@
 
 用描述法表示一个集合基于下面的概括原则:
 
-概括原则 对任给的一个性质 $P$, 存在一个集合 $S$, 它的元素恰好是具有性质 $P$ 的所有对象, 即
+\textbf{概括原则}\quad 对任给的一个性质 $P$, 存在一个集合 $S$, 它的元素恰好是具有性质 $P$ 的所有对象, 即
 $$
 	S=\{x \mid P(x)\}
 $$
@@ -17,7 +17,7 @@ $$
 集合的元素个数为有限数的集合称为有限集, 元素个数为无限数的集合称为无限集. 如果有限集 $A$ 的元素个数为 $n$, 则称 $A$ 为 $n$ 元集, 记作 $|A|=n$. 空集不含任何元素.
 
 \begin{example}
-	设集合 $M=\left\{x \left\lvert\, \frac{a x-5}{x^{2}-a}<0\right., x \in \mathbf{R}\right\}$. 若 $3 \in M$, 且 $5 \notin M$, 求实数 $a$ 的取值范围.
+	设集合 $M=\left\{x \left\lvert\, \frac{a x-5}{x^{2}-a}<0\right., x \in \mathbb{R}\right\}$. 若 $3 \in M$, 且 $5 \notin M$, 求实数 $a$ 的取值范围.
 \end{example}
 \begin{solution}
 	由 $3 \in M$, 得 $\frac{3 a-5}{3^{2}-a}<0$, 即
@@ -38,37 +38,37 @@ $$
 
 
 	由 (1), (2) 得, $a \in\left[1, \frac{5}{3}\right) \cup(9,25]$.
-
-	说明 $5 \notin M$ 隐含了条件 $5^{2}-a=0$, 这是容易被忽视的.
 \end{solution}
+\begin{analysis}
+	$5 \notin M$ 隐含了条件 $5^{2}-a=0$, 这是容易被忽视的.
+\end{analysis}
 
 \begin{example}
-	设集合 $M=\left\{a \mid a=x^{2}-y^{2}, x, y \in \mathbf{Z}\right\}, n$ 为整数. 分别判断数 $4 n ,  4 n+1 ,  4 n+2 ,  4 n+3$ 与集合 $M$ 的关系.
+	设集合 $M=\left\{a \mid a=x^{2}-y^{2}, x, y \in \mathbb{Z}\right\}, n$ 为整数. 分别判断数 $4 n ,  4 n+1 ,  4 n+2 ,  4 n+3$ 与集合 $M$ 的关系.
 \end{example}
-
 \begin{analysis}
-	当 $n=1$ 时, 易知 $4=2^{2}-0^{2}, 5=3^{2}-2^{2}, 7=4^{2}-3^{2}$; 而对任何整数 $x ,  y$, 由于 $x+y$ 与 $x-y$ 同奇偶, 故 $(x+y)(x-y) \neq 2 \times 3=6 \times$ $1=6$. 于是, 我们尝试将 $4 n ,  4 n+1 ,  4 n+3$ 分别表示成 $x^{2}-y^{2}$ 的形式, 并证明不存在 $x, y \in \mathbf{Z}$, 使 $4 n+2=x^{2}-y^{2}$.
+	当 $n=1$ 时, 易知 $4=2^{2}-0^{2}, 5=3^{2}-2^{2}, 7=4^{2}-3^{2}$; 而对任何整数 $x ,  y$, 由于 $x+y$ 与 $x-y$ 同奇偶, 故 $(x+y)(x-y) \neq 2 \times 3=6 \times$ $1=6$. 于是, 我们尝试将 $4 n ,  4 n+1 ,  4 n+3$ 分别表示成 $x^{2}-y^{2}$ 的形式, 并证明不存在 $x, y \in \mathbb{Z}$, 使 $4 n+2=x^{2}-y^{2}$.
 \end{analysis}
 
 \begin{solution}
 	因为对任意的整数 $n$, 有
 	\begin{gather*}
-		4 n=(n+1)^{2}-(n-1)^{2}(n+1, n-1 \in \mathbf{Z}) \\
-		4 n+1=(2 n+1)^{2}-(2 n)^{2}(2 n+1,2 n \in \mathbf{Z}) \\
-		4 n+3=(2 n+2)^{2}-(2 n+1)^{2}(2 n+2,2 n+1 \in \mathbf{Z})
+		4 n=(n+1)^{2}-(n-1)^{2}(n+1, n-1 \in \mathbb{Z}) \\
+		4 n+1=(2 n+1)^{2}-(2 n)^{2}(2 n+1,2 n \in \mathbb{Z}) \\
+		4 n+3=(2 n+2)^{2}-(2 n+1)^{2}(2 n+2,2 n+1 \in \mathbb{Z})
 	\end{gather*}
 
 	所以 $4 n, 4 n+1,4 n+3 \in M$.
 
-	若 $4 n+2$ 是 $M$ 的元素, 则存在 $x, y \in \mathbf{Z}$ 满足 $4 n+2=x^{2}-y^{2}$. 注意到 $x+y$ 与 $x-y$ 奇偶性相同, 若同为奇数, 则 $4 n+2=x^{2}-y^{2}=(x+y)(x-$ $y)$ 不成立; 若同为偶数, 则 $(x+y)(x-y)$ 为 4 的倍数, 但 $4 n+2$ 不是 4 的倍数, 故 $4 n+2=x^{2}-y^{2}=(x+y)(x-y)$ 不成立. 所以 $4 n+2$ 不是 $M$ 的元素.
-
-	说明 由概括原则我们知道, 判断一个对象 $x$ 是否为集合 $S$ 的元素, 等价于判断 $x$ 是否具有性质 $P$.
+	若 $4 n+2$ 是 $M$ 的元素, 则存在 $x, y \in \mathbb{Z}$ 满足 $4 n+2=x^{2}-y^{2}$. 注意到 $x+y$ 与 $x-y$ 奇偶性相同, 若同为奇数, 则 $4 n+2=x^{2}-y^{2}=(x+y)(x-$ $y)$ 不成立; 若同为偶数, 则 $(x+y)(x-y)$ 为 4 的倍数, 但 $4 n+2$ 不是 4 的倍数, 故 $4 n+2=x^{2}-y^{2}=(x+y)(x-y)$ 不成立. 所以 $4 n+2$ 不是 $M$ 的元素.
 \end{solution}
-
+\begin{note}
+	由概括原则我们知道, 判断一个对象 $x$ 是否为集合 $S$ 的元素, 等价于判断 $x$ 是否具有性质 $P$.
+\end{note}
 \begin{example}
 	设集合
 	$$
-		S=\left\{\left.\frac{m+n}{\sqrt{m^{2}+n^{2}}} \right\rvert\, m, n \in \mathbf{N}, m^{2}+n^{2} \neq 0\right\}
+		S=\left\{\left.\frac{m+n}{\sqrt{m^{2}+n^{2}}} \right\rvert\, m, n \in \mathbb{N}, m^{2}+n^{2} \neq 0\right\}
 	$$
 
 	证明: 对一切 $x, y \in S$, 且 $x<y$, 总存在 $z \in S$, 使得 $x<z<y$.
@@ -77,7 +77,7 @@ $$
 \begin{proof}
 	因 $\left(\frac{m+n}{\sqrt{m^{2}+n^{2}}}\right)^{2}=1+2 \times \frac{m n}{m^{2}+n^{2}}$, 所以, 原命题等价于: 设
 	$$
-		S^{\prime}=\left\{\left.\frac{m n}{m^{2}+n^{2}} \right\rvert\, m, n \in \mathbf{N}\right\}
+		S^{\prime}=\left\{\left.\frac{m n}{m^{2}+n^{2}} \right\rvert\, m, n \in \mathbb{N}\right\}
 	$$
 
 	则对一切 $x, y \in S^{\prime}$ 且 $x<y$, 总存在 $z \in S^{\prime}$ 使得 $x<z<y$.
@@ -92,7 +92,7 @@ $$
 		\end{gathered}
 	$$
 
-	因此, 可以选择有理数 $\frac{p}{q}(p, q \in \mathbf{N}, q \neq 0)$, 使得 $\frac{m}{n}<\frac{p}{q}<$ $\frac{a}{b}\left(\right.$ 如取 $\left.\frac{p}{q}=\frac{1}{2}\left(\frac{m}{n}+\frac{a}{b}\right)\right)$. 故
+	因此, 可以选择有理数 $\frac{p}{q}(p, q \in \mathbb{N}, q \neq 0)$, 使得 $\frac{m}{n}<\frac{p}{q}<$ $\frac{a}{b}\left(\right.$ 如取 $\left.\frac{p}{q}=\frac{1}{2}\left(\frac{m}{n}+\frac{a}{b}\right)\right)$. 故
 	$$
 		f\left(\frac{m}{n}\right)<f\left(\frac{p}{q}\right)<f\left(\frac{a}{b}\right)
 	$$
@@ -124,8 +124,7 @@ $$
 \end{example}
 
 \begin{analysis}
-	一个自然的想法是, 先列出集合 $\{1,2, \cdots, 50\}$ 的所有仅包含形如 $\left\{x, 3^{k} x\right\}\left(k \in \mathbf{N}^{*}\right)$ 的二元子集且元素尽可能多的子集,以及 $\{1,2, \cdots, 50\}$\\
-	除去上述复合元素后余下元素构成的子集, 然后考虑如何从这些子集中选取元素组成超“特殊子集”.
+	一个自然的想法是, 先列出集合 $\{1,2, \cdots, 50\}$ 的所有仅包含形如 $\left\{x, 3^{k} x\right\}\left(k \in \mathbb{N}^{*}\right)$ 的二元子集且元素尽可能多的子集,以及 $\{1,2, \cdots, 50\}$除去上述复合元素后余下元素构成的子集, 然后考虑如何从这些子集中选取元素组成超“特殊子集”.
 \end{analysis}
 \begin{solution}
 	作集合 $\{1,2, \cdots, 50\}$ 的子集：
@@ -145,14 +144,12 @@ $$
 	超特殊子集可以从集合 $E_{1} ,  E_{2} ,  E_{3} ,  E_{4}$ 中各选两个元素, 同一个集合中选取的两个数没有一个是另一个的 3 倍; 从 $E_{5}, E_{6}, \cdots, E_{11}$ 中各取一个元素;取集合 $E_{12}$ 的全部元素. 故超特殊子集最多含有 $2 \times 4+7+23=38$ (个) 元素.
 
 	因为从 $E_{1}$ 中选取两个元素的方法有 3 种; 从 $E_{2} ,  E_{3} ,  E_{4}$ 中各选取两个元素的方法和从 $E_{12}$ 中选取全部元素的方法各只有 1 种; 从 $E_{5}, E_{6}, \cdots, E_{11}$ 中各选取一个元素的方法各有 2 种, 所以, 共有 $3 \times 2^{7}=384$ (个)不同的超特殊子集.
-
-	如果 $A ,  B$ 是两个相等的数集, 那么可以得到 $A=B$ 的两个非常有用的必要条件:
-
-	(1) 两个集合的元素之和相等;
-
-	(2) 两个集合的元素之积相等.
 \end{solution}
+如果 $A ,  B$ 是两个相等的数集, 那么可以得到 $A=B$ 的两个非常有用的必要条件:
 
+(1) 两个集合的元素之和相等;
+
+(2) 两个集合的元素之积相等.
 \begin{example}
 	设 $a ,  b ,  c$ 是互不相同的正整数, $n$ 为正整数. 若集合
 	$$
@@ -255,7 +252,7 @@ $$
 	设 $A_{1}, A_{2}, A_{3}, \cdots$ 是一列集合, 满足:对任意正整数 $j$, 只有有限多个正整数 $i$, 使得 $A_{i} \subseteq A_{j}$. 证明: 存在一列正整数 $a_{1}, a_{2}, a_{3}, \cdots$, 使得对任意正整数 $i ,  j, a_{i} \mid a_{j}$ 当且仅当 $A_{i} \subseteq A_{j}$.
 \end{example}
 \begin{proof}
-	设 $p_{1}, p_{2}, p_{3}, \cdots$ 是全体素数从小到大排列. 对 $i \in \mathbf{N}^{*}$, 记 $S_{i}=$ $\left\{j \in \mathbf{N}^{*} \mid A_{j} \subseteq A_{i}\right\}$, 由题设知 $S_{i}$ 是有限集, 且 $i \in S_{i}$. 令 $a_{i}=\prod_{j \in S_{i}} p_{j}$, 下面证明数列 $a_{1}, a_{2}, a_{3}, \cdots$ 满足条件.
+	设 $p_{1}, p_{2}, p_{3}, \cdots$ 是全体素数从小到大排列. 对 $i \in \mathbb{N}^{*}$, 记 $S_{i}=$ $\left\{j \in \mathbb{N}^{*} \mid A_{j} \subseteq A_{i}\right\}$, 由题设知 $S_{i}$ 是有限集, 且 $i \in S_{i}$. 令 $a_{i}=\prod_{j \in S_{i}} p_{j}$, 下面证明数列 $a_{1}, a_{2}, a_{3}, \cdots$ 满足条件.
 
 	对任意正整数 $i ,  j$, 若 $A_{i} \subseteq A_{j}$, 则 $S_{i} \subseteq S_{j}$, 从而 $a_{i} \mid a_{j}$; 若 $a_{i} \mid a_{j}$, 则 $S_{i} \subseteq$ $S_{j}$, 由 $i \in S_{i}$ 可知 $i \in S_{j}$, 故 $A_{i} \subseteq A_{j}$. 因此 $a_{i} \mid a_{j}$ 当且仅当 $A_{i} \subseteq A_{j}$.
 \end{proof}
@@ -393,7 +390,7 @@ $\complement_{U}(A \cup B)=\complement_{U} A \cap \complement_{U} B$.
 
 \subsection{集合的笛卡尔积}
 \begin{definition}
-	设 $A 、 B$ 为两个集合, 以 $A$ 中元素为第一元素, $B$ 中元素为第二元素构成有序对, 所有这样的有序对组成的集合叫做集合 $A$ 与 $B$ 的笛卡尔积 (又称直称 $),$ 记作 $A \times B , $ 即
+	设 $A 、 B$ 为两个集合, 以 $A$ 中元素为第一元素, $B$ 中元素为第二元素构成有序对, 所有这样的有序对组成的集合叫做集合 $A$ 与 $B$ 的笛卡尔积 (又称直积), 记作 $A \times B , $ 即
 	$$
 		A \times B=\{(x, y) \mid x \in A, y \in B\}
 	$$
@@ -416,8 +413,39 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 利用维恩图可以清晰地理解集合的交、并、补、差运算及其运算律. 维恩图为集合问题的解决提供了一个直观的工具.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{images/2024_05_17_3b020e8fe1313185a92eg-014.jpg}
-	\caption{维恩图的一个例子}
+	
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Rectangle [id:dp7072478037374308] 
+\draw   (247,73) -- (446.4,73) -- (446.4,181.6) -- (247,181.6) -- cycle ;
+%Shape: Ellipse [id:dp7336265334601111] 
+\draw   (254.4,136.6) .. controls (254.4,120.58) and (279.02,107.6) .. (309.4,107.6) .. controls (339.78,107.6) and (364.4,120.58) .. (364.4,136.6) .. controls (364.4,152.62) and (339.78,165.6) .. (309.4,165.6) .. controls (279.02,165.6) and (254.4,152.62) .. (254.4,136.6) -- cycle ;
+%Shape: Ellipse [id:dp8796498546563649] 
+\draw   (329.4,134.6) .. controls (329.4,118.58) and (354.02,105.6) .. (384.4,105.6) .. controls (414.78,105.6) and (439.4,118.58) .. (439.4,134.6) .. controls (439.4,150.62) and (414.78,163.6) .. (384.4,163.6) .. controls (354.02,163.6) and (329.4,150.62) .. (329.4,134.6) -- cycle ;
+
+% Text Node
+\draw (254,80.4) node [anchor=north west][inner sep=0.75pt]    {$U$};
+% Text Node
+\draw (333,80.4) node [anchor=north west][inner sep=0.75pt]    {$1,9$};
+% Text Node
+\draw (297.5,110.9) node [anchor=north west][inner sep=0.75pt]    {$A$};
+% Text Node
+\draw (381.5,108.9) node [anchor=north west][inner sep=0.75pt]    {$B$};
+% Text Node
+\draw (276.5,132.4) node [anchor=north west][inner sep=0.75pt]    {$3,5,7$};
+% Text Node
+\draw (339.5,126.4) node [anchor=north west][inner sep=0.75pt]    {$2$};
+% Text Node
+\draw (371.5,130.4) node [anchor=north west][inner sep=0.75pt]    {$4,6,8$};
+
+
+\end{tikzpicture}
+
+	\caption{}
 	\label{fig:Venn}
 \end{figure}
 
@@ -473,8 +501,9 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 	$(A \cup B) \cap C=(A \cap C) \cup(B \cap C), A \cap C$ 与 $B \cap C$ 分别为方程组
 
 	(i) $\left\{\begin{array}{l}a x+y=1, \\ x^{2}+y^{2}=1,\end{array}\right.$
-
+    \qquad
 	(ii) $\left\{\begin{array}{l}x+a y=1, \\ x^{2}+y^{2}=1\end{array}\right.$
+	
 	的解集.
 
 	由 (i) 解得 $(x, y)=(0,1),\left(\frac{2 a}{1+a^{2}}, \frac{1-a^{2}}{1+a^{2}}\right)$;
@@ -483,10 +512,10 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 
 	(1) 使 $(A \cup B) \cap C$ 恰有两个元素的情况只有两种可能:
 
-	(1) $\left\{\begin{array}{l}\frac{2 a}{1+a^{2}}=0, \\ \frac{1-a^{2}}{1+a^{2}}=1 ;\end{array}\right.$
-
-	(2) $\left\{\begin{array}{l}\frac{2 a}{1+a^{2}}=1 \\ \frac{1-a^{2}}{1+a^{2}}=0 .\end{array}\right.$\\
-	由(1)得 $a=0$; 由(2)得 $a=1$.
+	\ding{172} $\left\{\begin{array}{l}\frac{2 a}{1+a^{2}}=0, \\ \frac{1-a^{2}}{1+a^{2}}=1 ;\end{array}\right.$
+    \qquad
+	\ding{173} $\left\{\begin{array}{l}\frac{2 a}{1+a^{2}}=1 \\ \frac{1-a^{2}}{1+a^{2}}=0 .\end{array}\right.$\\
+	由\ding{172}得 $a=0$; 由\ding{173}得 $a=1$.
 
 	故当 $a=0$ 或 1 时, $(A \cup B) \cap C$ 恰有两个元素.
 
@@ -501,7 +530,7 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 \end{solution}
 
 \begin{example}\label{ex:1.2.3}
-	设 $n \in \mathbf{N}$, 且 $n \geqslant 15, A 、 B$ 都是 $\{1,2, \cdots, n\}$ 的真子集, $A \cap B=\varnothing$,且 $\{1,2, \cdots, n\}=A \cup B$. 证明: $A$ 或者 $B$ 中必有两个不同数的和为完全平方数.
+	设 $n \in \mathbb{N}$, 且 $n \geqslant 15, A 、 B$ 都是 $\{1,2, \cdots, n\}$ 的真子集, $A \cap B=\varnothing$,且 $\{1,2, \cdots, n\}=A \cup B$. 证明: $A$ 或者 $B$ 中必有两个不同数的和为完全平方数.
 \end{example}
 
 \begin{proof}
@@ -711,7 +740,7 @@ $$
 \end{solution}
 
 \begin{example}
-	设 $m, n \in \mathbf{Z}_{+}$, 已知有 $n$ 堆金币,第 $i(1 \leqslant i \leqslant n)$ 堆中含有 $a_{i}\left(a_{i}>\right.$ 0) 枚. 鲍勃和爱丽丝按照如下步骤进行游戏:
+	设 $m, n \in \mathbb{Z}_{+}$, 已知有 $n$ 堆金币,第 $i(1 \leqslant i \leqslant n)$ 堆中含有 $a_{i}\left(a_{i}>\right.$ 0) 枚. 鲍勃和爱丽丝按照如下步骤进行游戏:
 
 		【第一步】鲍勃选择集合 $\{1,2, \cdots, m\}$ 的非空子集 $B_{1}, B_{2}, \cdots, B_{n}$;
 
@@ -817,22 +846,22 @@ $$
 \subsection{有限集的阶}
 有限集 $A$ 的元素的数目叫做这个集合的阶, 记作 $|A|$ (或 $n(A))$.
 \begin{example}
-	设集合 $A=\{a \mid 1 \leqslant a \leqslant 2000, a=4 k+1, k \in \mathbf{Z}\}$, 集合 $B=$ $\{b \mid 1 \leqslant b \leqslant 3000, b=3 k-1, k \in \mathbf{Z}\}$. 求 $|A \cap B|$.
+	设集合 $A=\{a \mid 1 \leqslant a \leqslant 2000, a=4 k+1, k \in \mathbb{Z}\}$, 集合 $B=$ $\{b \mid 1 \leqslant b \leqslant 3000, b=3 k-1, k \in \mathbb{Z}\}$. 求 $|A \cap B|$.
 \end{example}
 
 \begin{analysis}
-	令 $4 k+1=3 m-1$, 得 $m=\frac{4 k+2}{3}=k+1+\frac{k-1}{3}$. 因 $m \in \mathbf{Z}$, 所以 $3 \mid k-1$. 令 $k-1=3 r, r \in \mathbf{Z}$, 得 $m=4 r+2$. 这时 $b=12 r+5$, 故 $A \cap B$的元素是形如 $12 r+5$ 的整数.
+	令 $4 k+1=3 m-1$, 得 $m=\frac{4 k+2}{3}=k+1+\frac{k-1}{3}$. 因 $m \in \mathbb{Z}$, 所以 $3 \mid k-1$. 令 $k-1=3 r, r \in \mathbb{Z}$, 得 $m=4 r+2$. 这时 $b=12 r+5$, 故 $A \cap B$的元素是形如 $12 r+5$ 的整数.
 \end{analysis}
 
 \begin{solution}
 	形如 $4 k+1$ 的数可分为 3 类:
 	$$
-		12 l+1,12 l+5,12 l+9(l \in \mathbf{Z})
+		12 l+1,12 l+5,12 l+9(l \in \mathbb{Z})
 	$$
 
 	其中只有形如 $12 l+5$ 的数是形如 $3 k-1$ 的数. 令
 	$$
-		1 \leqslant 12 l+5 \leqslant 2000(l \in \mathbf{Z})
+		1 \leqslant 12 l+5 \leqslant 2000(l \in \mathbb{Z})
 	$$
 
 	得 $0 \leqslant l \leqslant 166$. 所以, $A \cap B=\{5,17, \cdots, 1997\}$.
@@ -1062,7 +1091,7 @@ $$
 \end{note}
 
 \begin{example}
-	设 $n, k \in \mathbf{N}^{*}$, 且 $k \leqslant n$. 并设 $S$ 是含有 $n$ 个互异实数的集合, $T=\left\{a \mid a=x_{1}+x_{2}+\cdots+x_{k}, x_{i} \in S, x_{i} \neq x_{j}(i \neq j), 1 \leqslant i, j \leqslant k\right\}$. 求证: $|T| \geqslant k(n-k)+1$.
+	设 $n, k \in \mathbb{N}^{*}$, 且 $k \leqslant n$. 并设 $S$ 是含有 $n$ 个互异实数的集合, $T=\left\{a \mid a=x_{1}+x_{2}+\cdots+x_{k}, x_{i} \in S, x_{i} \neq x_{j}(i \neq j), 1 \leqslant i, j \leqslant k\right\}$. 求证: $|T| \geqslant k(n-k)+1$.
 \end{example}
 
 \begin{analysis}
@@ -1388,7 +1417,7 @@ $$
 
 	它恰好由 $M_{k+1}$ 的 $2^{k+1}$ 个不同子集排成,且任意两个相邻集合的元素都仅相差 1 个. 可见当 $n=k+1$ 时, 命题也成立.
 
-	所以,对任意的 $n \in \mathbf{N}^{*}$, 所述命题成立.
+	所以,对任意的 $n \in \mathbb{N}^{*}$, 所述命题成立.
 \end{proof}
 
 \begin{analysis}
@@ -1454,7 +1483,7 @@ $$
 \end{proof}
 
 \begin{example}
-	现有 $n\left(n \in \mathbf{Z}_{+}, n \geqslant 2\right)$ 盏灯, 每血灯只有开和关两种状态. 对这些灯的每一个非空子集 $A$, 有一个按钮可操作集合 $A$ 中的灯, 在操作该按钮时,每个集合 $A$ 中的灯会改变它们各自的状态 (开的变为关的,关的变为开的).每个按钮均是相同的, 哪个按钮对应哪些灯组成的子集是未知的. 假设最开始所有灯是关闭的. 证明: 可以在至多 $2^{n-1}+1$ 次操作内让所有的灯全部打开.
+	现有 $n\left(n \in \mathbb{Z}_{+}, n \geqslant 2\right)$ 盏灯, 每血灯只有开和关两种状态. 对这些灯的每一个非空子集 $A$, 有一个按钮可操作集合 $A$ 中的灯, 在操作该按钮时,每个集合 $A$ 中的灯会改变它们各自的状态 (开的变为关的,关的变为开的).每个按钮均是相同的, 哪个按钮对应哪些灯组成的子集是未知的. 假设最开始所有灯是关闭的. 证明: 可以在至多 $2^{n-1}+1$ 次操作内让所有的灯全部打开.
 \end{example}
 
 \begin{proof}
@@ -1555,13 +1584,50 @@ $$
 
 	首先, 若 $Y_{1} 、 Y_{2}$ 是集合族昇中的两个非空集合, 且 $Y_{1} \backslash Z=Y_{2} \backslash Z$ (可能会有 $Y_{1}=Z$ 或 $Y_{2}=Z$ ), 则 $Y_{1}=Y_{2}$. 否则, 存在非空集合 $Y_{1}, Y_{2} \in \mathscr{F}$, 且 $Y_{1} \neq$ $Y_{2}$. 不妨设存在一个元素 $x_{1} \in Y_{1} \backslash Y_{2}$.
 
-	由于 $Y_{1} \backslash Y_{2} \subseteq Z$, 则 $x_{1} \in Z \backslash Y_{2}$ (如图 4-1).
+	由于 $Y_{1} \backslash Y_{2} \subseteq Z$, 则 $x_{1} \in Z \backslash Y_{2}$ (如图\ref{fig:完美集合族}).
 
-	%\begin{center}
-	%	\includegraphics[max width=\textwidth]{2024_05_17_3b020e8fe1313185a92eg-041}
-	%\end{center}
+\begin{figure}
+	\centering
+	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
-	图 4-1
+	\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+		%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+		%Shape: Ellipse [id:dp4986066503370681] 
+		\draw   (186,119.57) .. controls (186,94.96) and (210.18,75) .. (240,75) .. controls (269.82,75) and (294,94.96) .. (294,119.57) .. controls (294,144.19) and (269.82,164.15) .. (240,164.15) .. controls (210.18,164.15) and (186,144.19) .. (186,119.57) -- cycle ;
+		%Shape: Ellipse [id:dp843936435141502] 
+		\draw   (254,118.57) .. controls (254,93.96) and (278.18,74) .. (308,74) .. controls (337.82,74) and (362,93.96) .. (362,118.57) .. controls (362,143.19) and (337.82,163.15) .. (308,163.15) .. controls (278.18,163.15) and (254,143.19) .. (254,118.57) -- cycle ;
+		%Shape: Ellipse [id:dp9951733970596428] 
+		\draw  [fill={rgb, 255:red, 155; green, 155; blue, 155 }  ,fill opacity=0.26 ] (223,168.57) .. controls (223,143.96) and (247.18,124) .. (277,124) .. controls (306.82,124) and (331,143.96) .. (331,168.57) .. controls (331,193.19) and (306.82,213.15) .. (277,213.15) .. controls (247.18,213.15) and (223,193.19) .. (223,168.57) -- cycle ;
+		%Shape: Circle [id:dp10790237532892788] 
+		\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (267.38,106.14) .. controls (267.38,105.59) and (267.83,105.15) .. (268.37,105.15) .. controls (268.92,105.15) and (269.36,105.59) .. (269.36,106.14) .. controls (269.36,106.68) and (268.92,107.13) .. (268.37,107.13) .. controls (267.83,107.13) and (267.38,106.68) .. (267.38,106.14) -- cycle ;
+		%Shape: Circle [id:dp38669899440893385] 
+		\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (244.38,141.14) .. controls (244.38,140.59) and (244.83,140.15) .. (245.37,140.15) .. controls (245.92,140.15) and (246.36,140.59) .. (246.36,141.14) .. controls (246.36,141.68) and (245.92,142.13) .. (245.37,142.13) .. controls (244.83,142.13) and (244.38,141.68) .. (244.38,141.14) -- cycle ;
+
+		% Text Node
+		\draw (172,72.5) node [anchor=north west][inner sep=0.75pt]    {$Y_{1}$};
+		% Text Node
+		\draw (362.5,91.5) node [anchor=north west][inner sep=0.75pt]    {$Y_{2}$};
+		% Text Node
+		\draw (219,99.5) node [anchor=north west][inner sep=0.75pt]    {$\emptyset $};
+		% Text Node
+		\draw (314,94) node [anchor=north west][inner sep=0.75pt]    {$\emptyset $};
+		% Text Node
+		\draw (237.2,143.76) node [anchor=north west][inner sep=0.75pt]    {$x_{1}$};
+		% Text Node
+		\draw (271.2,96.36) node [anchor=north west][inner sep=0.75pt]    {$x_{2}$};
+		% Text Node
+		\draw (320.48,195.16) node [anchor=north west][inner sep=0.75pt]    {$Z$};
+
+
+	\end{tikzpicture}
+	\caption{}\label{fig:完美集合族}
+\end{figure}
+
+
+	
+
+
 
 	因为 $Z$ 为元素最少的非空集合, 且 $Y_{2}$ 不为空集,所以, $|Z| \leqslant\left|Y_{2}\right|$.
 
