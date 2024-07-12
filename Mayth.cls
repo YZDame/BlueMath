@@ -41,11 +41,25 @@
 \renewcommand{\proofname}{\bf 证明}
 \newcommand{\pll}{\kern 0.56em/\kern -0.8em /\kern 0.56em}
 
-\newenvironment{centertikzpicture}
-{\begin{center}\begin{tikzpicture}}
-            {\end{tikzpicture}\end{center}}
-\AtBeginEnvironment{question}{\setcounter{figure}{\value{question}}}
-\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\def\equationautorefname{式}
+\def\footnoteautorefname{脚注}
+\def\itemautorefname{项}
+\def\figureautorefname{图}
+\def\tableautorefname{表}
+\def\partautorefname{篇}
+\def\appendixautorefname{附录}
+\def\chapterautorefname{章}
+\def\sectionautorefname{节}
+\def\paragraphautorefname{段落}
+\def\subparagraphautorefname{子段落}
+\def\FancyVerbLineautorefname{行}
+\def\theoremautorefname{定理}
+\def\exampleautorefname{例}
+\def\questionautorefname{问题}
+\def\exerciseautorefname{练习}
+\def\formulaautorefname{公式}
+\def\definitionautorefname{定义}
+% 对于没有编号的环境，如 solution，通常不需要定义 \autoref 名称
 
 \def\pgfsysdriver{pgfsys-dvipdfm.def}
 \usetikzlibrary{shapes.geometric}
