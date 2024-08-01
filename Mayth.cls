@@ -1,5 +1,5 @@
 \ProvidesClass{Mayth}
-\LoadClass[zihao=-4]{ctexbook}
+\LoadClass[zihao=-4,oneside]{ctexbook}
 
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
@@ -79,6 +79,6 @@
             \tikz[baseline,line width=0.05ex,line join=round]
             \draw (0,.1ex) -- (.8em,.1ex) -- (1em,1.6ex) -- (.2em,1.6ex) -- cycle;}}}
 
-\title{\textsc{BlueMath}: 高中数学竞赛小蓝本 \LaTeX 整理版}
-\author{LeyuDame}
+\title{\textsc{BlueMath}: 高中数学竞赛小蓝本 \LaTeX 整理版（一试讲义）}
+\author{YZDame}
 \date{\today}
