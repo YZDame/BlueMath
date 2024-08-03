@@ -49,8 +49,8 @@
 \end{note}
 
 \begin{example}
-	设函数 $f(x)=|\sin x|+|\cos x|$. 
-	
+	设函数 $f(x)=|\sin x|+|\cos x|$.
+
 	(1) 试讨论函数的性质(有界性, 奇偶性, 单调性, 周期性), 求出其最值, 并作出其在 $[0,2 \pi]$ 上的图象;
 
 	(2) 求函数 $y=\sqrt{\sin x}+\sqrt{\cos x}\left(x \in\left[0, \frac{\pi}{2}\right]\right)$ 的值域. (2007 年上海交大自主招生)
@@ -123,7 +123,6 @@
 
 	所以函数 $y=\sqrt{\sin x}+\sqrt{\cos x}\left(x \in\left[0, \frac{\pi}{2}\right]\right)$ 的值域为 $\left[1,2^{\frac{3}{4}}\right]$.
 \end{solution}
-
 \begin{note}
 	这两道题都是考查三角函数的基本性质. 第(1)小题关键是如何看出 $\frac{\pi}{2}$ 是函数的周期, 实际上可用图象分析出来, 或者取特殊点观察可得. 第 (2) 小题求值域方法很多, 关键是细心谨慎, 小心放缩. 本小题还可用均值不等式, 柯西不等式来求解.\\
 \end{note}
@@ -137,7 +136,6 @@
 
 	(3) 判定方程 $f(x)=\tan \frac{\sqrt{2}}{3} \pi$ 在区间 $(-\pi, \pi)$ 上解的个数.
 \end{example}
-
 \begin{solution}
 	(1) 因为 $-1 \leqslant \sin x \leqslant 1$, 所以 $-\frac{\pi}{\sqrt{3}} \leqslant \frac{\pi}{\sqrt{3}} \sin x \leqslant \frac{\pi}{\sqrt{3}}$.
 
@@ -191,7 +189,6 @@
 
 	显然方程 $\sin x=\frac{\sqrt{6}}{3}, \sin x=-\sqrt{3}+\frac{\sqrt{6}}{3}$, 在 $(-\pi, \pi)$ 上各有两个解, 故 $f(x)=\tan \frac{\sqrt{2}}{3} \pi$ 在区间 $(-\pi, \pi)$ 上共有 4 个解.
 \end{solution}
-
 \begin{note}
 	本题是正弦函数与正切函数的复合. (1) 求 $f(x)$ 的定义域和值域,应当先搞清楚 $y=\frac{\pi}{\sqrt{3}} \sin x$ 的值域与 $y=\tan x$ 的定义域的交集; (2)求 $f(x)$\\
 	的单调区间，必须先搞清 $f(x)$ 的基本性质，如奇偶性、周期性、复合函数单调性等.
@@ -200,7 +197,6 @@
 \begin{example}
 	设 $\omega$ 为正实数, 若存在 $a 、 b(\pi \leqslant a<b \leqslant 2 \pi)$, 使得 $\sin \omega a+\sin \omega b$ $=2$. 求 $\omega$ 的取值范围. (2015 年全国高中数学联赛)
 \end{example}
-
 \begin{solution}
 	由 $\sin \omega a+\sin \omega b=2$ 知, $\sin \omega a=\sin \omega b=1$, 而 $[\omega a, \omega b] \subseteq[\omega \pi$, $2 \omega \pi]$, 故题目条件等价于: 存在整数 $k 、 l(k<l)$, 使得
 
@@ -223,118 +219,112 @@
 		\left\{\omega \left\lvert\, \frac{9}{4} \leqslant \omega \leqslant \frac{5}{2}\right. \text {, 或 } \omega \geqslant \frac{13}{4}\right\} .
 	$$
 \end{solution}
-
 \begin{note}
 	本题难点在于分类讨论. 首先注意到 $\omega \geqslant 4$ 时, 区间 $[\omega \pi, 2 \omega \pi]$ 的长度大于或等于 $4 \pi$, 在两个周期之内. 一定存在两个最大值, 其次逐步对取得 1 时, $\omega a 、 \omega b$ 的相应值加以讨论.
 \end{note}
 
-例 6 设函数 $f(x)=\sin ^{2} x+(2 a-1) \sin x+a^{2}+\frac{1}{4}$, 已知 $x \in$ $\left[\frac{5}{6} \pi, \frac{3}{2} \pi\right]$, 求 $f(x)$ 的最值.
+\begin{example}
+	设函数 $f(x)=\sin ^{2} x+(2 a-1) \sin x+a^{2}+\frac{1}{4}$, 已知 $x \in$ $\left[\frac{5}{6} \pi, \frac{3}{2} \pi\right]$, 求 $f(x)$ 的最值.
+\end{example}
+\begin{solution}
+	设 $\sin x=t$, 则 $t \in\left[-1, \frac{1}{2}\right]$.
 
-解 设 $\sin x=t$, 则 $t \in\left[-1, \frac{1}{2}\right]$.
+	$f(x)=g(t)=t^{2}+(2 a-1) t+a^{2}+\frac{1}{4}$, 对称轴为 $t=\frac{1-2 a}{2}$.
 
-$f(x)=g(t)=t^{2}+(2 a-1) t+a^{2}+\frac{1}{4}$, 对称轴为 $t=\frac{1-2 a}{2}$.
+	当 $\frac{1-2 a}{2} \leqslant-1$ 即 $a \geqslant \frac{3}{2}$ 时, $\left[-1, \frac{1}{2}\right]$ 为 $g(t)$ 的单调增区间,所以
 
-当 $\frac{1-2 a}{2} \leqslant-1$ 即 $a \geqslant \frac{3}{2}$ 时, $\left[-1, \frac{1}{2}\right]$ 为 $g(t)$ 的单调增区间,所以
+	$$
+		f_{\min }=g(-1)=a^{2}-2 a+\frac{9}{4}, f_{\max }=g\left(\frac{1}{2}\right)=a^{2}+a
+	$$
 
-$$
-	f_{\min }=g(-1)=a^{2}-2 a+\frac{9}{4}, f_{\max }=g\left(\frac{1}{2}\right)=a^{2}+a
-$$
+	当 $-1<\frac{1-2 a}{2} \leqslant-\frac{1}{4}$ 即 $\frac{3}{4} \leqslant a<\frac{3}{2}$ 时, $g(-1) \leqslant g\left(\frac{1}{2}\right)$, 所以
 
-当 $-1<\frac{1-2 a}{2} \leqslant-\frac{1}{4}$ 即 $\frac{3}{4} \leqslant a<\frac{3}{2}$ 时, $g(-1) \leqslant g\left(\frac{1}{2}\right)$, 所以
+	$$
+		f_{\min }=g\left(\frac{1-2 a}{2}\right)=a, f_{\max }=g\left(\frac{1}{2}\right)=a^{2}+a
+	$$
 
-$$
-	f_{\min }=g\left(\frac{1-2 a}{2}\right)=a, f_{\max }=g\left(\frac{1}{2}\right)=a^{2}+a
-$$
+	当 $-\frac{1}{4}<\frac{1-2 a}{2} \leqslant \frac{1}{2}$ 即 $0 \leqslant a<\frac{3}{4}$ 时, $g(-1)>g\left(\frac{1}{2}\right)$, 所以
 
-当 $-\frac{1}{4}<\frac{1-2 a}{2} \leqslant \frac{1}{2}$ 即 $0 \leqslant a<\frac{3}{4}$ 时, $g(-1)>g\left(\frac{1}{2}\right)$, 所以
+	$$
+		f_{\min }=g\left(\frac{1-2 a}{2}\right)=a, f_{\max }=g(-1)=a^{2}-2 a+\frac{9}{4}
+	$$
 
-$$
-	f_{\min }=g\left(\frac{1-2 a}{2}\right)=a, f_{\max }=g(-1)=a^{2}-2 a+\frac{9}{4}
-$$
+	当 $\frac{1-2 a}{2}>\frac{1}{2}$ 即 $a<0$ 时, $\left[-1, \frac{1}{2}\right]$ 为 $g(t)$ 的单调减区间, 所以
 
-当 $\frac{1-2 a}{2}>\frac{1}{2}$ 即 $a<0$ 时, $\left[-1, \frac{1}{2}\right]$ 为 $g(t)$ 的单调减区间, 所以
+	$$
+		f_{\min }=g\left(\frac{1}{2}\right)=a^{2}+a, f_{\max }=g(-1)=a^{2}-2 a+\frac{9}{4}
+	$$
+\end{solution}
+\begin{note}
+	求形如 $f(x)=A \sin ^{2} x+B \sin x+C$ 形式的最值, 通常用换元法,化成二次函数在区间的最值问题.
+\end{note}
 
-$$
-	f_{\min }=g\left(\frac{1}{2}\right)=a^{2}+a, f_{\max }=g(-1)=a^{2}-2 a+\frac{9}{4}
-$$
+\begin{example}
+	已知函数 $f(x)=\frac{a-2 \cos x}{3 \sin x}$ 在区间 $\left(0, \frac{\pi}{2}\right)$ 内是增函数, 求 $a$ 的取值范围.
+\end{example}
+\begin{analysis}
+	根据增函数的定义,列出不等式,求 $a$ 的取值范围.
+\end{analysis}
+\begin{solution}
+	解法一: 由条件得: 当 $0<x_{1}<x_{2}<\frac{\pi}{2}$ 时,
+	$$
+		f\left(x_{1}\right)-f\left(x_{2}\right)=\frac{a-2 \cos x_{1}}{3 \sin x_{1}}-\frac{a-2 \cos x_{2}}{3 \sin x_{2}}<0
+	$$
 
-评注 求形如 $f(x)=A \sin ^{2} x+B \sin x+C$ 形式的最值, 通常用换元法,化成二次函数在区间的最值问题.
+	因为 $\sin x_{2}>\sin x_{1}>0$, 所以去分母得
+	$$
+		a \sin x_{2}-2 \cos x_{1} \sin x_{2}-a \sin x_{1}+2 \cos x_{2} \sin x_{1}<0,
+	$$
 
-例 7 已知函数 $f(x)=\frac{a-2 \cos x}{3 \sin x}$ 在区间 $\left(0, \frac{\pi}{2}\right)$ 内是增函数, 求 $a$ 的取值范围.
+	整理得
+	$$
+		a\left(\sin x_{2}-\sin x_{1}\right)-2 \sin \left(x_{2}-x_{1}\right)<0,
+	$$
 
-分析 根据增函数的定义,列出不等式,求 $a$ 的取值范围.
+	故
+	$a<\frac{2 \sin \left(x_{2}-x_{1}\right)}{\sin x_{2}-\sin x_{1}}=\frac{4 \sin \frac{x_{2}-x_{1}}{2} \cos \frac{x_{2}-x_{1}}{2}}{2 \cos \frac{x_{2}+x_{1}}{2} \sin \frac{x_{2}-x_{1}}{2}}=\frac{2 \cos \frac{x_{2}-x_{1}}{2}}{\cos \frac{x_{2}+x_{1}}{2}}$
 
-解法一 由条件得: 当 $0<x_{1}<x_{2}<\frac{\pi}{2}$ 时,
-
-$$
-	f\left(x_{1}\right)-f\left(x_{2}\right)=\frac{a-2 \cos x_{1}}{3 \sin x_{1}}-\frac{a-2 \cos x_{2}}{3 \sin x_{2}}<0
-$$
-
-因为 $\sin x_{2}>\sin x_{1}>0$, 所以去分母得
-
-$$
-	a \sin x_{2}-2 \cos x_{1} \sin x_{2}-a \sin x_{1}+2 \cos x_{2} \sin x_{1}<0,
-$$
-
-整理得
-
-$$
-	a\left(\sin x_{2}-\sin x_{1}\right)-2 \sin \left(x_{2}-x_{1}\right)<0,
-$$
-
-故
-
-$a<\frac{2 \sin \left(x_{2}-x_{1}\right)}{\sin x_{2}-\sin x_{1}}=\frac{4 \sin \frac{x_{2}-x_{1}}{2} \cos \frac{x_{2}-x_{1}}{2}}{2 \cos \frac{x_{2}+x_{1}}{2} \sin \frac{x_{2}-x_{1}}{2}}=\frac{2 \cos \frac{x_{2}-x_{1}}{2}}{\cos \frac{x_{2}+x_{1}}{2}}$
-
-由于
-
-$$
-	\begin{aligned}
+	由于
+	\begin{align}
 		\cos \frac{x_{2}-x_{1}}{2} & =\cos \frac{x_{2}}{2} \cos \frac{x_{1}}{2}+\sin \frac{x_{2}}{2} \sin \frac{x_{1}}{2} \\
-		                           & >\cos \frac{x_{2}}{2} \cos \frac{x_{1}}{2}-\sin \frac{x_{2}}{2} \sin \frac{x_{1}}{2}
-	\end{aligned}
-$$
+		                           & >\cos \frac{x_{2}}{2} \cos \frac{x_{1}}{2}-\sin \frac{x_{2}}{2} \sin \frac{x_{1}}{2} \\
+		                           & =\cos \frac{x_{1}+x_{2}}{2}>0
+	\end{align}
 
-$$
-	=\cos \frac{x_{1}+x_{2}}{2}>0
-$$
+	所以 $\frac{\cos \frac{x_{2}-x_{1}}{2}}{\cos \frac{x_{1}+x_{2}}{2}}>1$, 从而 $a \leqslant 2$, 即 $a$ 的取值范围为 $(-\infty, 2]$.
 
-所以 $\frac{\cos \frac{x_{2}-x_{1}}{2}}{\cos \frac{x_{1}+x_{2}}{2}}>1$, 从而 $a \leqslant 2$, 即 $a$ 的取值范围为 $(-\infty, 2]$.
+	解法二：记 $\tan \frac{x}{2}=t$, 则 $\sin x=\frac{2 t}{1+t^{2}}, \cos x=\frac{1-t^{2}}{1+t^{2}}$, 且 $t \in(0,1)$,
 
-解法二 记 $\tan \frac{x}{2}=t$, 则 $\sin x=\frac{2 t}{1+t^{2}}, \cos x=\frac{1-t^{2}}{1+t^{2}}$, 且 $t \in(0,1)$,
+	所以
+	$$
+		\begin{aligned}
+			g(t) & =f(x)=\frac{a-2 \times \frac{1-t^{2}}{1+t^{2}}}{3 \times \frac{2 t}{1+t^{2}}}=\frac{(a-2)+(a+2) t^{2}}{6 t} \\
+			     & =\frac{a-2}{6 t}+\frac{a+2}{6} \cdot t
+		\end{aligned}
+	$$
 
-所以
+	设 $0<t_{1}<t_{2}<1$ ，则
+	$$
+		g\left(t_{1}\right)-g\left(t_{2}\right)=\left(\frac{a-2}{6 t_{1}}+\frac{a+2}{6} t_{1}\right)-\left(\frac{a-2}{6 t_{2}}+\frac{a+2}{6} t_{2}\right)<0
+	$$
 
-$$
-	\begin{aligned}
-		g(t) & =f(x)=\frac{a-2 \times \frac{1-t^{2}}{1+t^{2}}}{3 \times \frac{2 t}{1+t^{2}}}=\frac{(a-2)+(a+2) t^{2}}{6 t} \\
-		     & =\frac{a-2}{6 t}+\frac{a+2}{6} \cdot t
-	\end{aligned}
-$$
+	去分母得
+	$$
+		(a-2) t_{2}+(a+2) t_{1}^{2} t_{2}-(a-2) t_{1}-(a+2) t_{1} t_{2}^{2}<0
+	$$
 
-设 $0<t_{1}<t_{2}<1$ ，则
+	整理得
+	$$
+		\left(t_{2}-t_{1}\right)\left(a-a t_{1} t_{2}-2-2 t_{1} t_{2}\right)<0
+	$$
 
-$$
-	g\left(t_{1}\right)-g\left(t_{2}\right)=\left(\frac{a-2}{6 t_{1}}+\frac{a+2}{6} t_{1}\right)-\left(\frac{a-2}{6 t_{2}}+\frac{a+2}{6} t_{2}\right)<0
-$$
+	而 $0<t_{1}<t_{2}<1$, 所以 $a<\frac{2\left(1+t_{1} t_{2}\right)}{1-t_{1} t_{2}}$.
 
-去分母得
-
-$$
-	(a-2) t_{2}+(a+2) t_{1}^{2} t_{2}-(a-2) t_{1}-(a+2) t_{1} t_{2}^{2}<0
-$$
-
-整理得
-
-$$
-	\left(t_{2}-t_{1}\right)\left(a-a t_{1} t_{2}-2-2 t_{1} t_{2}\right)<0
-$$
-
-而 $0<t_{1}<t_{2}<1$, 所以 $a<\frac{2\left(1+t_{1} t_{2}\right)}{1-t_{1} t_{2}}$.
-
-显然 $\frac{1+t_{1} t_{2}}{1-t_{1} t_{2}}>1$, 故 $a \leqslant 2$, 即 $a$ 的取值范围为 $(-\infty, 2]$.
-
-评注 对于含参数不等式的问题, 如 $a<f(t)$ 恒成立, 则应取 $f(t)$ 的最小值后得 $a$ 的取值范围; 如 $a>f(t)$, 则取 $f(t)$ 的最大值后得 $a$ 的取值范围,如 $f(t)$ 无最值, 则取它的变化趋势的最值.
+	显然 $\frac{1+t_{1} t_{2}}{1-t_{1} t_{2}}>1$, 故 $a \leqslant 2$, 即 $a$ 的取值范围为 $(-\infty, 2]$.
+\end{solution}
+\begin{note}
+	对于含参数不等式的问题, 如 $a<f(t)$ 恒成立, 则应取 $f(t)$ 的最小值后得 $a$ 的取值范围; 如 $a>f(t)$, 则取 $f(t)$ 的最大值后得 $a$ 的取值范围,如 $f(t)$ 无最值, 则取它的变化趋势的最值.
+\end{note}
 
 例 8 设函数 $f(x), g(x)$ 对任意实数 $x$ 均有 $-\frac{\pi}{2}<f(x)+g(x)<\frac{\pi}{2}$,并且 $-\frac{\pi}{2}<f(x)-g(x)<\frac{\pi}{2}$. 求证: 对任意实数 $x$ 均有 $\cos f(x)>$ $\sin g(x)$, 并由此证明: 对任意实数 $x$ 均有 $\cos (\cos x)>\sin (\sin x)$.
 
