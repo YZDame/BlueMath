@@ -1,0 +1,540 @@
+\chapter{复数与向量}
+\section{预备知识}
+\subsection{向量补充知识}
+\subsubsection{外积的定义及基本性质}
+两个向量 $\vec{a} , \vec{b}$ 的外积是一个新的向量 $\vec{a} \times \vec{b}$ ，其模长为 $|\vec{a}| \cdot|\vec{b}| \cdot$ $\sin \langle\vec{a}, \vec{b}\rangle$ ，方向垂直于 $\vec{a}$ 和 $\vec{b}$ 且 $\vec{a} , \vec{b} , \vec{a} \times \vec{b}$ 构成右手系.
+从定义易知, $\vec{a} \times \vec{a}=\overrightarrow{0}$. 设 $\vec{a}=\overrightarrow{O A}, \vec{b}=\overrightarrow{O B}$, 则 $|\vec{a} \times \vec{b}|=2 S_{\triangle O A B}$.
+外积满足下列运算法则:
+
+(1) $\vec{a} \times \vec{b}=-\vec{b} \times \vec{a}$;
+
+(2) $(\vec{a}+\vec{b}) \times \vec{c}=\vec{a} \times \vec{c}+\vec{b} \times \vec{c}$;
+
+(3) $(\lambda \vec{a}) \times \vec{b}=\vec{a} \times(\lambda \vec{b})=\lambda(\vec{a} \times \vec{b}) \quad(\lambda \in \mathbf{R})$.
+
+设 $\vec{a}=\left(a_x, a_y, a_z\right), \vec{b}=\left(b_x, b_y, b_z\right)$，则
+\begin{align*}
+	\begin{aligned}
+		\vec{a} \times \vec{b} & =\begin{vmatrix}
+			                          a_y & a_z \\
+			                          b_y & b_z
+		                          \end{vmatrix} \vec{i}-\begin{vmatrix}
+			                                                a_x & a_z \\
+			                                                b_x & b_z
+		                                                \end{vmatrix} \vec{j}+\begin{vmatrix}
+			                                                                      a_x & a_y \\
+			                                                                      b_x & b_y
+		                                                                      \end{vmatrix} \vec{k} \\
+		                       & =\begin{vmatrix}
+			                          \vec{i} & \vec{j} & \vec{k} \\
+			                          a_x     & a_y     & a_z     \\
+			                          b_x     & b_y     & b_z
+		                          \end{vmatrix} .
+	\end{aligned}
+\end{align*}
+
+\subsubsection{向量的混合积}
+三个向量 $\vec{a} , \vec{b} , \vec{c}$ 作运算 $(\vec{a} \times \vec{b}) \cdot \vec{c}$ 称为 $\vec{a} , \vec{b} , \vec{c}$ 的混合积, 记为 $(\vec{a}, \vec{b}, \vec{c})$.
+设 $\vec{a}=\left(a_x, a_y, a_z\right), \vec{b}=\left(b_x, b_y, b_z\right), \vec{c}=\left(c_x, c_y, c_z\right)$, 则
+\begin{align*}
+	(\vec{a}, \vec{b}, \vec{c})=\begin{vmatrix}
+		                            a_x & a_y & a_z \\
+		                            b_x & b_y & b_z \\
+		                            c_x & c_y & c_z
+	                            \end{vmatrix} .
+\end{align*}
+
+由行列式的运算性质可知:
+\begin{align*}
+	\begin{aligned}
+		{(\vec{a}, \vec{b}, \vec{c}) } & =(\vec{b}, \vec{c}, \vec{a})=(\vec{c}, \vec{a}, \vec{b})                                  \\
+		                               & =-(\vec{b}, \vec{a}, \vec{c})=-(\vec{a}, \vec{c}, \vec{b})=-(\vec{c}, \vec{b}, \vec{a}) .
+	\end{aligned}
+\end{align*}
+
+混合积可用来判断三个向量共面: $\vec{a}, \vec{b}, \vec{c}$ 共面当且仅当 $(\vec{a}, \vec{b}, \vec{c})=0$.
+
+\subsubsection{空间平面方程}
+过点 $P\left(x_0, y_0, z_0\right)$ 且与非零向量 $\vec{n}=(A, B, C)$ 垂直的平面 $\Pi$ 的方程为
+\begin{align*}
+	A\left(x-x_0\right)+B\left(y-y_0\right)+C\left(z-z_0\right)=0,
+\end{align*}
+
+这称为 $\Pi$ 的点法式方程, $\vec{n}$ 称为 $\Pi$ 的法向量.
+由点法式方程可将 $\Pi$ 的方程化为 $A x+B y+C z+D=0$, 称之为 $\Pi$ 的一般式方程. 给定 $\Pi_1: A_1 x+B_1 y+C_1 z+D_1=0, \Pi_2: A_2 x+B_2 y+C_2 z+D_2=$ 0 , 则两平面的夹角 $\theta$ 即两平面法向量 $\vec{n}_1, \vec{n}_2$ 的夹角 (取非针角), 故
+\begin{align*}
+	\cos \theta=\frac{\left|\overrightarrow{n_1} \cdot \overrightarrow{n_2}\right|}{\left|\overrightarrow{n_1}\right| \cdot\left|\overrightarrow{n_2}\right|}=\frac{\left|A_1 A_2+B_1 B_2+C_1 C_2\right|}{\sqrt{A_1^2+B_1^2+C_1^2} \cdot \sqrt{A_2^2+B_2^2+C_2^2}} .
+\end{align*}
+
+\subsubsection{空间直线方程}
+过点 $P\left(x_0, y_0, z_0\right)$ 且平行于非零向量 $\vec{s}=(m, n, p)$ 的直线方程为
+\begin{align*}
+	\frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p},
+\end{align*}
+
+称之为直线的点向式方程, $\vec{s}$ 称为其方向向量, 其参数式方程可表示为
+\begin{align*}
+	\left\{\begin{array}{l}
+		       x=x_0+m t,                   \\
+		       y=y_0+n t,(t \in \mathbf{R}) \\
+		       z=z_0+p t .
+	       \end{array}\right.
+\end{align*}
+
+需要说明的是, 点向式方程中, 允许 $m 、 n 、 p$ 中的一个或两个为 0 , 此时就意味着其所对应的分子为 0 .
+
+直线方程的另一种表示方法为 $\left\{\begin{array}{l}A_1 x+B_1 y+C_1 z+D_1=0, \\ A_2 x+B_2 y+C_2 z+D_2=0,\end{array}\right.$ 其意义为将直线表示为两个平面的交线, 我们称之为直线的交面式方程.
+
+两条直线的夹角 $\theta$ 即为两直线方向向量 $\vec{s}_1 、 \vec{s}_2$ 的夹角 (取非针角), 故
+\begin{align*}
+	\cos \theta=\frac{\left|\overrightarrow{s_1} \cdot \overrightarrow{s_2}\right|}{\left|\vec{s}_1\right| \cdot\left|\overrightarrow{s_2}\right|} .
+\end{align*}
+
+给定平面 $\Pi: A x+B y+C z+D=0$ 和直线 $l: \frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p}$,当 $\Pi$ 与 $l$ 垂直时, 定义它们的夹角为 $\frac{\pi}{2}$, 当 $\Pi$ 与 $l$ 不垂直时, 定义它们的夹角 $\theta$为 $l$ 与其在平面 $\Pi$ 上的投影直线 $l^{\prime}$ 的夹角 (取锐角), 故
+\begin{align*}
+	\sin \theta=\frac{|\vec{s} \cdot \vec{n}|}{|\vec{s}| \cdot|\vec{n}|}=\frac{|A m+B n+C p|}{\sqrt{A^2+B^2+C^2} \cdot \sqrt{m^2+n^2+p^2}},
+\end{align*}
+
+其中 $\vec{s}$ 为 $l$ 的方向向量, $\vec{n}$ 为 $\Pi$ 的法向量.
+
+过直线
+\begin{align*}
+	\left\{\begin{array}{l}
+		       A_1 x+B_1 y+C_1 z+D_1=0, \\
+		       A_2 x+B_2 y+C_2 z+D_2=0
+	       \end{array}\right.
+\end{align*}
+的平面束方程为 $\lambda_1\left(A_1 x+B_1 y+C_1 z+D_1\right)+\lambda_2\left(A_2 x+B_2 y+C_2 z+D_2\right)=$ 0 , 其中 $\lambda_1 、 \lambda_2$ 不全为零. 通常我们固定 $\lambda_1=1$, 记 $\lambda_2=\lambda$, 得到简化写法
+\begin{align*}
+	A_1 x+B_1 y+C_1 z+D_1+\lambda\left(A_2 x+B_2 y+C_2 z+D_2\right)=0,
+\end{align*}
+
+\begin{example}
+	设点 $A(1,2,3), B(3,4,5), C(2,4,7)$. 求三角形 $A B C$ 的面积.
+\end{example}
+\begin{solution}
+	\begin{align*}
+		\begin{aligned}
+			S_{\triangle A B C} & = \frac{1}{2}|\overrightarrow{A B}| \cdot|\overrightarrow{A C}| \cdot \sin \angle B A C \\
+			                    & =\frac{1}{2}|\overrightarrow{A B} \times \overrightarrow{A C}|                          \\
+			                    & =\frac{1}{2}\left\lvert\left|\begin{array}{lll}
+				                                                   \vec{i} & \vec{j} & \vec{k} \\
+				                                                   2       & 2       & 2       \\
+				                                                   1       & 2       & 4
+			                                                   \end{array}\right| \right\rvert\,                          \\
+			                    & =\frac{1}{2}|(4,-6,2)|                                                                  \\
+			                    & =\sqrt{14} .
+		\end{aligned}
+	\end{align*}
+\end{solution}
+
+\begin{example}
+	求过三点 $M_1(2,-1,4), M_2(-1,3,-2), M_3(0,2,3)$ 的平面 $\Pi$ 的方程.
+\end{example}
+\begin{solution}
+	解法 1: 设 $\Pi$ 的法向量为 $\vec{n}$. 由于 $\vec{n} \perp \overrightarrow{M_1 M_2}, \vec{n} \perp \overrightarrow{M_1 M_3}$, 故可取
+	\begin{align*}
+		\vec{n}=\overrightarrow{M_1 M_2} \times \overrightarrow{M_1 M_3}=\left|\begin{array}{ccc}
+			                                                                       \vec{i} & \vec{j} & \vec{k} \\
+			                                                                       -3      & 4       & -6      \\
+			                                                                       -2      & 3       & -1
+		                                                                       \end{array}\right|=(14,9,-1),
+	\end{align*}
+
+	又 $M_1 \in \Pi$, 故 $\Pi$ 的方程为 $14(x-2)+9(y+1)-(z-4)=0$, 即 $14 x+9 y$ $-z-15=0$.
+
+	解法 2: 设 $M(x, y, z)$ 为 $\Pi$ 上任意一点, 由 $\overrightarrow{M_1 M} 、 \overrightarrow{M_1 M_2}, \overrightarrow{M_1 M_3}$ 共面知, $\left(\overrightarrow{M_1 M}, \overrightarrow{M_1 M_2}, \overrightarrow{M_1 M_3}\right)=0$, 即 $\left|\begin{array}{ccc}x-2 & y+1 & z-4 \\ -3 & 4 & -6 \\ -2 & 3 & -1\end{array}\right|=0$, 将行列式展开, 即得 $14 x+9 y-z-15=0$.
+\end{solution}
+\begin{note}
+	一般地, 过三点 $M_k\left(x_k, y_k, z_k\right)(k=1,2,3)$ 的平面方程为
+	\begin{align*}
+		\left|\begin{array}{ccc}
+			      x-x_1   & y-y_1   & z-z_1   \\
+			      x_2-x_1 & y_2-y_1 & z_2-z_1 \\
+			      x_3-x_1 & y_3-y_1 & z_3-z_1
+		      \end{array}\right|=0 .
+	\end{align*}
+\end{note}
+
+\begin{example}
+	设 $P_0\left(x_0, y_0, z_0\right)$ 是平面 $A x+B y+C z+D=0$ 外一点, 求 $P_0$ 到平面的距离 $d$.
+\end{example}
+\begin{solution}
+	平面的法向量为 $\vec{n}=(A, B, C)$, 在平面上取一点 $P_1\left(x_1, y_1\right.$, $z_1$ ), 则 $P_0$ 到平面的距离为
+		\begin{align*}
+			\begin{aligned}
+				d & =\left|\overrightarrow{P_1 P_0}\right| \cdot\left|\cos \left\langle\vec{n}, \overrightarrow{P_1 P_0}\right\rangle\right|=\frac{\left|\overrightarrow{P_1 P_0} \cdot \vec{n}\right|}{|\vec{n}|} \\
+				  & =\frac{\left|A\left(x_0-x_1\right)+B\left(y_0-y_1\right)+C\left(z_0-z_1\right)\right|}{\sqrt{A^2+B^2+C^2}},
+			\end{aligned}
+		\end{align*}
+		由 $A x_1+B y_1+C z_1+D=0$ 可知,
+	$$
+		d=\frac{\left|A x_0+B y_0+C z_0+D\right|}{\sqrt{A^2+B^2+C^2}}.
+	$$
+\end{solution}
+
+\begin{example}
+	用点向式表示直线 $\left\{\begin{array}{l}x+y+z+1=0, \\ 2 x-y+3 z+4=0 .\end{array}\right.$
+\end{example}
+\begin{solution}
+	先在直线上找一点.
+	令 $x=1$, 解方程组 $\left\{\begin{array}{l}y+z=-2, \\ y-3 z=6\end{array}\right.$, 得 $y=0, z=-2$, 故 $(1,0,-2)$ 为直线上一点.
+	再求直线的方向向量 $\vec{s}$.
+	由 $\vec{s}$ 与平面 $x+y+z+1=0$ 的法向量 $\vec{n}_1=(1,1,1)$ 垂直, 且与平面 $2 x-y+3 z+4=0$ 的法向量 $\vec{n}_2=(2,-1,3)$ 垂直,故可取
+	\begin{align*}
+		\vec{s}=\overrightarrow{n_1} \times \overrightarrow{n_2}=\left|\begin{array}{ccc}
+			                                                               \vec{i} & \vec{j} & \vec{k} \\
+			                                                               1       & 1       & 1       \\
+			                                                               2       & -1      & 3
+		                                                               \end{array}\right|=(4,-1,-3) .
+	\end{align*}
+	因此所给直线的点向式方程为 $\frac{x-1}{4}=\frac{y}{-1}=\frac{z+2}{-3}$.
+\end{solution}
+
+\begin{example}
+	求过点 $P(2,1,3)$ 且与直线 $\frac{x+1}{3}=\frac{y-1}{2}=\frac{z}{-1}$ 垂直相交的直线方程.
+\end{example}
+\begin{solution}
+	设已知直线为 $l$, 则 $l$ 的方向向量为 $\vec{s}=(3,2,-1)$.
+	设过点 $P$ 且垂直于 $l$ 的平面为 $\Pi$, 则 $\Pi$ 的法向量 $\vec{n}$ 即为 $\vec{s}$, 故 $\Pi$ 的方程为 $3(x-2)+2(y-1)-(z-3)=0$.
+	易知 $l$ 与 $\Pi$ 的交点在所求直线上, 我们先求 $l$ 与 $\Pi$ 的交点 $Q$.
+
+	将 $l$ 化为参数方程 $\left\{\begin{array}{l}x=3 t-1, \\ y=2 t+1, \\ z=-t,\end{array}\right.$ 代人 $\Pi$ 的方程, 即
+	\begin{align*}
+		3(3 t-1-2)+2(2 t+1-1)-(-t-3)=0,
+	\end{align*}
+
+	解得 $t=\frac{3}{7}$, 故 $Q\left(\frac{2}{7}, \frac{13}{7},-\frac{3}{7}\right)$.
+	取 $\overrightarrow{Q P}=\left(\frac{12}{7},-\frac{6}{7}, \frac{24}{7}\right)$ 为所求直线的方向向量, 即得所求直线方程为
+	\begin{align*}
+		\frac{x-2}{2}=\frac{y-1}{-1}=\frac{z-3}{4} .
+	\end{align*}
+\end{solution}
+
+\begin{example}
+	求直线 $\left\{\begin{array}{l}x+y-z-1=0, \\ x-y+z+1=0\end{array}\right.$ 在平面 $x+y+z=0$ 上的投影直线方程.
+\end{example}
+\begin{solution}
+	过已知直线的平面束方程为 $x+y-z-1+\lambda(x-y+z+1)=0$, 即
+	\begin{align*}
+		(1+\lambda) x+(1-\lambda) y+(-1+\lambda) z+(-1+\lambda)=0,
+	\end{align*}
+
+	其法向量为 $\vec{n}_1=(1+\lambda, 1-\lambda,-1+\lambda)$.
+
+	已知平面的法向量为 $\overrightarrow{n_2}=(1,1,1)$, 令 $\vec{n}_1 \cdot \overrightarrow{n_2}=0$, 解得 $\lambda=-1$, 即得与已知平面垂直且过已知直线的平面方程: $y-z-1=0$, 由此得到所求投影直线的方程为 $\left\{\begin{array}{l}y-z-1=0, \\ x+y+z=0 .\end{array}\right.$
+\end{solution}
+\begin{note}
+	作为一个练习, 可尝试再将所求直线方程化为点向式.
+\end{note}
+
+\begin{example}
+	求过点 $M_0(1,1,1)$ 且与两直线 $L_1:\left\{\begin{array}{l}y=2 x, \\ z=x-1,\end{array} L_2:\left\{\begin{array}{l}y=3 x-4, \\ z=2 x-1\end{array}\right.\right.$ 均相交的直线 $L$ 的方程.
+\end{example}
+\begin{solution}
+	$L_1 、 L_2$ 的参数方程分别为 $L_1:\left\{\begin{array}{l}x=t, \\ y=2 t, \\ z=t-1,\end{array} L_2:\left\{\begin{array}{l}x=t, \\ y=3 t-4, \\ z=2 t-1,\end{array}\right.\right.$
+
+	设 $L$ 与它们的交点分别为 $M_1\left(t_1, 2 t_1, t_1-1\right), M_2\left(t_2, 3 t_2-4,2 t_2-1\right)$.由 $M_0 、 M_1 、 M_2$ 三点共线知: $\overrightarrow{M_0 M_1} / / \overrightarrow{M_0 M_2}$, 故
+	\begin{align*}
+		\frac{t_1-1}{t_2-1}=\frac{2 t_1-1}{3 t_2-4-1}=\frac{t_1-1-1}{2 t_2-1-1} .
+	\end{align*}
+
+	由 $\frac{t_1-1}{t_2-1}=\frac{t_1-2}{2 t_2-2}$ 知: $t_1=0$, 代人 $\frac{t_1-1}{t_2-1}=\frac{2 t_1-1}{3 t_2-5}$ 知: $t_2=2$.
+
+	故 $M_1(0,0,-1), M_2(2,2,3)$, 由此得 $L$ 的方向向量 $\vec{s}=(2,2,4)$,故 $L$ 的方程为 $\frac{x-1}{1}=\frac{y-1}{1}=\frac{z-1}{2}$.
+\end{solution}
+
+\subsubsection{习题}
+\begin{exercise}
+	求垂直于平面 $z=0$ 且通过点 $M_0(1,-1,1)$ 到直线 $L:\left\{\begin{array}{l}y-z+1=0, \\ x=0\end{array}\right.$ 垂线的平面方程.
+\end{exercise}
+
+\begin{exercise}
+	证明两直线
+	\begin{align*}
+		\frac{x-2}{1}=\frac{y+2}{-1}=\frac{z-3}{2} \text { 与 } \frac{x-1}{-1}=\frac{y+1}{2}=\frac{z-1}{1}
+	\end{align*}
+	共面,并求该平面方程.
+\end{exercise}
+
+\begin{exercise}
+	在平面 $N: x+y+z=1$ 上求一直线 $L$, 使其与直线 $L_1:\left\{\begin{array}{l}y=1, \\ z=-1\end{array}\right.$ 垂直且相交.
+\end{exercise}
+
+\begin{exercise}
+	求两异面直线
+	\begin{align*}
+		L_1: x+1=y=\frac{z-1}{2} \text { 与 } L_2: x=\frac{y+1}{3}=\frac{z-2}{4}
+	\end{align*}
+	之间的最短距离.
+\end{exercise}
+
+
+\subsection{单位根}
+对于方程
+\begin{align*}
+	x^n-1=0,\left(n \in \mathbf{N}^*, n \geqslant 2\right)
+\end{align*}
+
+由复数开方法则得到它的 $n$ 个根
+\begin{align*}
+	\varepsilon_k=\cos \frac{2 k \pi}{n}+\operatorname{isin} \frac{2 k \pi}{n} .(k=0,1,2, \cdots, n-1)
+\end{align*}
+
+它们显然是 1 的 $n$ 次方根, 称为 $n$ 次单位根.
+
+利用复数乘方公式, 有
+\begin{align*}
+	\varepsilon_k=\left(\cos \frac{2 \pi}{n}+\mathrm{i} \sin \frac{2 \pi}{n}\right)^k=\varepsilon_1^k .
+\end{align*}
+
+这说明, $n$ 个 $n$ 次单位根可以表示为
+\begin{align*}
+	1, \varepsilon_1, \varepsilon_1^2, \cdots, \varepsilon_1^{n-1} .
+\end{align*}
+
+关于 $n$ 次单位根，有如下一些性质：
+
+(1) $\left|\varepsilon_k\right|=1 .(k \in \mathbf{N})$
+
+(2) $\varepsilon_j \varepsilon_k=\varepsilon_{j+k} . \quad(j, k \in \mathbf{N})$
+
+(3) $1+\varepsilon_1+\varepsilon_1^2+\cdots+\varepsilon_1^{n-1}=0 . \quad(n \geqslant 2)$
+
+(4) 设 $m$ 是整数,则
+\begin{align*}
+	1+\varepsilon_1^m+\varepsilon_2^m+\cdots+\varepsilon_{n-1}^m=\left\{\begin{array}{l}
+		                                                                    n, \text { 当 } m \text { 是 } n \text { 的倍数时; } \\
+		                                                                    0, \text { 当 } m \text { 不是 } n \text { 的倍数时. }
+	                                                                    \end{array}\right.
+\end{align*}
+
+\begin{example}
+	已知单位圆的内接正 $n$ 边形 $A_1 A_2 \cdots A_n$ 及圆周上一点 $P$, 求证：
+	\begin{align*}
+		\sum_{k=1}^n\left|P A_k\right|^2=2 n .
+	\end{align*}
+\end{example}
+
+\begin{solution}
+	设 $\zeta=\mathrm{e}^{\frac{2 \pi \mathrm{in}}{n}}, A_1, \cdots, A_n$ 对应的复数是 $1, \zeta, \zeta^2, \cdots, \zeta^{-1}$. 又设 $P$ 点 (对应的复数) 为 $z=\mathrm{e}^{i \theta}$. 则我们有
+	\begin{align*}
+		\begin{aligned}
+			\sum_{k=1}^n\left|P A_k\right|^2 & =\sum_{k=0}^{n-1}\left|z-\zeta^k\right|^2=\sum_{k=0}^{n-1}\left(z-\zeta^k\right)\left(\bar{z}-\zeta^{-k}\right) \\
+			                                 & =\sum_{k=0}^{n-1}\left(|z|^2-\zeta^k \bar{z}-\zeta^{-k} z+1\right)                                              \\
+			                                 & =2 n-\bar{z} \sum_{k=0}^{n-1} \zeta^k-z \sum_{k=0}^{n-1} \zeta^{-k}=2 n,
+		\end{aligned}
+	\end{align*}
+	（最后一步应用了 $1+\zeta+\zeta^2+\cdots+\zeta^{-1}=0$ ），证毕.
+\end{solution}
+
+\begin{example}
+	设 $P(x), Q(x), R(x)$ 及 $S(x)$ 都是多项式，且
+	\begin{align*}
+		P\left(x^5\right)+x Q\left(x^5\right)+x^2 R\left(x^5\right)=\left(x^4+x^3+x^2+x+1\right) S(x),
+	\end{align*}
+	求证： $x-1$ 是 $P(x), Q(x), R(x)$ 及 $S(x)$ 的公因式.
+\end{example}
+\begin{solution}
+	设 $\zeta$ 是一个 5 次单位根 $(\zeta \neq 1)$, 在 (1) 中取 $x=\zeta, \zeta^2, \zeta^3, \zeta^4$ ，得出
+	\begin{align*}
+		\left(\zeta^k\right)^2 R(1)+\zeta^k Q(1)+P(1)=0(k=1,2,3,4),
+	\end{align*}
+
+	这意味着多项式 $x^2 R(1)+x Q(1)+P(1)$ 有四个不同的零点.
+
+	从而必须 $R(1)=Q(1)=P(1)=0$ .
+
+	再将 $x=1$ 代人 (1), 得 $S(1)=0$ .
+
+	于是 $P(x), Q(x), R(x)$ 及 $S(x)$ 都有因式 $x-1$, 证毕.
+\end{solution}
+
+\begin{example}
+	求最小的正整数 $n$,使 $n \times n$ 格纸可以划分为若干 $40 \times 40$ 和 $49 \times 49$格纸（这两种格纸都要有）.
+\end{example}
+\begin{solution}
+	$n=2000$ 时, 将 $2000 \times 2000$ 分出一个 $1960 \times 1960$ （用 $49 \times 49$ 铺满), 别的部分用 $40 \times 40$ 铺满, 故 $n=2000$ 满足.
+
+	设用 $a$ 块 $40 \times 40, b$ 块 $49 \times 49$ 铺满 $n \times n$ 格纸，则 $40^2 a+49^2 b=n^2$.
+
+	将从上往下第 $k$ 行，从左往右第 $j$ 列的交叉格内填上 $z^k w^j$ ，其中 $z=$ $\cos \frac{2 \pi}{40}+i \sin \frac{2 \pi}{40}, w=\cos \frac{2 \pi}{49}+i \sin \frac{2 \pi}{49}$, 则每个 $40 \times 40 、 49 \times 49$ 盖住的格子内数之和均为 0 ，故方格表内所有数之和均为 0 ，即
+	\begin{align*}
+		0=\left(z+z^2+\cdots+z^n\right)\left(w+w^2+\cdots+w^n\right)=z w \frac{z^n-1}{z-1} \cdot \frac{w^n-1}{w-1},
+	\end{align*}
+	故 $z^n=1$ 或 $w^n=1$, 因此 $40 \mid n$ 或 $49 \mid n$.
+
+	若 $40 \mid n$, 则 $40^2 \mid b$, 即 $b \geqslant 40^2$, 故 $n^2>49^2 b \geqslant(40 \times 49)^2$, 因此 $n>1960$,故 $n \geqslant 2000$.
+
+	若 $49 \mid n$, 与上述方法类似可得 $n \geqslant 2009$.
+
+	因此 $n$ 最小为 2000 .
+\end{solution}
+
+\begin{example}
+	设 $\varepsilon=\cos \frac{2 \pi}{n}+\mathrm{i} \sin \frac{2 \pi}{n}$, 求证：
+
+	(1) $(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right)=n$;
+
+	(2) $\sin \frac{\pi}{n} \sin \frac{2 \pi}{n} \cdots \sin \frac{(n-1) \pi}{n}=\frac{n}{2^{n-1}}$.
+\end{example}
+\begin{solution}
+	方程 $x^n-1=0$ 的 $n$ 个单位根是
+	\begin{align*}
+		\varepsilon_k=\cos \frac{2 k \pi}{n}+i \sin \frac{2 k \pi}{n},(k=0,1, \cdots, n-1)
+	\end{align*}
+
+	注意到 $\varepsilon=\cos \frac{2 \pi}{n}+\mathrm{i} \sin \frac{2 \pi}{n}$, 从而有 $\varepsilon_k=\varepsilon^k$.
+
+	于是, 由
+	\begin{align*}
+		x^n-1=(x-1)(x-\varepsilon)\left(x-\varepsilon^2\right) \cdots\left(x-\varepsilon^{n-1}\right)
+	\end{align*}
+
+	得
+	\begin{align*}
+		(x-\varepsilon)\left(x-\varepsilon^2\right) \cdots\left(x-\varepsilon^{n-1}\right)=\frac{x^n-1}{x-1}=x^{n-1}+x^{n-2}+\cdots+x+1 .
+	\end{align*}
+
+	即有
+	\begin{equation}\label{eq:11-1}
+		(x-\varepsilon)\left(x-\varepsilon^2\right) \cdots\left(x-\varepsilon^{n-1}\right)=x^{n-1}+x^{n-2}+\cdots+x+1 .
+	\end{equation}
+	(1) 在\autoref{eq:11-1}中, 令 $x=1$, 立得
+	\begin{equation}\label{eq:11-2}
+		(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right)=n .
+	\end{equation}
+	(2) 对\autoref{eq:11-2}的两边取模, 并注意到
+	\begin{align*}
+		\left|1-\varepsilon^k\right|=2 \sin \frac{k \pi}{n},
+	\end{align*}
+
+	立得
+	\begin{align*}
+		2^{n-1} \sin \frac{\pi}{n} \sin \frac{2 \pi}{n} \cdots \sin \frac{(n-1) \pi}{n}=n,
+	\end{align*}
+
+	即有
+	\begin{align*}
+		\sin \frac{\pi}{n} \sin \frac{2 \pi}{n} \cdots \sin \frac{(n-1) \pi}{n}=\frac{n}{2^{n-1}},
+	\end{align*}
+	证毕.
+\end{solution}
+
+\begin{example}
+	试求一切有序正整数对 $(n, k)$, 使得 $x^n+x+1$ 被 $x^k+x+1$ 整除.
+\end{example}
+\begin{solution}
+	显然， $n \geqslant k$ .
+	当 $n>k$ 时, 设 $\omega$ 是 $x^k+x+1=0$ 的一个根, 则 $\omega \neq 0, \omega^n+\omega+1=0$,于是
+	\begin{align*}
+		\omega^n-\omega^k=\omega^k\left(\omega^{n-k}-1\right)=0 .
+	\end{align*}
+
+	从而有
+	\begin{align*}
+		\omega^{n-k}=1 .
+	\end{align*}
+
+	由 $|\omega|^{n-k}=\left|\omega^{n-k}\right|=1$, 知 $|\omega|=1$ .
+	由 $1=|\omega|^k=\left|\omega^k\right|=|\omega+1|$, 可知 $\omega$ 的实部为 $-\frac{1}{2}$, 则 $k \geqslant 2$.
+	$\omega_1=\frac{-1+\sqrt{3} \mathrm{i}}{2}$ 或 $\omega_2=\frac{-1-\sqrt{3} \mathrm{i}}{2}$ 是 $x^k+x+1=0$ 的所有根, 从而有
+	\begin{align*}
+		x^k+x+1=\left(x-\omega_1\right)^{k_1}\left(x-\omega_2\right)^{k-k_1}, k_1 \in \mathbf{Z}, 0 \leqslant k_1 \leqslant k .
+	\end{align*}
+
+	若 $k>2$, 考虑上面等式两边含 $x^{k-1}$ 的项的系数, 便有 $k_1 \omega_1+\left(k-k_1\right) \omega_2=$ 0 , 考虑实部即有 $k=0$, 产生矛盾.
+
+	若 $k=2$, 令 $n \equiv l(\bmod 3), 0 \leqslant l<3$. 由 $\omega^n+\omega+1=\omega^l+\omega+1=0$,得 $l=2, n \equiv 2(\bmod 3)$ .
+	故知 $(n, k)=(k, k)$ 或 $(3 m+2,2), m$ 是正整数.
+\end{solution}
+
+\begin{example}
+	求证：不存在四个整系数多项式 $f_k(x)(k=1,2,3,4)$ ，使得恒等式
+	\begin{align*}
+		9 x+4=f_1^3(x)+f_2^3(x)+f_3^3(x)+f_4^3(x)
+	\end{align*}
+	成立.
+\end{example}
+\begin{solution}
+	记 $\omega$ 是三次单位根 $(\omega \neq 1)$ ，则对任意整系数多项式 $f(x)$ ，利用 $\omega^3=1$ 及 $\omega^2=-1-\omega$ 可将 $f(\omega)$ 化为 $a+b \omega$ ( $a 、 b$ 是整数), 于是 (注意 $1+$ $\left.\omega+\omega^2=0\right)$
+	\begin{align*}
+		f^3(\omega)=(a+b \omega)^3=a^3+b^3-3 a b^2+3 a b(a-b) \omega .
+	\end{align*}
+
+	由于 $a b(a-b)$ 总是偶数, 故若存在形如 (1) 的恒等式, 以 $x=\omega$ 代人, 即得
+	\begin{align*}
+		9 \omega+4=A+B \omega .
+	\end{align*}
+
+	这里 $A 、 B$ 都是整数, 且 $B$ 是偶数. 但由 (2)易知 $B=9$, 这显然不可能, 证毕.
+\end{solution}
+
+\begin{example}
+	设 $z_k(k=0,1, \cdots, n-1)$ 是 $z^n-1=0$ 的 $n$ 个根，定义
+	\begin{align*}
+		f(x)=a_m x^m+a_{m-1} x^{m-1}+\cdots+a_1 x+a_0,
+	\end{align*}
+	其中 $m$ 为小于 $n$ 的正整数, 求证: $\frac{1}{n} \sum_{k=0}^{n-1} f\left(z_k\right)=a_0$.
+\end{example}
+\begin{solution}
+	令 $z_k=\cos \frac{2 k \pi}{n}+\operatorname{isin} \frac{2 k \pi}{n}=z_1^k(k=0,1, \cdots, n-1)$, 则由 $l<n$时, $z_1^d \neq 1, z_1^n=1$, 知
+	\begin{align*}
+		\sum_{k=0}^{n-1} z_1^k=\frac{1-\left(z_1^l\right)^n}{1-z_1^l}=0
+	\end{align*}
+	所以 $\frac{1}{n} \sum_{k=0}^{n-1} f\left(z_k\right)=a_0$, 证毕.
+\end{solution}
+\begin{note}
+	本题可以看作一个很重要的引理, 使用很方便, 可参考下例.
+\end{note}
+
+\begin{example}
+	单位圆周上任意 $n$ 个点 $z_1, \cdots, z_n$. 求证：
+	\begin{align*}
+		\max _{|z|=1}\left|z-z_1\right| \cdots\left|z-z_n\right| \geqslant 2,
+	\end{align*}
+	并证明等号成立的充要条件是 $z_1, \cdots, z_n$ 构成正 $n$ 边形.
+\end{example}
+\begin{solution}
+	因为通过适当的旋转, 可设 $z_1 z_2 \cdots z_n=(-1)^n$. 记
+	\begin{align*}
+		P(z)=\left(z-z_1\right) \cdots\left(z-z_n\right)=z^n+a_1 z^{n-1}+\cdots+a_{n-1} z+1=z^n+f(z)+1,
+	\end{align*}
+
+	其中 $f(z)$ 或为零, 或次数不超过 $n-1$. 设 $\zeta_1, \zeta_2, \cdots, \zeta_n$ 是全部 $n$ 次单位根,则由上例知
+	\begin{align*}
+		f\left(\zeta_1\right)+\cdots+f\left(\zeta_n\right)=0 .
+	\end{align*}
+
+	如果 $f(z)$ 不恒为 0 , 则存在 $j$ 使 $f\left(\zeta_j\right) \neq 0$, 且 $\operatorname{Re} f\left(\zeta_j\right) \geqslant 0$, 故 $\left|P\left(\zeta_j\right)\right|=$ $\left|2+f\left(\zeta_j\right)\right|>2$ ；如 $f(z)$ 恒为 0 ，则当然有 $\left|P\left(\zeta_j\right)\right|=2$ .这就证明了(1).
+
+	上面的论证还表明, 如果(1)成立等号, 必须 $f\left(\zeta_j\right)=0(j=1,2, \cdots, n)$,这意味着 $f(z)=0$, 即 $P(z)=z^n+1$, 所以 $z_1, \cdots, z_n$ 构成正 $n$ 边形, 证毕.
+\end{solution}
+
+\subsubsection{习题}
+\begin{exercise}
+	求证: $\sin 1+\sin 2+\cdots+\sin n \leqslant \frac{1}{\sin \frac{1}{2}}$.
+\end{exercise}
+
+\begin{exercise}
+	方程 $x^{10}+(13 x-1)^{10}=0$ 的 10 个复数根分别为 $r_1, \overline{r_1}, r_2, \overline{r_2}, r_3, \overline{r_3}$, $r_4, \overline{r_4}, r_5, \overline{r_5}$. 求代数式 $\frac{1}{r_1 \overline{r_1}}+\frac{1}{r_2 \overline{r_2}}+\cdots+\frac{1}{r_5 \overline{r_5}}$ 的值.
+\end{exercise}
+
+\begin{exercise}
+	设 $f(x)=x^4+x^3+x^2+x+1$, 求 $f\left(x^5\right)$ 被 $f(x)$ 除得的余数.
+\end{exercise}
+
+\begin{exercise}
+	设 $f(x)$ 是复系数多项式, $n$ 是正整数, 求证: 如果 $(x-1) \mid f\left(x^n\right)$, 则 $\left(x^n-1\right) \mid f\left(x^n\right)$.
+\end{exercise}
+
+\begin{exercise}
+	设 $g(\theta)=\lambda_1 \cos \theta+\lambda_2 \cos 2 \theta+\cdots+\lambda_n \cos n \theta$, 其中 $\lambda_1, \lambda_2, \cdots, \lambda_n, \theta$ 均为实数. 若对一切实数 $\theta$, 恒有 $g(\theta) \geqslant-1$. 求证: $\lambda_1+\lambda_2+\cdots+\lambda_n \leqslant n$.
+\end{exercise}
+
+\begin{exercise}
+	有 $m$ 个男孩与 $n$ 个女孩围坐在一个圆周上 $(m>0, n>0, m+n \geqslant 3)$,将顺序相邻的 3 人中恰有 1 个男孩的组数记作 $a$, 顺序相邻的 3 人中恰有 1 个女孩的组数记作 $b$, 求证: $a-b$ 是 3 的倍数.
+\end{exercise}
+\subsection{复数的模与辐角}
+
+\section{赛题选讲}
