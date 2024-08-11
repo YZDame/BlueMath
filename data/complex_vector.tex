@@ -12,35 +12,35 @@
 
 (3) $(\lambda \vec{a}) \times \vec{b}=\vec{a} \times(\lambda \vec{b})=\lambda(\vec{a} \times \vec{b}) \quad(\lambda \in \mathbb{R})$.
 
-设 $\vec{a}=\left(a_x, a_y, a_z\right), \vec{b}=\left(b_x, b_y, b_z\right)$, 则
+设 $\vec{a}=\left(a_1, a_2, a_3\right), \vec{b}=\left(b_1, b_2, b_3\right)$, 则
 \begin{align*}
 	\begin{aligned}
 		\vec{a} \times \vec{b} & =\begin{vmatrix}
-			                          a_y & a_z \\
-			                          b_y & b_z
+			                          a_2 & a_3 \\
+			                          b_2 & b_3
 		                          \end{vmatrix} \vec{i}-\begin{vmatrix}
-			                                                a_x & a_z \\
-			                                                b_x & b_z
+			                                                a_1 & a_3 \\
+			                                                b_1 & b_3
 		                                                \end{vmatrix} \vec{j}+\begin{vmatrix}
-			                                                                      a_x & a_y \\
-			                                                                      b_x & b_y
+			                                                                      a_1 & a_2 \\
+			                                                                      b_1 & b_2
 		                                                                      \end{vmatrix} \vec{k} \\
 		                       & =\begin{vmatrix}
 			                          \vec{i} & \vec{j} & \vec{k} \\
-			                          a_x     & a_y     & a_z     \\
-			                          b_x     & b_y     & b_z
+			                          a_1     & a_2     & a_3     \\
+			                          b_1     & b_2     & b_3
 		                          \end{vmatrix} .
 	\end{aligned}
 \end{align*}
 
 \subsection{向量的混合积}
 三个向量 $\vec{a} , \vec{b} , \vec{c}$ 作运算 $(\vec{a} \times \vec{b}) \cdot \vec{c}$ 称为 $\vec{a} , \vec{b} , \vec{c}$ 的混合积, 记为 $(\vec{a}, \vec{b}, \vec{c})$.
-设 $\vec{a}=\left(a_x, a_y, a_z\right), \vec{b}=\left(b_x, b_y, b_z\right), \vec{c}=\left(c_x, c_y, c_z\right)$, 则
+设 $\vec{a}=\left(a_1, a_2, a_3\right), \vec{b}=\left(b_1, b_2, b_3\right), \vec{c}=\left(c_1, c_2, c_3\right)$, 则
 \begin{align*}
 	(\vec{a}, \vec{b}, \vec{c})=\begin{vmatrix}
-		                            a_x & a_y & a_z \\
-		                            b_x & b_y & b_z \\
-		                            c_x & c_y & c_z
+		                            a_1 & a_2 & a_3 \\
+		                            b_1 & b_2 & b_3 \\
+		                            c_1 & c_2 & c_3
 	                            \end{vmatrix} .
 \end{align*}
 
