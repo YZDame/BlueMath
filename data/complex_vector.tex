@@ -236,10 +236,17 @@
 
 	设 $L$ 与它们的交点分别为 $M_1\left(t_1, 2 t_1, t_1-1\right), M_2\left(t_2, 3 t_2-4,2 t_2-1\right)$.由 $M_0 ,  M_1 ,  M_2$ 三点共线知: $\overrightarrow{M_0 M_1} / / \overrightarrow{M_0 M_2}$, 故
 	\begin{align*}
-		\frac{t_1-1}{t_2-1}=\frac{2 t_1-1}{3 t_2-4-1}=\frac{t_1-1-1}{2 t_2-1-1} .
+		\overrightarrow{M_0 M_1} \times \overrightarrow{M_0 M_2} = \vec{0} .
 	\end{align*}
-
-	由 $\frac{t_1-1}{t_2-1}=\frac{t_1-2}{2 t_2-2}$ 知: $t_1=0$, 代入 $\frac{t_1-1}{t_2-1}=\frac{2 t_1-1}{3 t_2-5}$ 知: $t_2=2$.
+	即
+	\begin{align*}
+		\left|\begin{array}{ccc}
+			\vec{i} & \vec{j} & \vec{k} \\
+			t_1-1 & 2t_1-1 & t_1-2 \\
+			t_2-1 & 3t_2-5 & 2t_2-2
+		\end{array}\right|=\vec{0},
+	\end{align*}
+	解得$t_1=0, t_2=2$.
 
 	故 $M_1(0,0,-1), M_2(2,2,3)$, 由此得 $L$ 的方向向量 $\vec{s}=(2,2,4)$,故 $L$ 的方程为 $\frac{x-1}{1}=\frac{y-1}{1}=\frac{z-1}{2}$.
 \end{solution}
@@ -326,7 +333,7 @@
 \begin{solution}
 	在 $L_1$ 上找点 $A(-1,0,1), B(0,1,3)$, 在 $L_2$ 上找点 $C(0,-1,2)$, $D(1,2,6)$.
 
-	则 $\overrightarrow{A C}=(1,-1,1), \overrightarrow{A B}=(1,1,2), \overrightarrow{C D}=(1,3,4)$. 由结论4可知：
+	则 $\overrightarrow{A C}=(1,-1,1), \overrightarrow{A B}=(1,1,2), \overrightarrow{C D}=(1,3,4)$. 由混合积的几何意义可知：
 	\begin{align*}
 		d=\frac{\left| \begin{vmatrix}
 				               1 & -1 & 1 \\
@@ -387,7 +394,7 @@
 	\end{align*}
 \end{example}
 
-\begin{solution}
+\begin{proof}
 	设 $\zeta=\mathrm{e}^{\frac{2 \pi \mathrm{in}}{n}}, A_1, \cdots, A_n$ 对应的复数是 $1, \zeta, \zeta^2, \cdots, \zeta^{-1}$. 又设 $P$ 点 (对应的复数) 为 $z=\mathrm{e}^{i \theta}$. 则我们有
 	\begin{align*}
 		\begin{aligned}
@@ -396,8 +403,8 @@
 			                                 & =2 n-\bar{z} \sum_{k=0}^{n-1} \zeta^k-z \sum_{k=0}^{n-1} \zeta^{-k}=2 n,
 		\end{aligned}
 	\end{align*}
-	（最后一步应用了 $1+\zeta+\zeta^2+\cdots+\zeta^{-1}=0$ ）, 证毕.
-\end{solution}
+	(最后一步应用了 $1+\zeta+\zeta^2+\cdots+\zeta^{-1}=0$ ).
+\end{proof}
 
 \begin{example}
 	设 $P(x), Q(x), R(x)$ 及 $S(x)$ 都是多项式, 且
@@ -406,7 +413,7 @@
 	\end{align*}
 	求证： $x-1$ 是 $P(x), Q(x), R(x)$ 及 $S(x)$ 的公因式.
 \end{example}
-\begin{solution}
+\begin{proof}
 	设 $\zeta$ 是一个 5 次单位根 $(\zeta \neq 1)$, 在 (1) 中取 $x=\zeta, \zeta^2, \zeta^3, \zeta^4$ , 得出
 	\begin{align*}
 		\left(\zeta^k\right)^2 R(1)+\zeta^k Q(1)+P(1)=0(k=1,2,3,4),
@@ -417,15 +424,15 @@
 	从而必须 $R(1)=Q(1)=P(1)=0$ .
 
 	再将 $x=1$ 代入 (1), 得 $S(1)=0$ .
-
-	于是 $P(x), Q(x), R(x)$ 及 $S(x)$ 都有因式 $x-1$, 证毕.
-\end{solution}
+	
+	于是 $P(x), Q(x), R(x)$ 及 $S(x)$ 都有因式 $x-1$.
+\end{proof}
 
 \begin{example}
-	求最小的正整数 $n$,使 $n \times n$ 格纸可以划分为若干 $40 \times 40$ 和 $49 \times 49$格纸（这两种格纸都要有）.
+	求最小的正整数 $n$,使 $n \times n$ 格纸可以划分为若干 $40 \times 40$ 和 $49 \times 49$格纸(这两种格纸都要有).
 \end{example}
 \begin{solution}
-	$n=2000$ 时, 将 $2000 \times 2000$ 分出一个 $1960 \times 1960$ （用 $49 \times 49$ 铺满), 别的部分用 $40 \times 40$ 铺满, 故 $n=2000$ 满足.
+	$n=2000$ 时, 将 $2000 \times 2000$ 分出一个 $1960 \times 1960$ (用 $49 \times 49$ 铺满), 别的部分用 $40 \times 40$ 铺满, 故 $n=2000$ 满足.
 
 	设用 $a$ 块 $40 \times 40, b$ 块 $49 \times 49$ 铺满 $n \times n$ 格纸, 则 $40^2 a+49^2 b=n^2$.
 
@@ -449,7 +456,7 @@
 
 	(2) $\sin \frac{\pi}{n} \sin \frac{2 \pi}{n} \cdots \sin \frac{(n-1) \pi}{n}=\frac{n}{2^{n-1}}$.
 \end{example}
-\begin{solution}
+\begin{proof}
 	方程 $x^n-1=0$ 的 $n$ 个单位根是
 	\begin{align*}
 		\varepsilon_k=\cos \frac{2 k \pi}{n}+i \sin \frac{2 k \pi}{n},(k=0,1, \cdots, n-1)
@@ -487,11 +494,12 @@
 
 	即有
 	\begin{align*}
-		\sin \frac{\pi}{n} \sin \frac{2 \pi}{n} \cdots \sin \frac{(n-1) \pi}{n}=\frac{n}{2^{n-1}},
+		\sin \frac{\pi}{n} \sin \frac{2 \pi}{n} \cdots \sin \frac{(n-1) \pi}{n}=\frac{n}{2^{n-1}}.
 	\end{align*}
-	证毕.
-\end{solution}
+\end{proof}
 
+% 这题有一定难度，暂时删去
+\begin{comment}
 \begin{example}
 	试求一切有序正整数对 $(n, k)$, 使得 $x^n+x+1$ 被 $x^k+x+1$ 整除.
 \end{example}
@@ -519,6 +527,7 @@
 	若 $k=2$, 令 $n \equiv l(\bmod 3), 0 \leqslant l<3$. 由 $\omega^n+\omega+1=\omega^l+\omega+1=0$,得 $l=2, n \equiv 2(\bmod 3)$ .
 	故知 $(n, k)=(k, k)$ 或 $(3 m+2,2), m$ 是正整数.
 \end{solution}
+\end{comment}
 
 \begin{example}
 	求证：不存在四个整系数多项式 $f_k(x)(k=1,2,3,4)$ , 使得恒等式
@@ -527,7 +536,7 @@
 	\end{align}
 	成立.
 \end{example}
-\begin{solution}
+\begin{proof}
 	记 $\omega$ 是三次单位根 $(\omega \neq 1)$ , 则对任意整系数多项式 $f(x)$ , 利用 $\omega^3=1$ 及 $\omega^2=-1-\omega$ 可将 $f(\omega)$ 化为 $a+b \omega$ ( $a ,  b$ 是整数), 于是 (注意 $1+$ $\left.\omega+\omega^2=0\right)$
 	\begin{align*}
 		f^3(\omega)=(a+b \omega)^3=a^3+b^3-3 a b^2+3 a b(a-b) \omega .
@@ -538,8 +547,8 @@
 		9 \omega+4=A+B \omega .
 	\end{align}
 
-	这里 $A ,  B$ 都是整数, 且 $B$ 是偶数. 但由\autoref{eq:不存在四个整系数多项式-2}易知 $B=9$, 这显然不可能, 证毕.
-\end{solution}
+	这里 $A ,  B$ 都是整数, 且 $B$ 是偶数. 但由\autoref{eq:不存在四个整系数多项式-2}易知 $B=9$, 这显然不可能.
+\end{proof}
 
 \begin{example}
 	设 $z_k(k=0,1, \cdots, n-1)$ 是 $z^n-1=0$ 的 $n$ 个根, 定义
@@ -548,17 +557,19 @@
 	\end{align*}
 	其中 $m$ 为小于 $n$ 的正整数, 求证: $\frac{1}{n} \sum_{k=0}^{n-1} f\left(z_k\right)=a_0$.
 \end{example}
-\begin{solution}
-	令 $z_k=\cos \frac{2 k \pi}{n}+\operatorname{isin} \frac{2 k \pi}{n}=z_1^k(k=0,1, \cdots, n-1)$, 则由 $l<n$时, $z_1^d \neq 1, z_1^n=1$, 知
-	\begin{align*}
-		\sum_{k=0}^{n-1} z_1^k=\frac{1-\left(z_1^l\right)^n}{1-z_1^l}=0
-	\end{align*}
-	所以 $\frac{1}{n} \sum_{k=0}^{n-1} f\left(z_k\right)=a_0$, 证毕.
-\end{solution}
+\begin{proof}
+	令 $z_k=\cos \frac{2 k \pi}{n}+\operatorname{isin} \frac{2 k \pi}{n}=z_1^k(k=0,1, \cdots, n-1)$, 则由 $m<n$时, $z_1^l \neq 1, z_1^n=1$, 知
+	\begin{align}\label{eq:单位根m次幂求和}
+		\sum_{k=0}^{n-1} z_1^{km}=\frac{1-\left(z_1^m\right)^n}{1-z_1^m}=0
+	\end{align}
+	所以 $\frac{1}{n} \sum_{k=0}^{n-1} f\left(z_k\right)=a_0$(\autoref{eq:单位根m次幂求和}用到了性质4).
+\end{proof}
 \begin{note}
 	本题可以看作一个很重要的引理, 使用很方便, 可参考下例.
 \end{note}
 
+% 这题有一定难度，暂时删去
+\begin{comment}
 \begin{example}
 	单位圆周上任意 $n$ 个点 $z_1, \cdots, z_n$. 求证：
 	\begin{align}\label{eq:单位圆周上任意n个点}
@@ -581,20 +592,23 @@
 
 	上面的论证还表明, 如果\autoref{eq:单位圆周上任意n个点}等号成立, 必须 $f\left(\zeta_j\right)=0(j=1,2, \cdots, n)$,这意味着 $f(z)=0$, 即 $P(z)=z^n+1$, 所以 $z_1, \cdots, z_n$ 构成正 $n$ 边形, 证毕.
 \end{solution}
+\end{comment}
 
 \subsection{习题}
 \begin{exercise}
 	求证: $\sin 1+\sin 2+\cdots+\sin n \leqslant \frac{1}{\sin \frac{1}{2}}$.
 \end{exercise}
-\begin{solution}
+\begin{proof}
 	\begin{align*}
 		\begin{aligned}
 			\left|\sum_{k=1}^n \sin k\right| & \leqslant\left|\sum_{k=1}^n \mathrm{e}^{\mathrm{i} k}\right|=\left|\frac{\mathrm{e}^{\mathrm{i}}\left(1-\mathrm{e}^{\mathrm{i} n}\right)}{1-\mathrm{e}^{\mathrm{i}}}\right|=\left|\frac{1-\mathrm{e}^{\mathrm{i} n}}{1-\mathrm{e}^{\mathrm{i}}}\right| \\
 			                                 & =\frac{\left|1-\mathrm{e}^{\mathrm{i} n}\right|}{2 \sin \frac{1}{2}} \leqslant \frac{1+\left|\mathrm{e}^{\mathrm{i} n}\right|}{2 \sin \frac{1}{2}}=\frac{1}{\sin \frac{1}{2}} .
 		\end{aligned}
 	\end{align*}
-\end{solution}
+\end{proof}
 
+% 这题有一定难度，暂时删去
+\begin{comment}
 \begin{exercise}
 	方程 $x^{10}+(13 x-1)^{10}=0$ 的 10 个复数根分别为 $r_1, \overline{r_1}, r_2, \overline{r_2}, r_3, \overline{r_3}$, $r_4, \overline{r_4}, r_5, \overline{r_5}$. 求代数式 $\frac{1}{r_1 \overline{r_1}}+\frac{1}{r_2 \overline{r_2}}+\cdots+\frac{1}{r_5 \overline{r_5}}$ 的值.
 \end{exercise}
@@ -622,24 +636,26 @@
 
 	设 $\zeta \neq 1$ 是一个 5 次单位根, 则 $r(\zeta)=r\left(\zeta^2\right)=r\left(\zeta^3\right)=r\left(\zeta^1\right)=5$ , 而 $\operatorname{deg} r \leqslant 3$, 故必须 $r(x)=5$, 即余式是常数 5.
 \end{solution}
+\end{comment}
 
 \begin{exercise}
 	设 $f(x)$ 是复系数多项式, $n$ 是正整数, 求证: 如果 $(x-1) \mid f\left(x^n\right)$, 则 $\left(x^n-1\right) \mid f\left(x^n\right)$.
 \end{exercise}
-\begin{solution}
+\begin{proof}
 	$f\left(x^n\right)=(x-1) g(x)$.
-	取 $\zeta=\mathrm{e}^{\frac{2 \pi i}{n}}$ 是一个 $n$ 次单位根, 由 $f(1)=0$ 知,  $f\left(\zeta^{b n}\right)=0(k=1, \cdots, n)$.故 $f\left(x^n\right)$ 被 $(x-\zeta)\left(x-\zeta^2\right) \cdots\left(x-\zeta^n\right)=x^n-1$ 整除, 证毕. 
-\end{solution}
+	取 $\zeta=\mathrm{e}^{\frac{2 \pi i}{n}}$ 是一个 $n$ 次单位根, 由 $f(1)=0$ 知,  $f\left(\zeta^{k n}\right)=0(k=1, \cdots, n)$.故 $f\left(x^n\right)$ 被 $(x-\zeta)\left(x-\zeta^2\right) \cdots\left(x-\zeta^n\right)=x^n-1$ 整除. 
+\end{proof}
+
 
 \begin{exercise}
 	设 $g(\theta)=\lambda_1 \cos \theta+\lambda_2 \cos 2 \theta+\cdots+\lambda_n \cos n \theta$, 其中 $\lambda_1, \lambda_2, \cdots, \lambda_n, \theta$ 均为实数. 若对一切实数 $\theta$, 恒有 $g(\theta) \geqslant-1$. 求证: $\lambda_1+\lambda_2+\cdots+\lambda_n \leqslant n$.
 \end{exercise}
-\begin{solution}
+\begin{proof}
 	令 $\theta_k=\frac{2 k \pi}{n+1}, k=0,1,2, \cdots, n$, 则有
-	\begin{align*}
+	\begin{align}\label{eq:等分点余弦求和为0}
 		\sum_{k=0}^n \cos m \theta_k=\sum_{k=0}^n \sin m \theta_k=0, m=1,2, \cdots, n .
-	\end{align*}
-	（事实上,  $\sum_{k=0}^n \mathrm{e}^{\mathrm{i} m \theta_k}=\frac{1-\mathrm{e}^{\mathrm{i} m \cdot 2 \pi}}{1-\mathrm{e}^{\mathrm{i} m \frac{2 \pi}{n+1}}}=0$ , 于是(1)式成立）, 因此
+	\end{align}
+	(事实上,  $\sum_{k=0}^n \mathrm{e}^{\mathrm{i} m \theta_k}=\frac{1-\mathrm{e}^{\mathrm{i} m \cdot 2 \pi}}{1-\mathrm{e}^{\mathrm{i} m \frac{2 \pi}{n+1}}}=0$ , 于是\autoref{eq:等分点余弦求和为0}成立), 因此
 	\begin{align*}
 		\begin{aligned}
 			  & g(0)+g\left(\theta_1\right)+g\left(\theta_2\right)+\cdots+g\left(\theta_n\right)                                                    \\
@@ -652,14 +668,12 @@
 	\begin{align*}
 		\lambda_1+\lambda_2+\cdots+\lambda_n=g(0)=-\left[g\left(\theta_1\right)+g\left(\theta_2\right)+\cdots+g\left(\theta_n\right)\right] \leqslant n,
 	\end{align*}
-
-	证毕.
-\end{solution}
+\end{proof}
 
 \begin{exercise}
 	有 $m$ 个男孩与 $n$ 个女孩围坐在一个圆周上 $(m>0, n>0, m+n \geqslant 3)$,将顺序相邻的 3 人中恰有 1 个男孩的组数记作 $a$, 顺序相邻的 3 人中恰有 1 个女孩的组数记作 $b$, 求证: $a-b$ 是 3 的倍数.
 \end{exercise}
-\begin{solution}
+\begin{proof}
 	用 $a_k$ 表示小孩, 且将 $a_k$ 赋值为 $a_k=\left\{\begin{array}{l}\omega, a_k \text { 表示男孩时, } \\ \bar{\omega}, a_k \text { 表示女孩时. }\end{array}\right.$其中 $\omega=-\frac{1}{2}+\frac{\sqrt{3}}{2} \mathrm{i}$, 有 $\omega^{3 m}=1$, 并且
 	\begin{align*}
 		a_k a_{k+1} a_{k+2}= \begin{cases}\omega^{-1}, & \left(a_k, a_{k+1}, a_{k+2} \text { 中恰有一个男孩 }\right) \\ \omega, & \left(a_k, a_{k+1}, a_{k+2} \text { 中恰有一个女孩 }\right) \\ 1, & \left(a_k, a_{k+1}, a_{k+2} \text { 全是男(女) 孩 }\right)\end{cases}
@@ -672,8 +686,8 @@
 			  & =\omega^{b-a},
 		\end{aligned}
 	\end{align*}
-	故 $a-b$ 是 3 的倍数,证毕.
-\end{solution}
+	故 $a-b$ 是 3 的倍数.
+\end{proof}
 \begin{note}
 	本题相当于一个复数赋值问题.
 \end{note}
@@ -764,7 +778,7 @@
 
 	于是 $\left|x_0\right|^2-\left|x_0\right|-9 \leqslant 0$, 故 $\left|x_0\right| \leqslant \frac{1+\sqrt{37}}{2}<4$.
 	下面, 利用上述论断证明 $f(x)$ 在整系数范围内中不可约.
-	若存在非常数的整系数多项式 $g(x)$ 和 $h(x)$ , 使得 $f(x)=g(x) h(x)$ , 设 $g(x)=b_m\left(x-r_1\right) \cdots\left(x-r_m\right)$ . 对于 $g(10)$ 而言, 一方面 $g(10) \in \mathbb{Z}$ , 另一方面, 对 $1 \leqslant i \leqslant m$ , 由于 $r_i$ 也是 $f(x)$ 的根, 如果 $r_i \in \mathbb{R}$ , 则 $r_i \leqslant 0$ (否则, 由 $f(x)$ 的系数均非负, 将导数 $f\left(r_i\right)>0$, ）故 $10-r_i \geqslant 10$ ；如果 $r_i \notin \mathbb{R}$ , 则 $\bar{r}_i$ 也是 $f(x)$的根, 这时
+	若存在非常数的整系数多项式 $g(x)$ 和 $h(x)$ , 使得 $f(x)=g(x) h(x)$ , 设 $g(x)=b_m\left(x-r_1\right) \cdots\left(x-r_m\right)$ . 对于 $g(10)$ 而言, 一方面 $g(10) \in \mathbb{Z}$ , 另一方面, 对 $1 \leqslant i \leqslant m$ , 由于 $r_i$ 也是 $f(x)$ 的根, 如果 $r_i \in \mathbb{R}$ , 则 $r_i \leqslant 0$ (否则, 由 $f(x)$ 的系数均非负, 将导数 $f\left(r_i\right)>0$, )故 $10-r_i \geqslant 10$ ；如果 $r_i \notin \mathbb{R}$ , 则 $\bar{r}_i$ 也是 $f(x)$的根, 这时
 	\begin{align*}
 		\left(10-r_i\right)\left(10-\bar{r}_i\right)=100-20 \operatorname{Re}\left(r_i\right)+\left|r_i\right|^2>20,
 	\end{align*}
@@ -775,7 +789,7 @@
 \end{solution}
 
 \begin{example}
-	是否存在 2002 个不同的正实数 $a_1, a_2, \cdots, a_{2002}$ , 使得对任意正整数 $k, 1 \leqslant k \leqslant 2002$, 多项式 $a_{k+2001} x^{2001}+a_{k+2000} x^{2000}+\cdots+a_{k+1} x+a_k$ 的每个复根 $z$ 都满足 $|\operatorname{Im} z| \leqslant|\operatorname{Re} z|$ ？（约定 $a_{2002+i}=a_i, i=1,2, \cdots, 2001$ ）
+	是否存在 2002 个不同的正实数 $a_1, a_2, \cdots, a_{2002}$ , 使得对任意正整数 $k, 1 \leqslant k \leqslant 2002$, 多项式 $a_{k+2001} x^{2001}+a_{k+2000} x^{2000}+\cdots+a_{k+1} x+a_k$ 的每个复根 $z$ 都满足 $|\operatorname{Im} z| \leqslant|\operatorname{Re} z|$ ？(约定 $a_{2002+i}=a_i, i=1,2, \cdots, 2001$ )
 \end{example}
 \begin{solution}
 	不存在.
@@ -1013,7 +1027,7 @@
 	复系数多项式 $f(z)=z^n+a_1 z^{n-1}+\cdots+a_{n-1} z+a_n$ 的 $n$ 个根为 $z_1$, $z_2, \cdots, z_n$, 且 $\sum_{k=1}^n\left|a_k\right|^2 \leqslant 1$, 求证: $\sum_{k=1}^n\left|z_k\right|^2 \leqslant n$.
 \end{example}
 \begin{solution}
-	引理 1：若正实数 $x_1, x_2, \cdots, x_m$ 都不大于 1（或都不小于 1）, 则
+	引理 1：若正实数 $x_1, x_2, \cdots, x_m$ 都不大于 1(或都不小于 1), 则
 	\begin{align*}
 		x_1+x_2+\cdots+x_m \leqslant(m-1)+x_1 x_2 \cdots x_m .
 	\end{align*}
