@@ -241,10 +241,10 @@
 	即
 	\begin{align*}
 		\left|\begin{array}{ccc}
-			\vec{i} & \vec{j} & \vec{k} \\
-			t_1-1 & 2t_1-1 & t_1-2 \\
-			t_2-1 & 3t_2-5 & 2t_2-2
-		\end{array}\right|=\vec{0},
+			      \vec{i} & \vec{j} & \vec{k} \\
+			      t_1-1   & 2t_1-1  & t_1-2   \\
+			      t_2-1   & 3t_2-5  & 2t_2-2
+		      \end{array}\right|=\vec{0},
 	\end{align*}
 	解得$t_1=0, t_2=2$.
 
@@ -387,7 +387,7 @@
 	                                                                    \end{array}\right.
 \end{align*}
 
-\begin{example}
+\begin{example}\label{ex:已知单位圆的内接正 $n$ 边形}
 	已知单位圆的内接正 $n$ 边形 $A_1 A_2 \cdots A_n$ 及圆周上一点 $P$, 求证：
 	\begin{align*}
 		\sum_{k=1}^n\left|P A_k\right|^2=2 n .
@@ -405,6 +405,9 @@
 	\end{align*}
 	(最后一步应用了 $1+\zeta+\zeta^2+\cdots+\zeta^{-1}=0$ ).
 \end{proof}
+\begin{note}
+	更多有关单位圆内接正 $n$ 边形的类似问题请参见练习.
+\end{note}
 
 \begin{example}
 	设 $P(x), Q(x), R(x)$ 及 $S(x)$ 都是多项式, 且
@@ -424,7 +427,7 @@
 	从而必须 $R(1)=Q(1)=P(1)=0$ .
 
 	再将 $x=1$ 代入 (1), 得 $S(1)=0$ .
-	
+
 	于是 $P(x), Q(x), R(x)$ 及 $S(x)$ 都有因式 $x-1$.
 \end{proof}
 
@@ -564,12 +567,14 @@
 	\end{align}
 	所以 $\frac{1}{n} \sum_{k=0}^{n-1} f\left(z_k\right)=a_0$(\autoref{eq:单位根m次幂求和}用到了性质4).
 \end{proof}
+
+\begin{comment}
 \begin{note}
 	本题可以看作一个很重要的引理, 使用很方便, 可参考下例.
 \end{note}
 
 % 这题有一定难度，暂时删去
-\begin{comment}
+
 \begin{example}
 	单位圆周上任意 $n$ 个点 $z_1, \cdots, z_n$. 求证：
 	\begin{align}\label{eq:单位圆周上任意n个点}
@@ -595,6 +600,89 @@
 \end{comment}
 
 \subsection{习题}
+\begin{exercise}
+	已知单位圆的内接正 $n$ 边形 $A_1 A_2 \cdots A_n$ 及圆周上一点 $P$, 求证:
+\begin{multicols}{2}
+	(a) $\dsum_{k=1}^n\left|P A_k\right|^2=2 n$.
+
+	(b) $\dsum_{k=1}^n\left|P A_k\right|^4=6 n$.
+
+	(c) $\dsum_{j, k=1}^n\left|A_j A_k\right|^2=2 n^2$.
+
+	(d) $\dprod_{k=2}^n\left|A_1 A_k\right|=n$.
+
+	(e) $\max \dprod_{k=1}^n\left|P A_k\right|=2$.
+
+	(f) $\max \dsum_{k=1}^n\left|P A_k\right|=\frac{2}{\sin \frac{\pi}{2 n}}$.
+
+	(g) $\min \dsum_{k=1}^n\left|P A_k\right|=2 \cot \frac{\pi}{2 n}$.
+\end{multicols}
+	
+\end{exercise}
+\begin{proof}
+	以圆心 $O$ 为原点, 设 $A_1, A_2, \cdots, A_n$ 分别为 $1, \varepsilon, \varepsilon^2, \cdots, \varepsilon^{n-1}$, 这里 $\varepsilon$ 为 $n$ 次单位根 $\mathrm{e}^{\frac{2 \pi \mathrm{i}}{n}}$.又设 $P$ 为 $z = \mathrm{e}^{\mathrm{i} \theta}$.
+
+	(a) 见\autoref{ex:已知单位圆的内接正 $n$ 边形}.
+	
+	(b)
+	\begin{align*}
+		\sum_{k=1}^n\left|P A_k\right|^4 & =\sum_{k=0}^{n-1}\left|z-\varepsilon^k\right|^4                                                                                           \\
+		                                 & =\sum_{k=0}^{n-1}\left(z^2-2 z \varepsilon^k+\varepsilon^{2 k}\right)\left(\bar{z}^2-2 \bar{z} \varepsilon^{-k}+\varepsilon^{-2 k}\right) \\
+		                                 & =\sum_{k=0}^{n-1}\left(6-4 z \varepsilon^{-k}-4 \bar{z} \varepsilon^k+z^2 \varepsilon^{-2 k}+\bar{z}^2 \varepsilon^{2 k}\right)           \\
+		                                 & =6 n
+	\end{align*}
+
+	(c)
+	\begin{align*}
+		\sum_{j, k=1}^n\left|A_j A_k\right|^2 & =\sum_{j, k=1}^n\left(\varepsilon^j-\varepsilon^k\right)\left(\varepsilon^{-j}-\varepsilon^{-k}\right) \\
+		                                      & =\sum_{j, k=1}^n\left(2-\varepsilon^{j-k}-\varepsilon^{k-j}\right)                                     \\
+		                                      & =2 n^2 .
+	\end{align*}
+
+	(d)
+	\begin{align*}
+		\prod_{k=2}^n\left|A_1 A_k\right|=\left|(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right)\right|.
+	\end{align*}
+	因为
+	\begin{align}\label{eq:z^n-1}
+		z^n-1=(z-1)(z-\varepsilon)\left(z-\varepsilon^2\right) \cdots\left(z-\varepsilon^{n-1}\right),
+	\end{align}
+	所以
+	\begin{align}
+		z^{n-1}+z^{n-2}+\cdots+z+1=(z-\varepsilon)\left(z-\varepsilon^2\right) \cdots\left(z-\varepsilon^{n-1}\right).
+	\end{align}
+	令 $z=1$ 得
+	\begin{align*}
+		n=(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right).
+	\end{align*}
+	从而
+	\begin{align*}
+		\prod_{k=2}^n\left|A_1 A_k\right|=n.
+	\end{align*}
+
+	(e) 在\autoref{eq:z^n-1}两边取模得
+	\begin{align*}
+		\left|(z-1)(z-\varepsilon) \cdots\left(z-\varepsilon^{n-1}\right)\right|=\left|z^n-1\right| \leqslant|z|^n+1=2,
+	\end{align*}
+	即 $\dprod_{k=1}^n\left|P A_k\right| \leqslant 2,$
+
+	等号在 $z$ 为 -1 的 $n$ 次根, 即 $P$ 为 $\arc{{A_k} A_{k+1}}(k=1,2, \cdots, n$; $\left.A_{n+1}=A_1\right)$ 中点时成立.
+
+	(f) 不妨设 $P$ 在 $\arc{A_n A_1}$ 上, 这时
+	\begin{align*}
+		\sum_{k=1}^n\left|P A_k\right| & =\sum_{k=0}^{n-1}\left|z-\varepsilon^k\right| \cdot\left|\mathrm{e}^{\frac{-(k-1) \pi i}{n}}\right|                                                                                                                                                                   \\
+		                               & =\sum_{k=0}^{n-1}\left|z \mathrm{e}^{\frac{-(k-1) \pi i}{n}}-\mathrm{e}^{\frac{(k+1) \times i}{n}}\right|=\left|\sum_{k=0}^{n-1}\left(z \mathrm{e}^{\frac{(k-1) \pi i}{n}}-\mathrm{e}^{\frac{(k+1) \pi i}{n}}\right)\right|                                           \\
+		                               & =\left|\frac{2 z \mathrm{e}^{\frac{\pi}{n}}}{1-\mathrm{e}^{-\frac{\pi}{n}}}-\frac{2 \mathrm{e}^{\frac{\pi i}{n}}}{1-\mathrm{e}^{\frac{\pi i}{n}}}\right|=\frac{2\left|z \mathrm{e}^{\frac{\pi j}{n}}+1\right|}{\left|1-\mathrm{e}^{\frac{\pi}{\frac{\pi}{n}}}\right|} \\
+		                               & =\frac{2 \sqrt{\left(1+\cos \left(\theta+\frac{\pi}{n}\right)\right)^2+\sin ^2\left(\theta+\frac{\pi}{n}\right)}}{\sqrt{\left(1-\cos \frac{\pi}{n}\right)^2+\sin ^2 \frac{\pi}{n}}}=\frac{2\left|\cos \frac{\theta+\frac{\pi}{n}}{2}\right|}{\sin \frac{\pi}{2 n}}    \\
+		                               & \leqslant \frac{2}{\sin \frac{\pi}{2 n}} .
+	\end{align*}
+	当且仅当 $\theta=-\frac{\pi}{n}$, 即 $P$ 为 $\arc{A_n A_1}$ 中点时等号成立.
+
+	在证明中将 $P A_k$ 旋转 $-\frac{(k-1) \pi}{n}$ (即将 $z-\varepsilon^k$ 乘以 $\mathrm{e}^{-\frac{(k-1) \pi}{n}}$ )，是为了使 $\overrightarrow{P A_k}$ 都与 $\overrightarrow{P A_1}$ 同向 (即相应的复数辐角相同), 从而各复数模的和与和的模相等, 并通过求和得出结果.
+
+	(g) 在 $(f)$ 中, $\theta=0$ 或 $-\frac{\pi}{2 n}$ (即 $P$ 与 $A_1$ 或 $A_n$ 重合) 时, 取得最小值.
+\end{proof}
+
 \begin{exercise}
 	求证: $\sin 1+\sin 2+\cdots+\sin n \leqslant \frac{1}{\sin \frac{1}{2}}$.
 \end{exercise}
@@ -643,7 +731,7 @@
 \end{exercise}
 \begin{proof}
 	$f\left(x^n\right)=(x-1) g(x)$.
-	取 $\zeta=\mathrm{e}^{\frac{2 \pi i}{n}}$ 是一个 $n$ 次单位根, 由 $f(1)=0$ 知,  $f\left(\zeta^{k n}\right)=0(k=1, \cdots, n)$.故 $f\left(x^n\right)$ 被 $(x-\zeta)\left(x-\zeta^2\right) \cdots\left(x-\zeta^n\right)=x^n-1$ 整除. 
+	取 $\zeta=\mathrm{e}^{\frac{2 \pi i}{n}}$ 是一个 $n$ 次单位根, 由 $f(1)=0$ 知,  $f\left(\zeta^{k n}\right)=0(k=1, \cdots, n)$.故 $f\left(x^n\right)$ 被 $(x-\zeta)\left(x-\zeta^2\right) \cdots\left(x-\zeta^n\right)=x^n-1$ 整除.
 \end{proof}
 
 
