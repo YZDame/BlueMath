@@ -88,6 +88,6 @@
 \newcommand{\dsum}{\displaystyle\sum}
 \newcommand{\dprod}{\displaystyle\prod}
 
-\title{\textsc{BlueMath}: 高中数学竞赛小蓝本 \LaTeX 整理版（一试讲义）}
+\title{\textsc{BlueMath}: 高中数学竞赛一试讲义}
 \author{YZDame}
 \date{\today}

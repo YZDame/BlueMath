@@ -452,7 +452,7 @@
 	因此 $n$ 最小为 2000 .
 \end{solution}
 
-\begin{example}
+\begin{example}\label{ex:设varepsilon}
 	设 $\varepsilon=\cos \frac{2 \pi}{n}+\mathrm{i} \sin \frac{2 \pi}{n}$, 求证：
 
 	(1) $(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right)=n$;
@@ -561,7 +561,7 @@
 	其中 $m$ 为小于 $n$ 的正整数, 求证: $\frac{1}{n} \sum_{k=0}^{n-1} f\left(z_k\right)=a_0$.
 \end{example}
 \begin{proof}
-	令 $z_k=\cos \frac{2 k \pi}{n}+\operatorname{isin} \frac{2 k \pi}{n}=z_1^k(k=0,1, \cdots, n-1)$, 则由 $m<n$时, $z_1^l \neq 1, z_1^n=1$, 知
+	令 $z_k=\cos \frac{2 k \pi}{n}+\operatorname{isin} \frac{2 k \pi}{n}=z_1^k(k=0,1, \cdots, n-1)$, 则由 $m<n$时, $z_1^m \neq 1, z_1^n=1$, 知
 	\begin{align}\label{eq:单位根m次幂求和}
 		\sum_{k=0}^{n-1} z_1^{km}=\frac{1-\left(z_1^m\right)^n}{1-z_1^m}=0
 	\end{align}
@@ -600,89 +600,6 @@
 \end{comment}
 
 \subsection{习题}
-\begin{exercise}
-	已知单位圆的内接正 $n$ 边形 $A_1 A_2 \cdots A_n$ 及圆周上一点 $P$, 求证:
-\begin{multicols}{2}
-	(a) $\dsum_{k=1}^n\left|P A_k\right|^2=2 n$.
-
-	(b) $\dsum_{k=1}^n\left|P A_k\right|^4=6 n$.
-
-	(c) $\dsum_{j, k=1}^n\left|A_j A_k\right|^2=2 n^2$.
-
-	(d) $\dprod_{k=2}^n\left|A_1 A_k\right|=n$.
-
-	(e) $\max \dprod_{k=1}^n\left|P A_k\right|=2$.
-
-	(f) $\max \dsum_{k=1}^n\left|P A_k\right|=\frac{2}{\sin \frac{\pi}{2 n}}$.
-
-	(g) $\min \dsum_{k=1}^n\left|P A_k\right|=2 \cot \frac{\pi}{2 n}$.
-\end{multicols}
-	
-\end{exercise}
-\begin{proof}
-	以圆心 $O$ 为原点, 设 $A_1, A_2, \cdots, A_n$ 分别为 $1, \varepsilon, \varepsilon^2, \cdots, \varepsilon^{n-1}$, 这里 $\varepsilon$ 为 $n$ 次单位根 $\mathrm{e}^{\frac{2 \pi \mathrm{i}}{n}}$.又设 $P$ 为 $z = \mathrm{e}^{\mathrm{i} \theta}$.
-
-	(a) 见\autoref{ex:已知单位圆的内接正 $n$ 边形}.
-	
-	(b)
-	\begin{align*}
-		\sum_{k=1}^n\left|P A_k\right|^4 & =\sum_{k=0}^{n-1}\left|z-\varepsilon^k\right|^4                                                                                           \\
-		                                 & =\sum_{k=0}^{n-1}\left(z^2-2 z \varepsilon^k+\varepsilon^{2 k}\right)\left(\bar{z}^2-2 \bar{z} \varepsilon^{-k}+\varepsilon^{-2 k}\right) \\
-		                                 & =\sum_{k=0}^{n-1}\left(6-4 z \varepsilon^{-k}-4 \bar{z} \varepsilon^k+z^2 \varepsilon^{-2 k}+\bar{z}^2 \varepsilon^{2 k}\right)           \\
-		                                 & =6 n
-	\end{align*}
-
-	(c)
-	\begin{align*}
-		\sum_{j, k=1}^n\left|A_j A_k\right|^2 & =\sum_{j, k=1}^n\left(\varepsilon^j-\varepsilon^k\right)\left(\varepsilon^{-j}-\varepsilon^{-k}\right) \\
-		                                      & =\sum_{j, k=1}^n\left(2-\varepsilon^{j-k}-\varepsilon^{k-j}\right)                                     \\
-		                                      & =2 n^2 .
-	\end{align*}
-
-	(d)
-	\begin{align*}
-		\prod_{k=2}^n\left|A_1 A_k\right|=\left|(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right)\right|.
-	\end{align*}
-	因为
-	\begin{align}\label{eq:z^n-1}
-		z^n-1=(z-1)(z-\varepsilon)\left(z-\varepsilon^2\right) \cdots\left(z-\varepsilon^{n-1}\right),
-	\end{align}
-	所以
-	\begin{align}
-		z^{n-1}+z^{n-2}+\cdots+z+1=(z-\varepsilon)\left(z-\varepsilon^2\right) \cdots\left(z-\varepsilon^{n-1}\right).
-	\end{align}
-	令 $z=1$ 得
-	\begin{align*}
-		n=(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right).
-	\end{align*}
-	从而
-	\begin{align*}
-		\prod_{k=2}^n\left|A_1 A_k\right|=n.
-	\end{align*}
-
-	(e) 在\autoref{eq:z^n-1}两边取模得
-	\begin{align*}
-		\left|(z-1)(z-\varepsilon) \cdots\left(z-\varepsilon^{n-1}\right)\right|=\left|z^n-1\right| \leqslant|z|^n+1=2,
-	\end{align*}
-	即 $\dprod_{k=1}^n\left|P A_k\right| \leqslant 2,$
-
-	等号在 $z$ 为 -1 的 $n$ 次根, 即 $P$ 为 $\arc{{A_k} A_{k+1}}(k=1,2, \cdots, n$; $\left.A_{n+1}=A_1\right)$ 中点时成立.
-
-	(f) 不妨设 $P$ 在 $\arc{A_n A_1}$ 上, 这时
-	\begin{align*}
-		\sum_{k=1}^n\left|P A_k\right| & =\sum_{k=0}^{n-1}\left|z-\varepsilon^k\right| \cdot\left|\mathrm{e}^{\frac{-(k-1) \pi i}{n}}\right|                                                                                                                                                                   \\
-		                               & =\sum_{k=0}^{n-1}\left|z \mathrm{e}^{\frac{-(k-1) \pi i}{n}}-\mathrm{e}^{\frac{(k+1) \times i}{n}}\right|=\left|\sum_{k=0}^{n-1}\left(z \mathrm{e}^{\frac{(k-1) \pi i}{n}}-\mathrm{e}^{\frac{(k+1) \pi i}{n}}\right)\right|                                           \\
-		                               & =\left|\frac{2 z \mathrm{e}^{\frac{\pi}{n}}}{1-\mathrm{e}^{-\frac{\pi}{n}}}-\frac{2 \mathrm{e}^{\frac{\pi i}{n}}}{1-\mathrm{e}^{\frac{\pi i}{n}}}\right|=\frac{2\left|z \mathrm{e}^{\frac{\pi j}{n}}+1\right|}{\left|1-\mathrm{e}^{\frac{\pi}{\frac{\pi}{n}}}\right|} \\
-		                               & =\frac{2 \sqrt{\left(1+\cos \left(\theta+\frac{\pi}{n}\right)\right)^2+\sin ^2\left(\theta+\frac{\pi}{n}\right)}}{\sqrt{\left(1-\cos \frac{\pi}{n}\right)^2+\sin ^2 \frac{\pi}{n}}}=\frac{2\left|\cos \frac{\theta+\frac{\pi}{n}}{2}\right|}{\sin \frac{\pi}{2 n}}    \\
-		                               & \leqslant \frac{2}{\sin \frac{\pi}{2 n}} .
-	\end{align*}
-	当且仅当 $\theta=-\frac{\pi}{n}$, 即 $P$ 为 $\arc{A_n A_1}$ 中点时等号成立.
-
-	在证明中将 $P A_k$ 旋转 $-\frac{(k-1) \pi}{n}$ (即将 $z-\varepsilon^k$ 乘以 $\mathrm{e}^{-\frac{(k-1) \pi}{n}}$ )，是为了使 $\overrightarrow{P A_k}$ 都与 $\overrightarrow{P A_1}$ 同向 (即相应的复数辐角相同), 从而各复数模的和与和的模相等, 并通过求和得出结果.
-
-	(g) 在 $(f)$ 中, $\theta=0$ 或 $-\frac{\pi}{2 n}$ (即 $P$ 与 $A_1$ 或 $A_n$ 重合) 时, 取得最小值.
-\end{proof}
-
 \begin{exercise}
 	求证: $\sin 1+\sin 2+\cdots+\sin n \leqslant \frac{1}{\sin \frac{1}{2}}$.
 \end{exercise}
@@ -780,6 +697,97 @@
 	本题相当于一个复数赋值问题.
 \end{note}
 
+\begin{exercise}
+	已知单位圆的内接正 $n$ 边形 $A_1 A_2 \cdots A_n$ 及圆周上一点 $P$, 求证:
+	\begin{multicols}{2}
+		(a) $\dsum_{k=1}^n\left|P A_k\right|^2=2 n$.
+
+		(b) $\dsum_{k=1}^n\left|P A_k\right|^4=6 n$.
+
+		(c) $\dsum_{j, k=1}^n\left|A_j A_k\right|^2=2 n^2$.
+
+		(d) $\dprod_{k=2}^n\left|A_1 A_k\right|=n$.
+
+		(e) $\max \dprod_{k=1}^n\left|P A_k\right|=2$.
+	\end{multicols}
+\end{exercise}
+
+\begin{comment}
+(f) $\max \dsum_{k=1}^n\left|P A_k\right|=\frac{2}{\sin \frac{\pi}{2 n}}$.
+
+(g) $\min \dsum_{k=1}^n\left|P A_k\right|=2 \cot \frac{\pi}{2 n}$.
+\end{comment}
+
+\begin{proof}
+	以圆心 $O$ 为原点, 设 $A_1, A_2, \cdots, A_n$ 分别为 $1, \varepsilon, \varepsilon^2, \cdots, \varepsilon^{n-1}$, 这里 $\varepsilon$ 为 $n$ 次单位根 $\mathrm{e}^{\frac{2 \pi \mathrm{i}}{n}}$.又设 $P$ 为 $z = \mathrm{e}^{\mathrm{i} \theta}$.
+
+	(a) 见\autoref{ex:已知单位圆的内接正 $n$ 边形}. 关键在于应用了以下两个等式:
+	\begin{align}
+		\sum_{k=0}^{n-1} \varepsilon^k=0, \\
+		z \bar{z} = |z|^2.
+	\end{align}
+
+	(b)
+	\begin{align*}
+		\sum_{k=1}^n\left|P A_k\right|^4 & =\sum_{k=0}^{n-1}\left|z-\varepsilon^k\right|^4                                                                                           \\
+		                                 & =\sum_{k=0}^{n-1}\left(z^2-2 z \varepsilon^k+\varepsilon^{2 k}\right)\left(\bar{z}^2-2 \bar{z} \varepsilon^{-k}+\varepsilon^{-2 k}\right) \\
+		                                 & =\sum_{k=0}^{n-1}\left(6-4 z \varepsilon^{-k}-4 \bar{z} \varepsilon^k+z^2 \varepsilon^{-2 k}+\bar{z}^2 \varepsilon^{2 k}\right)           \\
+		                                 & =6 n
+	\end{align*}
+
+	(c)
+	\begin{align*}
+		\sum_{j, k=1}^n\left|A_j A_k\right|^2 & =\sum_{j, k=1}^n\left(\varepsilon^j-\varepsilon^k\right)\left(\varepsilon^{-j}-\varepsilon^{-k}\right) \\
+		                                      & =\sum_{j, k=1}^n\left(2-\varepsilon^{j-k}-\varepsilon^{k-j}\right)                                     \\
+		                                      & =2 n^2 .
+	\end{align*}
+
+	(d)其实就是\autoref{ex:设varepsilon}中的(1), 首先
+	\begin{align*}
+		\prod_{k=2}^n\left|A_1 A_k\right|=\left|(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right)\right|.
+	\end{align*}
+	因为
+	\begin{align}\label{eq:z^n-1}
+		z^n-1=(z-1)(z-\varepsilon)\left(z-\varepsilon^2\right) \cdots\left(z-\varepsilon^{n-1}\right),
+	\end{align}
+	所以
+	\begin{align}
+		z^{n-1}+z^{n-2}+\cdots+z+1=(z-\varepsilon)\left(z-\varepsilon^2\right) \cdots\left(z-\varepsilon^{n-1}\right).
+	\end{align}
+	令 $z=1$ 得
+	\begin{align*}
+		n=(1-\varepsilon)\left(1-\varepsilon^2\right) \cdots\left(1-\varepsilon^{n-1}\right).
+	\end{align*}
+	从而
+	\begin{align*}
+		\prod_{k=2}^n\left|A_1 A_k\right|=n.
+	\end{align*}
+
+	(e) 在\autoref{eq:z^n-1}两边取模得
+	\begin{align*}
+		\left|(z-1)(z-\varepsilon) \cdots\left(z-\varepsilon^{n-1}\right)\right|=\left|z^n-1\right| \leqslant|z|^n+1=2,
+	\end{align*}
+	即 $\dprod_{k=1}^n\left|P A_k\right| \leqslant 2,$
+
+	等号在 $z$ 为 $-1$ 的 $n$ 次根, 即 $P$ 为 $\arc{{A_k}A_{k+1}}(k=1,2, \cdots, n$; $\left.A_{n+1}=A_1\right)$ 中点时成立.
+\end{proof}
+
+\begin{comment}
+(f) 不妨设 $P$ 在 $\arc{A_n A_1}$ 上, 这时
+\begin{align*}
+	\sum_{k=1}^n\left|P A_k\right| & =\sum_{k=0}^{n-1}\left|z-\varepsilon^k\right| \cdot\left|\mathrm{e}^{\frac{-(k-1) \pi i}{n}}\right|                                                                                                                                                                   \\
+	                               & =\sum_{k=0}^{n-1}\left|z \mathrm{e}^{\frac{-(k-1) \pi i}{n}}-\mathrm{e}^{\frac{(k+1) \times i}{n}}\right|=\left|\sum_{k=0}^{n-1}\left(z \mathrm{e}^{\frac{(k-1) \pi i}{n}}-\mathrm{e}^{\frac{(k+1) \pi i}{n}}\right)\right|                                           \\
+	                               & =\left|\frac{2 z \mathrm{e}^{\frac{\pi}{n}}}{1-\mathrm{e}^{-\frac{\pi}{n}}}-\frac{2 \mathrm{e}^{\frac{\pi i}{n}}}{1-\mathrm{e}^{\frac{\pi i}{n}}}\right|=\frac{2\left|z \mathrm{e}^{\frac{\pi j}{n}}+1\right|}{\left|1-\mathrm{e}^{\frac{\pi}{\frac{\pi}{n}}}\right|} \\
+	                               & =\frac{2 \sqrt{\left(1+\cos \left(\theta+\frac{\pi}{n}\right)\right)^2+\sin ^2\left(\theta+\frac{\pi}{n}\right)}}{\sqrt{\left(1-\cos \frac{\pi}{n}\right)^2+\sin ^2 \frac{\pi}{n}}}=\frac{2\left|\cos \frac{\theta+\frac{\pi}{n}}{2}\right|}{\sin \frac{\pi}{2 n}}    \\
+	                               & \leqslant \frac{2}{\sin \frac{\pi}{2 n}} .
+\end{align*}
+当且仅当 $\theta=-\frac{\pi}{n}$, 即 $P$ 为 $\arc{A_n A_1}$ 中点时等号成立.
+
+在证明中将 $P A_k$ 旋转 $-\frac{(k-1) \pi}{n}$ (即将 $z-\varepsilon^k$ 乘以 $\mathrm{e}^{-\frac{(k-1) \pi}{n}}$ )，是为了使 $\overrightarrow{P A_k}$ 都与 $\overrightarrow{P A_1}$ 同向 (即相应的复数辐角相同), 从而各复数模的和与和的模相等, 并通过求和得出结果.
+
+(g) 在 $(f)$ 中, $\theta=0$ 或 $-\frac{\pi}{2 n}$ (即 $P$ 与 $A_1$ 或 $A_n$ 重合) 时, 取得最小值.
+\end{comment}
+
 
 \section{复数的模与辐角}
 \begin{example}
@@ -809,6 +817,8 @@
 	将一个等于 0 的式子中起主要作用的项移到 0 的那边, 再两边取模,用不等式放缩, 是一个重要的技巧.
 \end{note}
 
+% 这题没什么意思
+\begin{comment}
 \begin{example}
 	设 $n(\geqslant 3)$ 个复数 $z_1, z_2, \cdots, z_n$ 满足
 
@@ -820,6 +830,7 @@
 \end{example}
 \begin{solution}
 	只需证明: 复数 $z_i(1 \leqslant i \leqslant n)$ 中, 必有两个复数 $z_k$ 和 $z_l(k \neq l)$, 它们之间的夹角不小于 $120^{\circ}$ .
+
 	对此用反证法予以证明, 若不存在满足条件的 $z_k$ 和 $z_l$, 经过对复平面作适当的旋转, 不妨设 $z_1$ 对应的向量 $\overrightarrow{O Z_1}$ 落在实轴的正半轴上, 作射线 $O A$ ,  $O B$, 使得
 	\begin{align*}
 		\angle x O A=120^{\circ}, \angle A O B=120^{\circ},
@@ -845,7 +856,10 @@
 		|z| \leqslant \max \left\{\left|z_i\right|,\left|z_j\right|\right\}<1 .
 	\end{align*}
 \end{note}
+\end{comment}
 
+% 这题有点难度，暂时删去
+\begin{comment}
 \begin{example}
 	设 $p=\overline{a_n a_{n-1} \cdots a_0}=a_n \times 10^n+a_{n-1} \times 10^{n-1}+\cdots+a_1 \times 10+a_0$ 是十进制表示下的一个质数, 这里 $a_n>0$. 证明: $f(x)=a_n x^n+\cdots+a_0$ 在整系数范围内不可约.
 \end{example}
@@ -875,7 +889,9 @@
 	但是, $f(10)=g(10) h(10)$ 为质数,矛盾. 证毕.
 	注 从本题的证明过程中我们知道：多项式根的分布情况对多项式的分解起着举足轻重的作用.
 \end{solution}
+\end{comment}
 
+% 这道题目关键在于Vieta定理
 \begin{example}
 	是否存在 2002 个不同的正实数 $a_1, a_2, \cdots, a_{2002}$ , 使得对任意正整数 $k, 1 \leqslant k \leqslant 2002$, 多项式 $a_{k+2001} x^{2001}+a_{k+2000} x^{2000}+\cdots+a_{k+1} x+a_k$ 的每个复根 $z$ 都满足 $|\operatorname{Im} z| \leqslant|\operatorname{Re} z|$ ？(约定 $a_{2002+i}=a_i, i=1,2, \cdots, 2001$ )
 \end{example}
@@ -889,12 +905,10 @@
 			      & =\left(\operatorname{Re} z_j\right)^2-\left(\operatorname{Im} z_j\right)^2+2\left(\operatorname{Re} z_j\right)\left(\operatorname{Im} z_j\right) \mathrm{i},
 		\end{aligned}
 	\end{align*}
-
 	即 $z_j^2$ 的实部 $\operatorname{Re}\left(z_j^2\right)=\left(\operatorname{Re} z_j\right)^2-\left(\operatorname{Im} z_j\right)^2 \geqslant 0(1 \leqslant j \leqslant 2001)$ , 所以
 	\begin{align*}
 		\operatorname{Re}\left(z_1^2+z_2^2+\cdots+z_{2001}^2\right)=\operatorname{Re}\left(z_1^2\right)+\operatorname{Re}\left(z_2^2\right)+\cdots+\operatorname{Re}\left(z_{2001}^2\right) \geqslant 0 .
 	\end{align*}
-
 	而由韦达定理
 	\begin{align*}
 		z_1+z_2+\cdots+z_{2001}=\frac{-a_{k+2000}}{a_{k+2001}},
@@ -902,7 +916,6 @@
 	\begin{align*}
 		\sum_{1 \leqslant j \leqslant l \leqslant 2001} z_j z_l=\frac{a_{k+1999}}{a_{k+2001}}
 	\end{align*}
-
 	所以
 	\begin{align*}
 		\begin{aligned}
@@ -910,22 +923,21 @@
 			                              & =\frac{a_{k+2000}^2-2 a_{k+1999} a_{k+2001}}{a_{k+2001}^2},
 		\end{aligned}
 	\end{align*}
-
 	即 $z_1^2+z_2^2+\cdots+z_{2001}^2$ 是一个实数.
 	又由(1)知, 其实部 $\geqslant 0$, 所以它是一个非负实数, 即
 	\begin{align*}
 		\frac{a_{k+2000}^2-2 a_{k+1999} a_{k+2001}}{a_{k+2001}^2} \geqslant 0 \Rightarrow a_{k+2000}^2-2 a_{k+1999} a_{k+2001} \geqslant 0 .
 	\end{align*}
-
 	上式对每个 $1 \leqslant k \leqslant 2002$ 均成立, 即当 $1 \leqslant j \leqslant 2002$, 均有 $a_j^2-$ $2 a_{j-1} a_{j+1} \geqslant 0$ . 但这是不可能的, 事实上:
 	设 $a_{j_0}$ 是 $a_1, a_2, \cdots, a_{2002}$ 中最小的一个, 那么
 	\begin{align*}
 		a_{j_0}^2-2 a_{j_0-1} a_{j_0+1} \leqslant a_{j_0}^2-2 a_{j_0} a_{j_0}=-a_{j_0}^2<0,
 	\end{align*}
-
 	矛盾.
 \end{solution}
 
+% 这些题目有点难度，暂时删去
+\begin{comment}
 \begin{example}
 	$n$ 是正整数, $a_j(j=1,2, \cdots, n)$ 为复数, 且对集合 $\{1,2, \cdots, n\}$的任一非空子集 $I$, 均有
 	\begin{align*}
@@ -1193,6 +1205,116 @@
 
 	所以 $\sum_{i=1}^n\left|z_i\right|^2 \leqslant k-1+(n-k-1)+2=n$, 证毕.
 \end{solution}
-
+\end{comment}
 
 \section{赛题选讲}
+\begin{example}
+	给定一个凸六边形,其任意两条对边具有如下性质: 它们的中点之间的距离等于它们的长度和的 $\frac{\sqrt{3}}{2}$ 倍. 证明：该六边形的所有内角相等(一个凸六边形 $A B C D E F$ 有 3 组对边: $A B$ 和 $D E, B C$ 和 $E F, C D$ 和 $F A$ ).
+\end{example}
+\begin{solution}
+	引理: $\triangle P Q R$ 中, $\angle Q P R \geqslant 60^{\circ}, L$ 为 $Q R$ 中点. 则 $P L \leqslant \frac{\sqrt{3}}{2} Q R$,等号当且仅当 $\triangle P Q R$ 为正三角形时取到.
+
+	引理的证明: 设 $S$ 为平面上一点, 使得 $P$ 与 $S$ 在 $Q R$ 的同侧, 而 $\triangle Q R S$ 为正三角形. 则由于 $\angle Q P R \geqslant 60^{\circ}$, 故 $P$ 在 $\triangle Q R S$ 的外接圆的内部 (包括边界).而 $\triangle Q R S$ 的外接圆落在以 $L$ 为圆心, $\frac{\sqrt{3}}{2} Q R$ 为半径的圆内. 所以引理获证.
+
+	设 $A B C D E F$ 为给定的凸六边形, 记 $\vec{a}=\overrightarrow{A B}, \vec{b}=\overrightarrow{B C}, \cdots, \vec{f}=\overrightarrow{F A}$. 并设 $M 、 N$ 分别为 $A B$ 和 $D E$ 的中点. 则
+	\begin{align*}
+		\begin{aligned}
+			\overrightarrow{M N} & =\frac{1}{2} \vec{a}+\vec{b}+\vec{c}+\frac{1}{2} \vec{d},   \\
+			\overrightarrow{M N} & =-\frac{1}{2} \vec{a}-\vec{f}-\vec{e}-\frac{1}{2} \vec{d} .
+		\end{aligned}
+	\end{align*}
+	于是
+	\begin{align}\label{eq:3.4.1-1}
+		\overrightarrow{M N}=\frac{1}{2}(\vec{b}+\vec{c}-\vec{e}-\vec{f}).
+	\end{align}
+	由条件, 我们有
+	\begin{align}\label{eq:3.4.1-2}
+		\overrightarrow{M N}=\frac{\sqrt{3}}{2}(|\vec{a}|+|\vec{d}|) \geqslant \frac{\sqrt{3}}{2}|\vec{a}-\vec{d}| .
+	\end{align}
+	记 $\vec{x}=\vec{a}-\vec{d}, \vec{y}=\vec{c}-\vec{f}, \vec{z}=\vec{e}-\vec{b}$, 由\autoref{eq:3.4.1-1}\autoref{eq:3.4.1-2}可得
+	\begin{align}\label{eq:3.4.1-3}
+		 & |\vec{y}-\vec{z}| \geqslant \sqrt{3}|\vec{x}| . \\
+		 & |\vec{z}-\vec{x}| \geqslant \sqrt{3}|\vec{y}|,  \\
+		 & |\vec{x}-\vec{y}| \geqslant \sqrt{3}|\vec{z}| .
+	\end{align}
+	上式可写成
+	\begin{align*}
+		|\vec{y}|^2-2 \vec{y} \cdot \vec{z}+|\vec{z}|^2 \geqslant 3|\vec{x}|^2; \\
+		|\vec{z}|^2-2 \vec{z} \cdot \vec{x}+|\vec{x}|^2 \geqslant 3|\vec{y}|^2; \\
+		|\vec{x}|^2-2 \vec{x} \cdot \vec{y}+|\vec{y}|^2 \geqslant 3|\vec{z}|^2.
+	\end{align*}
+	上述 3 式相加，得
+	\begin{align*}
+		-|\vec{x}|^2-|\vec{y}|^2-|\vec{z}|^2-2 \vec{y} \cdot \vec{z}-2 \vec{z} \cdot \vec{x}-2 \vec{x} \cdot \vec{y} \geqslant 0 .
+	\end{align*}
+	即 $-|\vec{x}+\vec{y}+\vec{z}| \geqslant 0$. 因此 $\vec{x}+\vec{y}+\vec{z}=0$, 并且上述所有不等式全部取等号. 于是
+	\begin{align*}
+		\vec{x}+\vec{y}+\vec{z}=0,
+	\end{align*}
+	\begin{align*}
+		\begin{aligned}
+			 & |\vec{y}-\vec{z}|=\sqrt{3}|\vec{x}|, \vec{a} / / \vec{d} / / \vec{x},  \\
+			 & |\vec{z}-\vec{x}|=\sqrt{3}|\vec{y}|, \vec{c} / / \vec{f} / / \vec{y},  \\
+			 & |\vec{x}-\vec{y}|=\sqrt{3}|\vec{z}|, \vec{e} / / \vec{b} / / \vec{z} .
+		\end{aligned}
+	\end{align*}
+	现在设 $\triangle P Q R$ 中, $\overrightarrow{P Q}=\vec{x}, \overrightarrow{Q R}=\vec{y}, \overrightarrow{R P}=\vec{z}$, 并不妨设 $\angle Q P R \geqslant 60^{\circ}$. $L$ 为 $Q R$ 中点, 则 $P L=\frac{1}{2}|\vec{z}-\vec{x}|=\frac{\sqrt{3}}{2}|\vec{y}|=\frac{\sqrt{3}}{2} Q R$. 利用引理可知, $\triangle P Q R$ 为正三角形. 于是, $\angle A B C=\angle B C D=\cdots=\angle F A B=120^{\circ}$, 证毕.
+\end{solution}
+
+\begin{example}
+	设实数 $a 、 b 、 c 、 d$ 满足 $b-d \geqslant 5$ ，实数 $x_1 、 x_2 、 x_3 、 x_4$ 为多项式 $P(x)=x^4+a x^3+b x^2+c x+d$ 的零点, 求 $\left(x_1^2+1\right)\left(x_2^2+1\right)\left(x_3^2+1\right)\left(x_4^2+1\right)$的最小值.
+\end{example}
+\begin{solution}
+	\begin{align*}
+		\begin{aligned}
+			\prod_{k=1}^4\left(x_k^2+1\right) & =\prod_{k=1}^4\left(x_k-\mathrm{i}\right)\left(x_k+\mathrm{i}\right)                                                                            \\
+			                                  & =\left[\prod_{k=1}^4\left(\mathrm{i}-x_k\right)\right]\left[\prod_{k=1}^4\left(-\mathrm{i}-x_k\right)\right]=P(\mathrm{i}) \cdot P(-\mathrm{i}) \\
+			                                  & =\left(\mathrm{i}^4+a \mathrm{i}^3+b \mathrm{i}^2+c \mathrm{i}+d\right)\left(\mathrm{i}^4-a \mathrm{i}^3+b \mathrm{i}^2-c \mathrm{i}+d\right)   \\
+			                                  & =[(1+d-b)+\mathrm{i}(c-a)][(1+d-b)-\mathrm{i}(c-a)]                                                                                             \\
+			                                  & =(b-d-1)^2+(c-a)^2,
+		\end{aligned}
+	\end{align*}
+	由 $b-d \geqslant 5$ 知, $(b-d-1)^2+(c-a)^2 \geqslant 4^2+0^2=16$, 当
+	\begin{align*}
+		P(x)=x^4+4 x^3+6 x^2+4 x+1=(x+1)^4
+	\end{align*}
+	时, $b-d=5, x_1=x_2=x_3=x_4=-1,\left(x_1^2+1\right)\left(x_2^2+1\right)\left(x_3^2+1\right)\left(x_4^2+1\right)$取到最小值 16.
+\end{solution}
+
+\begin{example}
+	设 $x_1, x_2, \cdots, x_n ; y_1, y_2, \cdots, y_n$ 均为模等于 1 的复数，设
+	\begin{align*}
+		z_i=x y_i+y x_i-x_i y_i(i=1,2, \cdots, n),
+	\end{align*}
+	其中 $x=\frac{1}{n} \sum_{i=1}^n x_i, y=\frac{1}{n} \sum_{i=1}^n y_i$.
+
+	证明: $\sum_{i=1}^n\left|z_i\right| \leqslant n$.
+\end{example}
+\begin{solution}
+	因为
+	\begin{equation}\label{eq:3.4.3-1}
+		\begin{aligned}
+			2 \sum_{i=1}^n\left|z_i\right| & =\sum_{i=1}^n\left|\left(2 x y_i-x_i y_i\right)+\left(2 y x_i-x_i y_i\right)\right|         \\
+			                               & \leqslant \sum_{i=1}^n\left|2 x y_i-x_i y_i\right|+\sum_{i=1}^n\left|2 y x_i-x_i y_i\right| \\
+			                               & =\sum_{i=1}^n\left|2 x-x_i\right|+\sum_{i=1}^n\left|2 y-y_i\right| .
+		\end{aligned}
+	\end{equation}
+	由柯西不等式知
+	\begin{align*}
+		\begin{aligned}
+			\left(\sum_{i=1}^n\left|2 x-x_i\right|\right)^2 & \leqslant n \sum_{i=1}^n\left|2 x-x_i\right|^2                                             \\
+			                                                & =n \sum_{i=1}^n\left(2 x-x_i\right)\left(2 \bar{x}-\overline{x_i}\right)                   \\
+			                                                & =n \cdot\left(4 n|x|^2+n-2 x \sum_{i=1}^n \overline{x_i}-2 \bar{x} \sum_{i=1}^n x_i\right) \\
+			                                                & =n^2 .
+		\end{aligned}
+	\end{align*}
+	即
+	\begin{align}\label{eq:3.4.3-2}
+		\sum_{i=1}^n\left|2 x-x_i\right| \leqslant n,
+	\end{align}
+	同理
+	\begin{align}\label{eq:3.4.3-3}
+		\sum_{i=1}^n\left|2 y-y_i\right| \leqslant n .
+	\end{align}
+	由\autoref{eq:3.4.3-1}\autoref{eq:3.4.3-2}\autoref{eq:3.4.3-3}即得 $\sum_{i=1}^n\left|z_i\right| \leqslant n$, 得证.
+\end{solution}
