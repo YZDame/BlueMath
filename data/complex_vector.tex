@@ -501,7 +501,7 @@
 	\end{align*}
 \end{proof}
 
-% 这题有一定难度，暂时删去
+% 这题有一定难度, 暂时删去
 \begin{comment}
 \begin{example}
 	试求一切有序正整数对 $(n, k)$, 使得 $x^n+x+1$ 被 $x^k+x+1$ 整除.
@@ -573,7 +573,7 @@
 	本题可以看作一个很重要的引理, 使用很方便, 可参考下例.
 \end{note}
 
-% 这题有一定难度，暂时删去
+% 这题有一定难度, 暂时删去
 
 \begin{example}
 	单位圆周上任意 $n$ 个点 $z_1, \cdots, z_n$. 求证：
@@ -612,7 +612,7 @@
 	\end{align*}
 \end{proof}
 
-% 这题有一定难度，暂时删去
+% 这题有一定难度, 暂时删去
 \begin{comment}
 \begin{exercise}
 	方程 $x^{10}+(13 x-1)^{10}=0$ 的 10 个复数根分别为 $r_1, \overline{r_1}, r_2, \overline{r_2}, r_3, \overline{r_3}$, $r_4, \overline{r_4}, r_5, \overline{r_5}$. 求代数式 $\frac{1}{r_1 \overline{r_1}}+\frac{1}{r_2 \overline{r_2}}+\cdots+\frac{1}{r_5 \overline{r_5}}$ 的值.
@@ -783,7 +783,7 @@
 \end{align*}
 当且仅当 $\theta=-\frac{\pi}{n}$, 即 $P$ 为 $\arc{A_n A_1}$ 中点时等号成立.
 
-在证明中将 $P A_k$ 旋转 $-\frac{(k-1) \pi}{n}$ (即将 $z-\varepsilon^k$ 乘以 $\mathrm{e}^{-\frac{(k-1) \pi}{n}}$ )，是为了使 $\overrightarrow{P A_k}$ 都与 $\overrightarrow{P A_1}$ 同向 (即相应的复数辐角相同), 从而各复数模的和与和的模相等, 并通过求和得出结果.
+在证明中将 $P A_k$ 旋转 $-\frac{(k-1) \pi}{n}$ (即将 $z-\varepsilon^k$ 乘以 $\mathrm{e}^{-\frac{(k-1) \pi}{n}}$ ), 是为了使 $\overrightarrow{P A_k}$ 都与 $\overrightarrow{P A_1}$ 同向 (即相应的复数辐角相同), 从而各复数模的和与和的模相等, 并通过求和得出结果.
 
 (g) 在 $(f)$ 中, $\theta=0$ 或 $-\frac{\pi}{2 n}$ (即 $P$ 与 $A_1$ 或 $A_n$ 重合) 时, 取得最小值.
 \end{comment}
@@ -858,7 +858,7 @@
 \end{note}
 \end{comment}
 
-% 这题有点难度，暂时删去
+% 这题有点难度, 暂时删去
 \begin{comment}
 \begin{example}
 	设 $p=\overline{a_n a_{n-1} \cdots a_0}=a_n \times 10^n+a_{n-1} \times 10^{n-1}+\cdots+a_1 \times 10+a_0$ 是十进制表示下的一个质数, 这里 $a_n>0$. 证明: $f(x)=a_n x^n+\cdots+a_0$ 在整系数范围内不可约.
@@ -906,9 +906,9 @@
 		\end{aligned}
 	\end{align*}
 	即 $z_j^2$ 的实部 $\operatorname{Re}\left(z_j^2\right)=\left(\operatorname{Re} z_j\right)^2-\left(\operatorname{Im} z_j\right)^2 \geqslant 0(1 \leqslant j \leqslant 2001)$ , 所以
-	\begin{align*}
+	\begin{align}\label{eq:实部大于0}
 		\operatorname{Re}\left(z_1^2+z_2^2+\cdots+z_{2001}^2\right)=\operatorname{Re}\left(z_1^2\right)+\operatorname{Re}\left(z_2^2\right)+\cdots+\operatorname{Re}\left(z_{2001}^2\right) \geqslant 0 .
-	\end{align*}
+	\end{align}
 	而由韦达定理
 	\begin{align*}
 		z_1+z_2+\cdots+z_{2001}=\frac{-a_{k+2000}}{a_{k+2001}},
@@ -924,7 +924,7 @@
 		\end{aligned}
 	\end{align*}
 	即 $z_1^2+z_2^2+\cdots+z_{2001}^2$ 是一个实数.
-	又由(1)知, 其实部 $\geqslant 0$, 所以它是一个非负实数, 即
+	又由\autoref{eq:实部大于0}知, 其实部 $\geqslant 0$, 所以它是一个非负实数, 即
 	\begin{align*}
 		\frac{a_{k+2000}^2-2 a_{k+1999} a_{k+2001}}{a_{k+2001}^2} \geqslant 0 \Rightarrow a_{k+2000}^2-2 a_{k+1999} a_{k+2001} \geqslant 0 .
 	\end{align*}
@@ -935,8 +935,34 @@
 	\end{align*}
 	矛盾.
 \end{solution}
+\begin{note}[韦达定理]
+	对称多项式的研究来源于一元 $n$ 次多项式根与系数的关系. 设 $x$ 是复数域 $\mathbb{C}$ 上的未定元, 代数基本定理告诉我们,  $\mathbb{C}[x]$ 中的任意一个 $n$ 次首 1 多项式 $f(x)=x^n+a_1 x^{n-1}+\cdots+a_{n-1} x+a_n$ 在 $\mathbb{C}$ 中有 $n$ 个根 $c_1, c_2, \cdots, c_n$ , (允许有重根). 于是
+	\begin{align}\label{eq:多项式根与系数关系}
+		f(x)=\left(x-c_1\right)\left(x-c_2\right) \cdots\left(x-c_n\right) .
+	\end{align}
+	将\autoref{eq:多项式根与系数关系}右端展开, 比较两端 $x$ 同次方幂的系数, 就得到了 $a_1, a_2, \cdots, a_n$ 通过根 $c_1, c_2, \cdots, c_n$ 的表达式:
+	\begin{equation}\label{eq:系数与根的关系}
+		\begin{array}{rlrl}
+			a_1 & =             & -\left(c_1+c_2+\cdots+c_n\right)                                \\
+			    & \cdots \cdots                                                                   \\
+			a_k & =             & (-1)^k \sum_{i_1<i_2<\cdots<i_k} c_{i_1} c_{i_2} \cdots c_{i_k} \\
+			    & \cdots \cdots                                                                   \\
+			a_n & =             & (-1)^n c_1 c_2 \cdots c_n .
+		\end{array}
+	\end{equation}
+	\autoref{eq:系数与根的关系}叫作韦达公式(F. Viete, 法国数学家, 1540—1603).
+	当 $n=2$ 时, 设 $f(x)=x^2+a_1 x+a_2$ 的根为 $c_1, c_2$, 那么
+	\begin{align*}
+		\begin{aligned}
+			c_1+c_2 & =-a_1 \\
+			c_1 c_2 & =a_2
+		\end{aligned}
+	\end{align*}
+	就是我们在中学学习过的韦达定理.
+	如果多项式 $f(x)$ 不是首 1 的, 即首项系数 $a_0 \neq 1$, 那么韦达公式给出了比值 $\frac{a_i}{a_0}$ 的表达式.
+\end{note}
 
-% 这些题目有点难度，暂时删去
+% 这些题目有点难度, 暂时删去
 \begin{comment}
 \begin{example}
 	$n$ 是正整数, $a_j(j=1,2, \cdots, n)$ 为复数, 且对集合 $\{1,2, \cdots, n\}$的任一非空子集 $I$, 均有
@@ -1243,7 +1269,7 @@
 		|\vec{z}|^2-2 \vec{z} \cdot \vec{x}+|\vec{x}|^2 \geqslant 3|\vec{y}|^2; \\
 		|\vec{x}|^2-2 \vec{x} \cdot \vec{y}+|\vec{y}|^2 \geqslant 3|\vec{z}|^2.
 	\end{align*}
-	上述 3 式相加，得
+	上述 3 式相加, 得
 	\begin{align*}
 		-|\vec{x}|^2-|\vec{y}|^2-|\vec{z}|^2-2 \vec{y} \cdot \vec{z}-2 \vec{z} \cdot \vec{x}-2 \vec{x} \cdot \vec{y} \geqslant 0 .
 	\end{align*}
@@ -1262,7 +1288,7 @@
 \end{solution}
 
 \begin{example}
-	设实数 $a 、 b 、 c 、 d$ 满足 $b-d \geqslant 5$ ，实数 $x_1 、 x_2 、 x_3 、 x_4$ 为多项式 $P(x)=x^4+a x^3+b x^2+c x+d$ 的零点, 求 $\left(x_1^2+1\right)\left(x_2^2+1\right)\left(x_3^2+1\right)\left(x_4^2+1\right)$的最小值.
+	设实数 $a 、 b 、 c 、 d$ 满足 $b-d \geqslant 5$ , 实数 $x_1 、 x_2 、 x_3 、 x_4$ 为多项式 $P(x)=x^4+a x^3+b x^2+c x+d$ 的零点, 求 $\left(x_1^2+1\right)\left(x_2^2+1\right)\left(x_3^2+1\right)\left(x_4^2+1\right)$的最小值.
 \end{example}
 \begin{solution}
 	\begin{align*}
@@ -1282,7 +1308,7 @@
 \end{solution}
 
 \begin{example}
-	设 $x_1, x_2, \cdots, x_n ; y_1, y_2, \cdots, y_n$ 均为模等于 1 的复数，设
+	设 $x_1, x_2, \cdots, x_n ; y_1, y_2, \cdots, y_n$ 均为模等于 1 的复数, 设
 	\begin{align*}
 		z_i=x y_i+y x_i-x_i y_i(i=1,2, \cdots, n),
 	\end{align*}
