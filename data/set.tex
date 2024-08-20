@@ -368,7 +368,7 @@ $\complement_{U}(A \cup B)=\complement_{U} A \cap \complement_{U} B$.
 	由属于集合 $A$ 且不属于集合 $B$, 或属于集合 $B$ 且不属于集合 $A$的全体元素组成的集合叫做集合 $A$ 和 $B$ 的对称差,记作 $A \triangle B$, 即
 	$$
 		\begin{aligned}
-			A \triangle B & =(A-B) \cup(B-A)                                                                         \\
+			A \triangle B & =(A-B) \cup(B-A)                                                                            \\
 			              & =\{x \mid x \in A \text { 且 } x \notin B, \text { 或 } x \in B \text { 且 } x \notin A\} .
 		\end{aligned}
 	$$
@@ -413,37 +413,37 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 利用维恩图可以清晰地理解集合的交、并、补、差运算及其运算律. 维恩图为集合问题的解决提供了一个直观的工具.
 \begin{figure}[ht]
 	\centering
-	
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%Shape: Rectangle [id:dp7072478037374308] 
-\draw   (247,73) -- (446.4,73) -- (446.4,181.6) -- (247,181.6) -- cycle ;
-%Shape: Ellipse [id:dp7336265334601111] 
-\draw   (254.4,136.6) .. controls (254.4,120.58) and (279.02,107.6) .. (309.4,107.6) .. controls (339.78,107.6) and (364.4,120.58) .. (364.4,136.6) .. controls (364.4,152.62) and (339.78,165.6) .. (309.4,165.6) .. controls (279.02,165.6) and (254.4,152.62) .. (254.4,136.6) -- cycle ;
-%Shape: Ellipse [id:dp8796498546563649] 
-\draw   (329.4,134.6) .. controls (329.4,118.58) and (354.02,105.6) .. (384.4,105.6) .. controls (414.78,105.6) and (439.4,118.58) .. (439.4,134.6) .. controls (439.4,150.62) and (414.78,163.6) .. (384.4,163.6) .. controls (354.02,163.6) and (329.4,150.62) .. (329.4,134.6) -- cycle ;
-
-% Text Node
-\draw (254,80.4) node [anchor=north west][inner sep=0.75pt]    {$U$};
-% Text Node
-\draw (333,80.4) node [anchor=north west][inner sep=0.75pt]    {$1,9$};
-% Text Node
-\draw (297.5,110.9) node [anchor=north west][inner sep=0.75pt]    {$A$};
-% Text Node
-\draw (381.5,108.9) node [anchor=north west][inner sep=0.75pt]    {$B$};
-% Text Node
-\draw (276.5,132.4) node [anchor=north west][inner sep=0.75pt]    {$3,5,7$};
-% Text Node
-\draw (339.5,126.4) node [anchor=north west][inner sep=0.75pt]    {$2$};
-% Text Node
-\draw (371.5,130.4) node [anchor=north west][inner sep=0.75pt]    {$4,6,8$};
 
 
-\end{tikzpicture}
+	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+	\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+		%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+		%Shape: Rectangle [id:dp7072478037374308] 
+		\draw   (247,73) -- (446.4,73) -- (446.4,181.6) -- (247,181.6) -- cycle ;
+		%Shape: Ellipse [id:dp7336265334601111] 
+		\draw   (254.4,136.6) .. controls (254.4,120.58) and (279.02,107.6) .. (309.4,107.6) .. controls (339.78,107.6) and (364.4,120.58) .. (364.4,136.6) .. controls (364.4,152.62) and (339.78,165.6) .. (309.4,165.6) .. controls (279.02,165.6) and (254.4,152.62) .. (254.4,136.6) -- cycle ;
+		%Shape: Ellipse [id:dp8796498546563649] 
+		\draw   (329.4,134.6) .. controls (329.4,118.58) and (354.02,105.6) .. (384.4,105.6) .. controls (414.78,105.6) and (439.4,118.58) .. (439.4,134.6) .. controls (439.4,150.62) and (414.78,163.6) .. (384.4,163.6) .. controls (354.02,163.6) and (329.4,150.62) .. (329.4,134.6) -- cycle ;
+
+		% Text Node
+		\draw (254,80.4) node [anchor=north west][inner sep=0.75pt]    {$U$};
+		% Text Node
+		\draw (333,80.4) node [anchor=north west][inner sep=0.75pt]    {$1,9$};
+		% Text Node
+		\draw (297.5,110.9) node [anchor=north west][inner sep=0.75pt]    {$A$};
+		% Text Node
+		\draw (381.5,108.9) node [anchor=north west][inner sep=0.75pt]    {$B$};
+		% Text Node
+		\draw (276.5,132.4) node [anchor=north west][inner sep=0.75pt]    {$3,5,7$};
+		% Text Node
+		\draw (339.5,126.4) node [anchor=north west][inner sep=0.75pt]    {$2$};
+		% Text Node
+		\draw (371.5,130.4) node [anchor=north west][inner sep=0.75pt]    {$4,6,8$};
+
+
+	\end{tikzpicture}
 	\caption{}
 	\label{fig:Venn}
 \end{figure}
@@ -500,9 +500,9 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 	$(A \cup B) \cap C=(A \cap C) \cup(B \cap C), A \cap C$ 与 $B \cap C$ 分别为方程组
 
 	(i) $\left\{\begin{array}{l}a x+y=1, \\ x^{2}+y^{2}=1,\end{array}\right.$
-    \qquad
+	\qquad
 	(ii) $\left\{\begin{array}{l}x+a y=1, \\ x^{2}+y^{2}=1\end{array}\right.$
-	
+
 	的解集.
 
 	由 (i) 解得 $(x, y)=(0,1),\left(\frac{2 a}{1+a^{2}}, \frac{1-a^{2}}{1+a^{2}}\right)$;
@@ -512,7 +512,7 @@ $(B \cap C) \times A=(B \times A) \cap(C \times A)$.
 	(1) 使 $(A \cup B) \cap C$ 恰有两个元素的情况只有两种可能:
 
 	\ding{172} $\left\{\begin{array}{l}\frac{2 a}{1+a^{2}}=0, \\ \frac{1-a^{2}}{1+a^{2}}=1 ;\end{array}\right.$
-    \qquad
+	\qquad
 	\ding{173} $\left\{\begin{array}{l}\frac{2 a}{1+a^{2}}=1 \\ \frac{1-a^{2}}{1+a^{2}}=0 .\end{array}\right.$\\
 	由\ding{172}得 $a=0$; 由\ding{173}得 $a=1$.
 
@@ -767,7 +767,7 @@ $$
 
 	故
 	\begin{equation}
-		\sum_{S \subseteq\{1,2, \cdots, m\}} \sum_{i=1}^{n}(-1)^{\left|B_{i} \cap s\right|} a_{i}>0 
+		\sum_{S \subseteq\{1,2, \cdots, m\}} \sum_{i=1}^{n}(-1)^{\left|B_{i} \cap s\right|} a_{i}>0
 		\label{eq:鲍勃和爱丽丝}
 	\end{equation}
 
@@ -1117,7 +1117,7 @@ $$
 
 \begin{example}
 	设集合 $F$ 是一个非空有限的整数集, $n$ 为正整数, 满足
-	
+
 	(1) 对任意的 $x \in F$, 均有
 	$$
 		x=y+z(y, z \in F) \text {; }
@@ -1579,43 +1579,43 @@ $$
 
 	由于 $Y_{1} \backslash Y_{2} \subseteq Z$, 则 $x_{1} \in Z \backslash Y_{2}$ (如~\autoref{fig:完美集合族}).
 
-\begin{figure}[ht]
-	\centering
-	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+	\begin{figure}[ht]
+		\centering
+		\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
-	\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-		%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+		\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+			%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
 
-		%Shape: Ellipse [id:dp4986066503370681] 
-		\draw   (186,119.57) .. controls (186,94.96) and (210.18,75) .. (240,75) .. controls (269.82,75) and (294,94.96) .. (294,119.57) .. controls (294,144.19) and (269.82,164.15) .. (240,164.15) .. controls (210.18,164.15) and (186,144.19) .. (186,119.57) -- cycle ;
-		%Shape: Ellipse [id:dp843936435141502] 
-		\draw   (254,118.57) .. controls (254,93.96) and (278.18,74) .. (308,74) .. controls (337.82,74) and (362,93.96) .. (362,118.57) .. controls (362,143.19) and (337.82,163.15) .. (308,163.15) .. controls (278.18,163.15) and (254,143.19) .. (254,118.57) -- cycle ;
-		%Shape: Ellipse [id:dp9951733970596428] 
-		\draw  [fill={rgb, 255:red, 155; green, 155; blue, 155 }  ,fill opacity=0.26 ] (223,168.57) .. controls (223,143.96) and (247.18,124) .. (277,124) .. controls (306.82,124) and (331,143.96) .. (331,168.57) .. controls (331,193.19) and (306.82,213.15) .. (277,213.15) .. controls (247.18,213.15) and (223,193.19) .. (223,168.57) -- cycle ;
-		%Shape: Circle [id:dp10790237532892788] 
-		\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (267.38,106.14) .. controls (267.38,105.59) and (267.83,105.15) .. (268.37,105.15) .. controls (268.92,105.15) and (269.36,105.59) .. (269.36,106.14) .. controls (269.36,106.68) and (268.92,107.13) .. (268.37,107.13) .. controls (267.83,107.13) and (267.38,106.68) .. (267.38,106.14) -- cycle ;
-		%Shape: Circle [id:dp38669899440893385] 
-		\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (244.38,141.14) .. controls (244.38,140.59) and (244.83,140.15) .. (245.37,140.15) .. controls (245.92,140.15) and (246.36,140.59) .. (246.36,141.14) .. controls (246.36,141.68) and (245.92,142.13) .. (245.37,142.13) .. controls (244.83,142.13) and (244.38,141.68) .. (244.38,141.14) -- cycle ;
+			%Shape: Ellipse [id:dp4986066503370681] 
+			\draw   (186,119.57) .. controls (186,94.96) and (210.18,75) .. (240,75) .. controls (269.82,75) and (294,94.96) .. (294,119.57) .. controls (294,144.19) and (269.82,164.15) .. (240,164.15) .. controls (210.18,164.15) and (186,144.19) .. (186,119.57) -- cycle ;
+			%Shape: Ellipse [id:dp843936435141502] 
+			\draw   (254,118.57) .. controls (254,93.96) and (278.18,74) .. (308,74) .. controls (337.82,74) and (362,93.96) .. (362,118.57) .. controls (362,143.19) and (337.82,163.15) .. (308,163.15) .. controls (278.18,163.15) and (254,143.19) .. (254,118.57) -- cycle ;
+			%Shape: Ellipse [id:dp9951733970596428] 
+			\draw  [fill={rgb, 255:red, 155; green, 155; blue, 155 }  ,fill opacity=0.26 ] (223,168.57) .. controls (223,143.96) and (247.18,124) .. (277,124) .. controls (306.82,124) and (331,143.96) .. (331,168.57) .. controls (331,193.19) and (306.82,213.15) .. (277,213.15) .. controls (247.18,213.15) and (223,193.19) .. (223,168.57) -- cycle ;
+			%Shape: Circle [id:dp10790237532892788] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (267.38,106.14) .. controls (267.38,105.59) and (267.83,105.15) .. (268.37,105.15) .. controls (268.92,105.15) and (269.36,105.59) .. (269.36,106.14) .. controls (269.36,106.68) and (268.92,107.13) .. (268.37,107.13) .. controls (267.83,107.13) and (267.38,106.68) .. (267.38,106.14) -- cycle ;
+			%Shape: Circle [id:dp38669899440893385] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (244.38,141.14) .. controls (244.38,140.59) and (244.83,140.15) .. (245.37,140.15) .. controls (245.92,140.15) and (246.36,140.59) .. (246.36,141.14) .. controls (246.36,141.68) and (245.92,142.13) .. (245.37,142.13) .. controls (244.83,142.13) and (244.38,141.68) .. (244.38,141.14) -- cycle ;
 
-		% Text Node
-		\draw (172,72.5) node [anchor=north west][inner sep=0.75pt]    {$Y_{1}$};
-		% Text Node
-		\draw (362.5,91.5) node [anchor=north west][inner sep=0.75pt]    {$Y_{2}$};
-		% Text Node
-		\draw (219,99.5) node [anchor=north west][inner sep=0.75pt]    {$\emptyset $};
-		% Text Node
-		\draw (314,94) node [anchor=north west][inner sep=0.75pt]    {$\emptyset $};
-		% Text Node
-		\draw (237.2,143.76) node [anchor=north west][inner sep=0.75pt]    {$x_{1}$};
-		% Text Node
-		\draw (271.2,96.36) node [anchor=north west][inner sep=0.75pt]    {$x_{2}$};
-		% Text Node
-		\draw (320.48,195.16) node [anchor=north west][inner sep=0.75pt]    {$Z$};
+			% Text Node
+			\draw (172,72.5) node [anchor=north west][inner sep=0.75pt]    {$Y_{1}$};
+			% Text Node
+			\draw (362.5,91.5) node [anchor=north west][inner sep=0.75pt]    {$Y_{2}$};
+			% Text Node
+			\draw (219,99.5) node [anchor=north west][inner sep=0.75pt]    {$\emptyset $};
+			% Text Node
+			\draw (314,94) node [anchor=north west][inner sep=0.75pt]    {$\emptyset $};
+			% Text Node
+			\draw (237.2,143.76) node [anchor=north west][inner sep=0.75pt]    {$x_{1}$};
+			% Text Node
+			\draw (271.2,96.36) node [anchor=north west][inner sep=0.75pt]    {$x_{2}$};
+			% Text Node
+			\draw (320.48,195.16) node [anchor=north west][inner sep=0.75pt]    {$Z$};
 
 
-	\end{tikzpicture}
-	\caption{}\label{fig:完美集合族}
-\end{figure}
+		\end{tikzpicture}
+		\caption{}\label{fig:完美集合族}
+	\end{figure}
 
 	因为 $Z$ 为元素最少的非空集合, 且 $Y_{2}$ 不为空集,所以, $|Z| \leqslant\left|Y_{2}\right|$.
 
@@ -1701,9 +1701,407 @@ $$
 \end{solution}
 
 \section{集合的性质}
-\section{集合中的最大(小)值}
-\section{集合的分划}
-\section{分类原则}
-\section{极端原理}
-\section{ 容斥原理}
-\section{ 映射方法}
+很多集合问题实际上是研究集合的性质的问题. 由集合的概括原则, 我们知道集合 $\{x \mid P(x)\}$ 是由满足性质 $P$ 的元素组成的, 因此除了研究一般集合的性质外, 我们更多地是研究具体的集合所满足的性质 $P$ 的等价形式或推论, 如对特定整数的集合、有理数的集合等的研究.
+
+在这里, 我们无意于也无此必要介绍太多集合论的知识, 利用中学已有的集合知识和解题中体悟的逻辑方法, 我们就能理解本书中的全部内容.
+
+\subsection{集合的整体性质}
+已知集合 $S=\{x \mid P(x)\}$. 如果由性质 $P$ 能推出 $S$ 中每个元素都满足的性质 $P^{\prime}$, 那么 $P^{\prime}$ 就是 $P$ 的一个必要条件. 设 $S^{\prime}=\left\{x \mid P^{\prime}(x)\right\}$, 显然有 $S \subseteq S^{\prime}$.
+\begin{example}
+	已知数集 $M$ 至少有 3 个元素, 且对 $M$ 中任何两个不同的元素 $a$ 、 $b$, 数 $a^{2}+b \sqrt{2}$ 都是有理数, 证明: 对于 $M$ 中任何数 $a$, 数 $a \sqrt{2}$ 都是有理数.
+\end{example}
+\begin{analysis}
+	设 $a, b \in M$ 且 $a \neq b$, 则 $a^{2}+b \sqrt{2} \in \mathbb{Q}, b^{2}+a \sqrt{2} \in \mathbb{Q}$. 于是有 $a^{2}+$ $b \sqrt{2}-\left(b^{2}+a \sqrt{2}\right)=\frac{1}{2}(a \sqrt{2}-b \sqrt{2})(a \sqrt{2}+b \sqrt{2}-2) \in \mathbb{Q}$. 若能证明 $a \sqrt{2}-$ $b \sqrt{2} \in \mathbb{Q}$ 或 $a \sqrt{2}+b \sqrt{2} \in \mathbb{Q}$, 则问题迎刃而解. 但已给条件似乎不够用! 不过另设 $c \in M, c \neq a, c \neq b$, 则 $c^{2}+a \sqrt{2} \in \mathbb{Q}, c^{2}+b \sqrt{2} \in \mathbb{Q}$, 便得到
+	$$
+		c^{2}+a \sqrt{2}-\left(c^{2}+b \sqrt{2}\right)=a \sqrt{2}-b \sqrt{2} \in \mathbb{Q}
+	$$
+\end{analysis}
+\begin{proof}
+	任取 $a, b, c \in M$, 且 $a 、 b 、 c$ 互不相等, 则 $a^{2}+b \sqrt{2}, b^{2}+a \sqrt{2}, c^{2}$ $+a \sqrt{2}, c^{2}+b \sqrt{2} \in \mathbb{Q}$. 因此
+	$$
+		\begin{aligned}
+			  & a^{2}+b \sqrt{2}-\left(b^{2}+a \sqrt{2}\right)=(a-b)(a+b-\sqrt{2})         \\
+			= & \frac{1}{2}(a \sqrt{2}-b \sqrt{2})(a \sqrt{2}+b \sqrt{2}-2) \in \mathbb{Q}
+		\end{aligned}
+	$$
+
+	$$
+		c^{2}+a \sqrt{2}-\left(c^{2}+b \sqrt{2}\right)=(a \sqrt{2}-b \sqrt{2}) \in \mathbb{Q}
+	$$
+	从而 $a \sqrt{2}+b \sqrt{2}-2 \in \mathbb{Q}$, 所以 $a \sqrt{2}+b \sqrt{2} \in \mathbb{Q}$.
+
+	所以
+
+	$$
+		a \sqrt{2}=\frac{1}{2}(a \sqrt{2}+b \sqrt{2}+a \sqrt{2}-b \sqrt{2}) \in \mathbb{Q}
+	$$
+\end{proof}
+
+\begin{example}
+	在平面上给定无穷多个点, 已知它们之间的距离都是整数, 求证这些点都在一条直线上.
+\end{example}
+\begin{analysis}
+	“无穷”和“整数”是两个关键词, 去其一, 则结论不成立. 下面我们就是利用这两点“制造”矛盾来反证结论成立.
+\end{analysis}
+\begin{proof}
+	若不然, 则存在三点 $A 、 B 、 C$ 使三点不共线且 $A B=r$ 和 $A C=s$都是整数. 设点 $P$ 是任一给定点, 则由三角不等式有
+	$$
+		|P A-P B| \leqslant A B=r
+	$$
+	即 $|P A-P B|$ 是整数 $0,1,2, \cdots, r$ 中之一. 因此,点 $P$ 或位于直线
+	$$
+		\begin{aligned}
+			 & H_{0}=\text { 直线 } A B \text { 的垂直平分线, } \\
+			 & H_{r}=\text { 直线 } A B
+		\end{aligned}
+	$$
+	之一上,或落在双曲线
+	$$
+		H_{i}=\{X|| X A-X B \mid=i\}, i=1,2, \cdots, r-1
+	$$
+	之一上. 同理, 点 $P$ 又或者位于直线
+	$$
+		\begin{aligned}
+			 & K_{0}=\text { 线段 } A C \text { 的垂直平分线, } \\
+			 & K_{s}=\text { 直线 } A C
+		\end{aligned}
+	$$
+	之一上,或者落在双曲线
+	$$
+		K_{j}=\{X|| X A-X C \mid=j\}, j=1,2, \cdots, s-1
+	$$
+	之一上. 由此可知, 任一给定点必落在集合
+	\begin{equation*}
+		H_{i} \cap K_{j}, i=0,1, \cdots, r, j=0,1, \cdots, s \tag{1}
+	\end{equation*}
+	之一上. 由于直线 $A B$ 与 $A C$ 不重合, 所以任一 $H_{i}$ 与任一 $K_{j}$ 都不相同.从而知(1)中每个集合都不多于 4 点,故知集合
+	$$
+		M=\bigcup_{i, j}\left(H_{i} \cap K_{j}\right)
+	$$
+	的点数不多于 $4(r+1)(s+1)$, 此与给定点有无穷多个矛盾.
+\end{proof}
+
+\begin{example}
+	设 $M$ 为一个无限的有理数集, 满足: $M$ 的任意一个 2009 元子集的元素之积为一个整数,且这个整数不能被任何质数的 2009 次幂整除. 证明: $M$的元素均为整数.
+\end{example}
+\begin{analysis}
+	这里的“2009”并不是一个关键的数字, 与上例一样, 我们还是得围绕“无限”做文章.
+\end{analysis}
+\begin{proof}
+	设 $a_{1}, a_{2}, \cdots, a_{2008} \in M$. 记
+	$$
+		A=a_{1} a_{2} \cdots a_{2008}=\frac{p}{q},(p, q)=1
+	$$
+
+	假设 $M$ 中包含了无数多个形如
+	$$
+		\alpha_{i}=\frac{p_{i}}{q_{i}},\left(p_{i}, q_{i}\right)=1, q_{i}>1
+	$$
+	的数,且 $\alpha_{i} \neq a_{1}, a_{2}, \cdots, a_{2008}$. 由于
+	$$
+		\alpha_{i} \cdot A=\alpha_{i} a_{1} a_{2} \cdots a_{2008}=\frac{p_{i}}{q_{i}} \cdot \frac{p}{q}
+	$$
+	为整数,所以
+	$q \mid p$
+	由于 $p$ 只有有限个因子, 故有无数个分母为 $q_{i}^{\prime}$ 的既约分数属于 $M$. 这些分数中的任意 2009 个的乘积都不是整数. 这与题设矛盾. 这说明 $M$ 中包含了无限多个整数,记这些整数的集合为 $M^{\prime}$.
+
+	假设有 $\frac{a}{b} \in M,(a, b)=1, b>1$.
+
+	设 $p$ 为 $b$ 的一个质因子. 由于 $\frac{a}{b}$ 与 $M^{\prime}$ 中任意 2008 个整数的乘积为整数,故 $p$ 为 $M^{\prime}$ 中无数多个整数的质因子. 而 $M^{\prime}$ 中任意 2009 个含有因数 $p$ 的数的乘积可被 $p^{2009}$ 整除. 这又与题设矛盾.
+
+	这就证明了 $M$ 的元素均为整数. 而这样的整数集是存在的,如全部质数的集合.
+\end{proof}
+
+\begin{example}
+	设七元素集合 $A=\left\{a_{1}, a_{2}, \cdots, a_{7}\right\}$ 的元素均为不大于 26 的正整数. 证明: 存在正整数 $t 、 m(1 \leqslant t<m \leqslant 7)$, 使得方程
+	$$
+		x_{1}+x_{2}+\cdots+x_{t}=x_{t+1}+x_{t+2}+\cdots+x_{m}
+	$$
+	在集合 $A$ 上有解,且 $x_{1}, x_{2}, \cdots, x_{m}$ 互不相等.
+\end{example}
+\begin{analysis}
+	如能证明集合 $A$ 有两个互不包含的子集的元素和相等, 则求证结论成立.
+\end{analysis}
+\begin{proof}
+	首先证明:在集合 $A$ 的最多含有四个元素的子集中,有两个集合的元素之和是相等的.
+
+	易知,集合 $A$ 的最多含有四个元素的非空子集有 $\mathrm{C}_{7}^{1}+\mathrm{C}_{7}^{2}+\mathrm{C}_{7}^{3}+\mathrm{C}_{7}^{1}=98$ (个). 这些子集的元素之和的最小可能值为 1 , 最大可能值为 $26+25+24+$ $23=98$.
+
+	假设在这些子集中没有两个的元素之和是相等的. 则 $1 \sim 98$ 的每个整数恰分别是上述 98 个子集的元素之和.
+
+	特别地, 98 是子集 $\{23,24,25,26\}$ 的元素之和.
+
+	故 $\{23,24,25,26\} \subset A$.
+
+	所以, $\{23,26\} \subset A$, 且 $\{24,25\} \subset A$.
+
+	而 $\{23,26\}$ 与 $\{24,25\}$ 的元素之和相等. 矛盾.
+
+	设 $B_{1} 、 B_{2}$ 是集合 $A$ 的两个元素之和相等的子集, $B_{1} \cap B_{2}=C$. 则 $B_{1}^{\prime}=$ $B_{1} \backslash C, B^{\prime}{ }_{2}=B_{2} \backslash C$ 也是集合 $A$ 的非空子集.
+
+	设 $\left|B_{1}^{\prime}\right|=t,\left|B_{2}\right|=m-t$. 记 $B_{1}^{\prime}$ 的元素分别为 $x_{1}, x_{2}, \cdots, x_{t}, B_{2}^{\prime}$ 的元素分别为 $x_{t+1}, x_{t+2}, \cdots, x_{m}$, 即得方程的一组解.
+\end{proof}
+
+\subsection{集合的局部性质}
+设集合 $S=\{x \mid P(x)\}$. 如果条件 $P^{*}$ 是条件 $P$ 的充分条件, 那么集合
+$$
+	S^{*}=\left\{x \mid P^{*}(x), x \in S\right\}
+$$
+是集合 $S$ 的子集,即 $S^{*} \subseteq S$. 这里 $P^{*}$ 是集合 $S$ 中部分元素的性质.
+
+我们还可以通过增加 $S$ 的“内涵”的方式来缩小它的“外延”: $S$ 是所有具备性质 $P$ 的元素 $x$ 的集合,增加新的性质 $P^{*}$, 得到集合
+$$
+	S^{*}=\left\{x \mid P(x) \text { 且 } P^{*}(x), x \in S\right\},
+$$
+
+显然 $S^{*}=\left\{x \mid P^{*}(x), x \in S\right\}$, 它是 $S$ 的子集, 即 $S^{*} \subseteq S$.
+
+一类典型的问题就是从集合 $S$ 中分离出所有满足性质 $P^{*}$ 的元素, 从而得到所求的 $S^{*}$.
+
+\begin{example}
+	设 $A \subset \mathbb{N}^{*}$ 是无限集, $A$ 中每个数 $a$ 是至多 1990 个质数的乘积. 证明: 必有 $A$ 的无限子集 $B$, 使得 $B$ 中任何两个不同数的最大公因数都相同.
+\end{example}
+\begin{analysis}
+	如果 $A$ 中含有无限多个两两互质的整数, 则结论显然成立. 否则,存在质数 $p_{1}$ 为 $A$ 的无限多个数的因数, 故 $A_{1}=\left\{\frac{a}{p_{1}} \left\lvert\, \frac{a}{p_{1}} \in \mathbb{Z}\right., a \in A\right\}$ 为无限集. 若 $A_{1}$ 中含有无限多个两两互质的整数,则结论亦成立. 否则, 继续上面的步骤.
+\end{analysis}
+\begin{proof}
+	如果 $A$ 中含有无限多个两两互质的正整数, 将它们全部选出作成子集 $B$, 则结论成立.
+
+	若存在质数 $p_{1}$ 为 $A$ 中无限多个数的因数, 则集合
+	$$
+		A_{1}=\left\{\frac{a}{p_{1}} \left\lvert\, \frac{a}{p_{1}} \in \mathbb{Z}\right., a \in A\right\}
+	$$
+	为无限集. 依此类推 (用 $A_{1}$ 代替 $A$ ). 由于 $A$ 中每个数的质因数个数 $\leqslant 1990$,所以必有无限集
+	$$
+		A_{k}=\left\{\frac{a}{p_{1} p_{2} \cdots p_{k}} \left\lvert\, \frac{a}{p_{1} p_{2} \cdots p_{k}} \in \mathbb{Z}\right., \frac{a}{p_{1} p_{2} \cdots p_{k-1}} \in A_{k-1}\right\},
+	$$
+
+	每个质数 $p_{i}$ 都仅是 $A_{k}$ 中有限多个数的因数.
+
+	任取 $a_{1} \in A_{k}$. 在取定 $a_{1}, a_{2}, \cdots, a_{n}$ 两两互质后, 由于每个质数都仅是 $A_{k}$ 中有限多个数的因数, 在 $A_{k}$ 中存在 $a_{n+1}$, 它与 $a_{1}, a_{2}, \cdots, a_{n}$ 均互质. 这样就得到 $A_{k}$ 的一个无穷子集 $B_{k}, B_{k}$ 中的元素两两互质.
+
+	将 $B_{k}$ 中每个元素乘以 $p_{1} p_{2} \cdots p_{k}$, 得到 $A$ 的无穷子集, 其中每两个数的最大公因数均为 $p_{1} p_{2} \cdots p_{k}$.
+\end{proof}
+
+\begin{example}
+	记 $\mathbb{Q}$ 为有理数集合, $\mathbb{Q}$ 的非空子集 $S$ 具有以下性质:
+
+	(1) $0 \notin S$;
+
+	(2) 若 $s_{1} \in S, s_{2} \in S$, 则 $\frac{s_{1}}{s_{2}} \in S$;
+
+	(3) 存在一非零有理数 $q, q \notin S$, 且每一个不在 $S$ 中的非零有理数都可写成 $q s$ 的形式, 其中 $s \in S$.
+
+	证明: 若 $x \in S$, 则存在 $y, z \in S$, 使 $x=y+z$.
+\end{example}
+\begin{analysis}
+	设 $\alpha, \beta \in \mathbb{Q}$, 且 $\alpha+\beta=1$, 则
+	$$
+		x=x(\alpha+\beta)=x \alpha+x \beta
+	$$
+
+	我们希望出现: $x \alpha \in S$ 且 $x \beta \in S$. 由 (3) 似乎应该有 $\alpha, \beta \in S$. 于是我们要解决两个问题: (1) 怎样的 $\alpha, \beta$ 必定属于 $S$; (2) 如 $x_{1} \in S, x_{2} \in S$, 则 $x_{1} x_{2} \in S$.
+\end{analysis}
+\begin{proof}
+	假设 $s \in S$. 令 $s_{1}=s_{2} \in S$, 则 $\frac{s_{1}}{s_{2}}=1 \in S$. 令 $s_{1}=1, s_{2}=s$, 则 $\frac{1}{s} \in S$.
+
+	若 $t \in S$, 令 $s_{1}=t, s_{2}=\frac{1}{s}$, 则 $\frac{s_{1}}{s_{2}}=\frac{t}{\frac{1}{s}}=s t \in S$ (这样 $s$ 就是乘法意义下的解).\\
+	假设 $u$ 是一个非零有理数, 若 $u \notin S$, 则 $u=q s$, 其中 $s \in S$, 于是我们有 $u^{2}=q^{2} s^{2}$.
+
+	若 $q^{2} \notin S$, 则可设 $q^{2}=q t(t \in S)$, 则 $q=t \in S$, 矛盾. 所以 $q^{2} \in S$, $u^{2} \in S$.
+
+	假如 $x \in S$, 则由 $\left(\frac{3}{5}\right)^{2} 、\left(\frac{4}{5}\right)^{2}$ 为平方数可知,
+	$$
+		x\left(\frac{3}{5}\right)^{2} \in S, x\left(\frac{4}{5}\right)^{2} \in S
+	$$
+	又 $x=x\left(\frac{3}{5}\right)^{2}+x\left(\frac{4}{5}\right)^{2}$, 取 $y=x\left(\frac{3}{5}\right)^{2}, z=x\left(\frac{4}{5}\right)^{2}$, 则命题得证.
+\end{proof}
+
+\begin{example}
+	平面上整点的集合 $M=\{(x, y) \mid x, y \in \mathbb{Z}$, 且 $1 \leqslant x \leqslant 12,1 \leqslant$ $y \leqslant 13\}$. 证明: 不少于 49 个点的 $M$ 的每一个子集,必包含一个矩形的 4 个顶点,且此矩形的边平行于坐标轴.
+\end{example}
+
+\begin{analysis}
+	设 $S$ 为 $M$ 的任一个 49 元子集. 其中纵坐标相同的点的横坐标的集合为:
+	$$
+		X_{i}=\{x \mid(x, i) \in S\}, i=1,2, \cdots, 13
+	$$
+	若存在关于整点横坐标的二元集 $(r, s)$ 同时是 $X_{i} 、 X_{j}(i \neq j)$ 的子集,则原题得证.
+\end{analysis}
+\begin{proof}
+	设 $S$ 为 $M$ 的任一个 49 元子集. 令
+	$$
+		X_{i}=\{x \mid(x, i) \in S\}, i=1,2, \cdots, 13
+	$$
+	则 $\left|X_{i}\right|=x_{i}, \sum_{i=1}^{13} x_{i}=49,0 \leqslant x_{i} \leqslant 12$. 记
+	$$
+		P_{i}=\{\{r, s\} \mid r \neq s,(r, i),(s, i) \in S\}, i=1,2, \cdots, 13
+	$$
+	显然, 全体 $P_{i}$ 中只有 $\mathrm{C}_{12}^{2}=66$ (种) 不同的二元集.
+
+	又 $\sum_{i=1}^{13}\left|P_{i}\right|=\sum_{i=1}^{13} \mathrm{C}_{x_{i}}^{2}$, 考虑其最小值.
+
+	利用局部调整: 当 $x_{1}+x_{2}=c$ 时,
+	$$
+		\mathrm{C}_{x_{1}}^{2}+\mathrm{C}_{x_{2}}^{2}=\frac{c^{2}-c}{2}-x_{1} x_{2} \geqslant \frac{c^{2}-c}{2}-\frac{c^{2}}{4},
+	$$
+
+	$x_{1}=\left[\frac{c}{2}\right], x_{2}=c-\left[\frac{c}{2}\right]$ 时, $\mathrm{C}_{x_{1}}^{2}+\mathrm{C}_{x_{2}}^{2}$ 取得最小值. 由此知, $\sum_{i=1}^{13} \mathrm{C}_{x_{i}}^{2}$ 取得最小值必须是将 $49=\sum_{i=1}^{13} x_{i}$ 尽可能地平均到 $\left\{x_{i}\right\}$ 中, 即 $\left\{x_{i}\right\}$ 中有 $j$ 个 $\left[\frac{49}{13}\right]=3$,\\
+	$(13-j)$ 个 $\left[\frac{49}{13}\right]+1=4$, 从而得 $j=3$.
+	所以
+	$$
+		\left(\sum_{i=1}^{13} \mathrm{C}_{x_{i}}^{2}\right)_{\min }=3 \mathrm{C}_{3}^{2}+10 \mathrm{C}_{4}^{2}=69
+	$$
+	从而, 有
+	$$
+		\sum_{i=1}^{13}\left|P_{i}\right|=\sum_{i=1}^{13} \mathrm{C}_{x_{i}}^{2} \geqslant 69>66
+	$$
+	由此推知存在 $i \neq j$, 使得 $(r, s) \in P_{i},(r, s) \in P_{j}$.故有 $(r, i),(s, i),(r, j),(s, j) \in S$, 结论成立.
+\end{proof}
+
+\subsection	{集合间的相关性质}
+\begin{example}
+	记 $A$ 为含有 $t\left(t \in \mathbb{R}_{+}\right)$的实数集, 使得存在一个实数集 $B$ (与 $A$ 有关), $|B| \geqslant 4, A B=\{a b \mid a \in A, b \in B\}$ 的元素构成一个有限长等差数列.求集合 $A$ 所有可能的情形.
+\end{example}
+\begin{analysis}
+	若 $|A| \geqslant 2$, 设 $x, x^{\prime} \in A\left(x \neq x^{\prime}\right), y, y^{\prime} \in B\left(y \neq y^{\prime}\right)$, 数列公差为 $d$, 则 $x y-x y^{\prime}=n d(n \in \mathbb{Z})$, 即 $x=n \cdot \frac{d}{y-y}$. 这说明将集合 $A$ 中的元素同时乘以 $\frac{y-y^{\prime}}{d}$, 即可将集合 $A$ 转化为一个整数集来讨论.
+\end{analysis}
+\begin{solution}
+	所求的集合为 $\{t\} 、\{-t, t\} 、\{0, t\} 、\{-t, 0, t\}$.
+
+	只需取 $B=\{-1,0,1,2\}$ 即可验证.
+
+	下面假设集合 $A 、 B$ 符合题意且 $|A| \geqslant 2$.
+
+	显然, $A 、 B$ 元素个数均必须有限.
+
+	记 $d$ 为集合 $A B$ 中等差数列的公差, 任取 $x, x^{\prime} \in A, x \neq x^{\prime}, y, y^{\prime} \in B$, $y \neq y^{\prime}$.
+
+	由于 $x y 、 x y^{\prime}$ 为等差数列中的项,于是,
+	$$
+		x y-x y^{\prime}=n d(n \in \mathbb{Z}),
+	$$
+
+	则 $x=n \cdot \frac{d}{y-y^{\prime}}$.
+
+	这表明, 集合 $A$ 中的任意元素均为 $\frac{d}{y-y}$ 的整数倍.
+
+	从而, 将集合 $A$ 中每个元素除以 $\frac{d}{y-y}$, 使得 $A$ 中每个元素均可化为整数.
+
+	类似地, 对集合 $B$ 中的元素作除以 $\frac{d}{x-x}$ 的处理使得均化为整数.
+
+	接下来, 可将集合 $A$ 中元素除以整体的公约数, 使得整体互质, 对集合 $B$ 也作类似处理.
+
+	记集合 $A$ 中绝对值最大的元素为 $a^{\prime}$, 不妨设 $a^{\prime}>0$. 否则, 将所有元素乘以 -1 即可.
+
+	类似地,记集合 $B$ 中绝对值最大的元素为 $b^{\prime}>0$.
+
+	下面证明: $A=\{-1,1\},\{0,1\},\{-1,0,1\}$.
+
+	因为集合 $B$ 中元素整体互质,而
+	$$
+		d \mid\left(x-x^{\prime}\right) y \quad\left(x, x^{\prime} \in A, x \neq x^{\prime}, y \in B\right)
+	$$
+
+	所以, $d \mid\left(x-x^{\prime}\right)$.
+
+	类似地, $d \mid\left(y-y^{\prime}\right)$.
+
+	而 $|B| \geqslant 4$ 故 $b^{\prime}>d$.
+
+	由于 $a^{\prime} b^{\prime}-d \in A B$, 可设 $a^{\prime} b^{\prime}-d=a b(a \in A, b \in B)$.
+
+	而 $a b=a^{\prime} b^{\prime}-d \geqslant b^{\prime}-d>0$,若 $|a| \neq a^{\prime}$, 则
+	$$
+		a^{\prime} b^{\prime}-d=a b=|a||b| \leqslant\left(a^{\prime}-1\right) b^{\prime}<a^{\prime} b^{\prime}-d
+	$$
+	矛盾.
+
+	故 $|a|=a^{\prime}, d=a^{\prime} b^{\prime}-|a||b|=\left(b^{\prime}-|b|\right) a^{\prime} \geqslant a^{\prime}$.
+
+	又集合 $A$ 中所有元素模 $d$ 相同,则
+	$$
+		A=\{-d, 0, d\},\left\{a^{\prime}, a^{\prime}-d\right\}\left(d \geqslant a^{\prime}>\left|a^{\prime}-d\right|\right)
+	$$
+
+	对于前一种情形, 有 $A=\{-t, 0, t\}$.
+
+	对于后一种情形, 若为 $\{0, d\}$, 则对应的 $A=\{0, t\}$. 除此以外, 由 $|a|=$ $a^{\prime}>\left|a^{\prime}-d\right|$, 则
+	$$
+		a=a^{\prime}, d=a^{\prime}\left(b^{\prime}-|b|\right)
+	$$
+
+	从而 $a^{\prime} \mid d$, 则 $a^{\prime} \leqslant \frac{d}{2}$.
+
+	若 $d$ 为偶数, 则可取 $\left\{-\frac{d}{2}, \frac{d}{2}\right\}$, 对应的 $A=\{t,-t\}$; 若 $a^{\prime}<\frac{d}{2}$, 则 $\left|a^{\prime}-d\right|>a^{\prime}$, 矛盾.
+\end{solution}
+
+\begin{example}
+	在一次数学竟赛中,一些同学间是朋友关系,且朋友关系是相互的. 证明: 存在由学生组成的一个子集 $M$, 使得集合 $M$ 中的每名同学在此集合中至多有三位朋友,不属于集合 $M$ 的每名同学在集合 $M$ 中至少有四位朋友.
+\end{example}
+\begin{proof}
+	设 $M_{0}=\varnothing$. 给出如下构造:
+
+	(1) 若学生 $x \in M$, 其在集合 $M$ 中至少有四位朋友, 则将其从集合 $M$ 中移出;
+
+	(2)若学生 $y \notin M$, 其在集合 $M$ 中最多有三位朋友,则将其移人集合 $M$ 中.
+
+	利用如上两种方法, 可构造满足题意的状态.
+
+	对于集合 $M$, 若 $x 、 y$ 为集合 $M$ 中的朋友, 记 $p(M)$ 表示 $(x, y) \in M \times M$的对数. 设
+	$$
+		f(M)=7|M|-p(M)
+	$$
+	注意到, $f(M)$ 仅能取到整数, 且不大于 $7|M|$, 初值为 $f\left(M_{0}\right)=0$.
+
+	由(1)对于 $x \in M, x$ 在集合 $M$ 中至少有四位朋友, 知 $(x, y),(y, x) \in$ $M \times M$ 至少有八对. 因此,若从集合 $M$ 中移出 $x$,则 $p(M)$ 至少减少 $8,|M|$ 减少 1 . 此时, $f(M)$ 增加了.
+
+	接下来, 由 (2)对于 $y \notin M, y$ 在集合 $M$ 中最多有三位朋友, 将 $y$ 添人集合 $M$ 中,则 $p(M)$ 至多增加 $6,|M|$ 增加 1 . 此时, $f(M)$ 也增加了.
+
+	操作 $(1)$ 、 (2) 均使 $f(M)$ 增加, 而 $f(M)$ 有上界, 故操作一定会停止, 此时的 $M$ 即为所要的子集.
+\end{proof}
+
+\begin{example}
+	已知集合 $X=\{1,2, \cdots, 8\}$. 现有 $k$ 种颜色给 $X$ 的三元子集染色,要求任意两个没有公共元素的三元子集有不同颜色. 证明:
+
+	(1) 四种颜色可以完成染色;
+
+	(2) 三种颜色无法完成染色.
+\end{example}
+\begin{proof}
+	(1) 设四种颜色分别为 $1 、 2 、 3 、 4, A$ 为 $X$ 的一个子集, $m_{A}$ 为其中最大元素值.
+
+	规定:给子集 $A$ 染的颜色为 $\max \left\{1, m_{A}-4\right\}$.
+
+	若两个子集 $A 、 B$ 无公共元素, 则至少在 $m_{A} 、 m_{B}$ 中有一个大于或等于 6 .于是, 两个集合不能全染为 1 号色. 相反, 若两个集合均染一种大于 1 的颜色,则 $m_{A}=m_{B}$, 与两集合不存在公共元素矛盾.
+
+	所以,用四种颜色可以完成染色.
+
+	(2) 将自然数 $1,2, \cdots, 8$ 分别标记为一个立方体的八个顶点, 同时, 标出三元集合 $\{a, b, c\}$ 所对应的三角形的重心. 以下将用各个三角形的重心来代替三元集合.
+
+	接下来证明:无法用三种颜色完成染色.
+
+	只考虑立方体表面上的点.
+
+	若两个三元子集在立方体中分别表示两个相对平面的顶点, 则其必无公共元素. 所以, 立方体一个面上的所有点的颜色必与其对面上点的颜色不同.\\
+	假设三种颜色能够完成染色任务. 故在一组对面中, 必有一个面中所有点的颜色相同, 也就是说在立方体表面上必有三个面为单染色面, 设为 $F_{1}$ 、 $F_{2} 、 F_{3}$.
+
+	因为三个面中任意两个面都不平行, 所以, 每两个面都有一个公共的边,且三边交于一点. 设这三个面的顶点分别为
+	$$
+		\{a, b, c, d\},\{a, b, e, f\},\{a, c, e, g\}
+	$$
+
+	因为在三个面中, 每两个面都含有一组不共点的三角形, 所以, 三个面的颜色必为三种不同颜色.
+
+	设 $h$ 为点 $a$ 的对顶点. 则以 $\{f, g, h\}$ 为顶点的三角形颜色与以 $\{a, b$, $c\} 、\{a, b, e\} 、\{a, c, e\}$ 为顶点的三角形颜色不同. 而此三个三角形又分别在面 $F_{1} 、 F_{2} 、 F_{3}$ 上. 于是, 需要第四种颜色.
+
+	综上, 三种颜色无法完成染色任务.
+\end{proof}
+
+
+% \section{集合中的最大(小)值}
+% \section{集合的分划}
+% \section{分类原则}
+% \section{极端原理}
+% \section{ 容斥原理}
+% \section{ 映射方法}
