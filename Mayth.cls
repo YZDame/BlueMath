@@ -32,6 +32,10 @@
 \newtheorem{exercise}{练习}[section]
 \newtheorem{formula}{公式}[section]
 \newtheorem{definition}{定义}[section]
+\newtheorem{theorem}{定理}[section]
+\newtheorem{lemma}{引理}[section]
+\newtheorem{corollary}{推论}[section]
+\newtheorem{proposition}{命题}[section]
 \newtheorem*{solution}{解}
 
 \theoremstyle{plain}
