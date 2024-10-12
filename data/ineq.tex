@@ -305,8 +305,9 @@ $$
 \geqslant & 0
 \end{aligned}
 $$
-故引理\ref{lem:证法七引理}成立. 现在, 我们利用引理\ref{lem:证法七引理}和数学归纳法证明平均值不等式.
+故引理\ref{lem:证法七引理}成立. 
 \end{proof}
+现在, 我们利用引理\ref{lem:证法七引理}和数学归纳法证明平均值不等式.
 
 (1)当 $n=2$ 时,已知结论成立.
 
@@ -587,18 +588,18 @@ $$
 
 为了证明平均值不等式, 首先证明另一个不等式, 即
 
-引理 3 如果 $x_{k} \geqslant 0$, 且 $x_{k} \geqslant x_{k-1}(k=2,3, \cdots, n)$, 则
+\begin{lemma}\label{lem:证法十二引理}
+如果 $x_{k} \geqslant 0$, 且 $x_{k} \geqslant x_{k-1}(k=2,3, \cdots, n)$, 则
 $$
 x_{n}^{n} \geqslant x_{1}\left(2 x_{2}-x_{1}\right)\left(3 x_{3}-2 x_{2}\right) \cdots\left[n x_{n}-(n-1) x_{n-1}\right]
 $$
-
 当且仅当 $x_{1}=x_{2}=\cdots=x_{n}$ 时等号成立.
-
-引理的证明: 因为 $x_{k} \geqslant x_{k-1}$, 则
+\end{lemma}
+\begin{proof}
+因为 $x_{k} \geqslant x_{k-1}$, 则
 $$
 x_{k}^{k-1}+x_{k}^{k-2} x_{k-1}+\cdots+x_{k-1}^{k-1} \geqslant k x_{k-1}^{k-1},
 $$
-
 所以
 $$
 \begin{aligned}
@@ -606,20 +607,19 @@ x_{k}^{k}-x_{k-1}^{k} & =\left(x_{k}-x_{k-1}\right)\left(x_{k}^{k-1}+x_{k}^{k-2}
 & \geqslant k x_{k-1}^{k-1}\left(x_{k}-x_{k-1}\right)
 \end{aligned}
 $$
-
 即
 $$
 x_{k}^{k} \geqslant x_{k-1}^{k-1}\left[k x_{k}-(k-1) x_{k-1}\right](k=1,2, \cdots, n)
 $$
-
 当且仅当 $x_{k}=x_{k-1}$ 时等号成立.
 
 所以
 $$
 x_{n}^{n}=x_{1} \frac{x_{2}^{2}}{x_{1}} \frac{x_{3}^{3}}{x_{2}^{2}} \cdots \frac{x_{n}^{n}}{x_{n-1}^{n-1}} \geqslant x_{1}\left(2 x_{2}-x_{1}\right)\left(3 x_{3}-2 x_{2}\right) \cdots\left[n x_{n}-(n-1) x_{n-1}\right]
 $$
+\end{proof}
 
-现在利用引理 3 证明平均值不等式.
+现在利用引理\ref{lem:证法十二引理}证明平均值不等式.
 
 不妨假设 $a_{n} \geqslant a_{n-1} \geqslant \cdots \geqslant a_{2} \geqslant a_{1}>0$. 由 $A_{k}=\frac{a_{1}+a_{2}+\cdots+a_{k}}{k}$, 则 $A_{k} \geqslant A_{k-1}>0(k=2,3, \cdots, n)$, 且 $k A_{k}-(k-1) A_{k-1}=a_{k}$. 由引理 3 , 得
 $$
@@ -629,22 +629,19 @@ $$
 即 $A_{n} \geqslant G_{n}$. 当且仅当 $A_{1}=A_{2}=\cdots=A_{n}$, 即 $a_{1}=a_{2}=\cdots=a_{n}$ 时等号成立.
 
 \subsubsection*{证法十三 (函数方法)}
-
-引理 4 如果函数 $f(x):(a, b) \rightarrow \mathbf{R}$ 满足
-
+\begin{lemma}\label{lem:证法十三引理}
+如果函数 $f(x):(a, b) \rightarrow \mathbf{R}$ 满足
 \begin{equation*}
 f\left(\frac{x+y}{2}\right) \geqslant \frac{f(x)+f(y)}{2}, x, y \in(a, b) \tag{13}
 \end{equation*}
-
 那么
-
 \begin{equation*}
 f\left(\frac{x_{1}+x_{2}+\cdots+x_{n}}{n}\right) \geqslant \frac{f\left(x_{1}\right)+f\left(x_{2}\right)+\cdots+f\left(x_{n}\right)}{n} \tag{14}
 \end{equation*}
-
 其中 $x_{i} \in(a, b)$.
-
-引理的证明: 对 $n$ 用归纳法.
+\end{lemma}
+\begin{proof}
+对 $n$ 用归纳法.
 
 当 $n=1,2$ 时,结论显然成立.
 
@@ -657,7 +654,6 @@ A_{k+1}=\frac{a_{1}+a_{2}+\cdots+a_{k}}{2 k}+\frac{a_{k+1}+(k-1) A_{k+1}}{2 k} \
 B=\frac{a_{k+1}+(k-1) A_{k+1}}{k}
 \end{gathered}
 $$
-
 则
 $$
 \begin{aligned}
@@ -667,7 +663,6 @@ f\left(A_{k+1}\right)= & f\left(\frac{A_{k}+B}{2}\right) \\
 & \left.+\frac{1}{k}\left[f\left(a_{k+1}\right)+(k-1) f\left(A_{k+1}\right)\right]\right\}
 \end{aligned}
 $$
-
 所以
 $$
 f\left(\frac{a_{1}+a_{2}+\cdots+a_{k+1}}{k+1}\right) \geqslant \frac{f\left(a_{1}\right)+f\left(a_{2}\right)+\cdots+f\left(a_{k+1}\right)}{k+1}
@@ -689,27 +684,24 @@ $$
 $$
 
 故命题成立.
+\end{proof}
 
 下面验证 $\ln x$ 为凹函数. 对任意 $x, y$, 要使得:
 $$
 f\left(\frac{x+y}{2}\right) \geqslant \frac{f(x)+f(y)}{2}
 $$
-
 即
 $$
 \ln \frac{x+y}{2} \geqslant \frac{\ln (x)+\ln (y)}{2}
 $$
-
 等价于
 $$
 \ln \frac{x+y}{2} \geqslant \ln (x y)^{\frac{1}{2}}
 $$
-
 由函数的单调性, 等价于
 $$
 \frac{x+y}{2} \geqslant(x y)^{\frac{1}{2}}
 $$
-
 这个可以由 $(\sqrt{x}-\sqrt{y})^{2}>0$ 直接导出.
 
 另外, 设 $p>0, q>0$, 且 $\frac{1}{p}+\frac{1}{q}=1$, 由于函数 $f(x)=\ln x, x \in \mathbf{R}_{+}$为凹函数, 则对 $x, y>0$, 有
@@ -721,12 +713,12 @@ $$
 x^{\frac{1}{p}} y^{\frac{1}{q}} \leqslant \frac{1}{p} x+\frac{1}{q} y
 \end{gathered}
 $$
-
 等号成立的充分必要条件是 $x=y$.
 
 这个不等式称为 Young 不等式.
+
 \begin{note}
-引理 4 中的不等式(44, 称为琴生 (Jensen)不等式, 它的一般形式为设 $y=f(x), x \in(a, b)$ 为凹函数, 则对任意 $x_{i} \in(a, b)(i=1,2, \cdots$, $n)$, 我们有加权的琴生不等式
+引理\ref{lem:证法十三引理}中的不等式(44, 称为琴生 (Jensen)不等式, 它的一般形式为设 $y=f(x), x \in(a, b)$ 为凹函数, 则对任意 $x_{i} \in(a, b)(i=1,2, \cdots$, $n)$, 我们有加权的琴生不等式
 $$
 \frac{1}{p_{1}} f\left(x_{1}\right)+\frac{1}{p_{2}} f\left(x_{2}\right)+\cdots+\frac{1}{p_{n}} f\left(x_{n}\right) \leqslant f\left(\frac{x_{1}}{p_{1}}+\frac{x_{2}}{p_{2}}+\cdots+\frac{x_{n}}{p_{n}}\right),
 $$
