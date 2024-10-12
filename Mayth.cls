@@ -93,5 +93,5 @@
 \newcommand{\dprod}{\displaystyle\prod}
 
 \title{\textsc{BlueMath}: 高中数学竞赛一试讲义}
-\author{YZDame}
+\author{LeyuDame}
 \date{\today}
