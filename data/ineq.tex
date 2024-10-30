@@ -728,12 +728,15 @@ $$
 
 \subsubsection*{证法十四(平均值不等式与函数不等式)
 }
-利用函数 $f(x)=\mathrm{e}^{x}-1-x$ 的性质,不难得到\\
-引理 $5 \mathrm{e}^{x} \geqslant 1+x, x \in \mathbf{R}$, 当且仅当 $x=0$ 时, 等号成立.
+利用函数 $f(x)=\mathrm{e}^{x}-1-x$ 的性质,不难得到
+
+\begin{lemma}\label{lem:证法十四引理}
+$5 \mathrm{e}^{x} \geqslant 1+x, x \in \mathbf{R}$, 当且仅当 $x=0$ 时, 等号成立.
 
 设 $a_{1}, a_{2}, \cdots, a_{n} \geqslant 0$. 令 $a_{k}=\left(1+x_{k}\right) A_{n}$, 其中 $\sum_{i=1}^{n} x_{i}=0$.
+\end{lemma}
 
-由引理 $5, \mathrm{e}^{x_{k}} \geqslant 1+x_{k}$, 于是
+由引理\ref{lem:证法十四引理}$\mathrm{e}^{x_{k}} \geqslant 1+x_{k}$, 于是
 $$
 \begin{aligned}
 G_{n} & =\sqrt[n]{a_{1} a_{2} \cdots a_{n}}=\left(\prod_{k=1}^{n}\left(1+x_{k}\right) A_{n}\right)^{\frac{1}{n}} \\
@@ -758,7 +761,8 @@ $$
 
 在这部分, 我们利用不同的方法证明了平均值不等式成立. 在证明过程中,利用了各种技巧和方法.
 \begin{comment}
-\section*{习 题 1}
+
+  \section*{习 题 1}
 $\square$ 设 $a, b, c>0, a b c=1$. 求证：
 $$
 \frac{1}{a}+\frac{1}{b}+\frac{1}{c} \geqslant \sqrt{a}+\sqrt{b}+\sqrt{c}
